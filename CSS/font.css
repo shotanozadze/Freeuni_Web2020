@@ -1,0 +1,24 @@
+@font-face {
+    font-family: DejaVuNeue;
+    src: url(fonts/DejaVuNeue.woff);
+}
+@font-face {
+    font-family: DejaVuNeueCaps;
+    src: url(fonts/DejaVuNeueCaps.woff);
+}
+@font-face {
+    font-family: DejaVuNeueCaps-Bold;
+    src: url(fonts/DejaVuNeueCaps-Bold.woff);
+}
+@font-face {
+    font-family: dejavusans;
+    src: url(fonts/dejavusans.woff);
+}
+@font-face {
+    font-family: bpg1;
+    src: url(fonts/bpg1.ttf);
+}
+@font-face {
+    font-family: bpg2;
+    src: url(fonts/bpg2.otf);
+}
