@@ -1,0 +1,55 @@
+body {
+    background: #f7f7f7;
+    margin: 3px;
+}
+
+.main {
+    width: 75%;
+    background: white;
+    margin: 0 auto;
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+}
+
+.header {
+    height: 170px;
+    background: #153d4d;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 7px solid #f6c246;
+}
+
+.menu {
+    height: 60px;
+    background: #33464e;
+}
+
+.mainbody {
+    min-height: 700px;
+}
+
+.mainmatches{
+    float: left;
+    width: 70%;
+}
+
+.sidebar {
+    min-height: 700px;
+    width: 30%;
+    float: right;
+    border-left: 1px solid #e2e2e2;
+}
+
+.barsection {
+    margin: 8px;
+    border-radius: 5px;
+    border: 1px solid #e2e2e2;
+}
+
+.barname {
+    background: #153d4d;
+    padding: 10px;
+    color: #e2e2e2;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px 5px 0 0;
+}
