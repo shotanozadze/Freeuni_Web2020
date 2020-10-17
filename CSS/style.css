@@ -1,6 +1,7 @@
 body {
     background: #f7f7f7;
-    margin: 3px;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 .main {
@@ -9,6 +10,8 @@ body {
     margin: 0 auto;
     border: 1px solid #e2e2e2;
     border-radius: 10px;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.11), 0 0 35px 0 rgba(0,0,0,0.06);
+    
 }
 
 .header {
@@ -16,6 +19,13 @@ body {
     background: #153d4d;
     border-radius: 10px 10px 0px 0px;
     border-bottom: 7px solid #f6c246;
+}
+
+.header img {
+    width: 40%;
+    height: auto;
+    margin-top: 35px;
+    margin-left: 20px;
 }
 
 .menu {
@@ -54,4 +64,13 @@ body {
     border-radius: 5px 5px 0 0;
     font-family: DejaVuNeueCaps;
     padding-top: 14px;
+}
+
+.footer {
+    border-top: 1px solid #e2e2e2;
+    padding: 50px;
+    color: #05172099;
+    font-family: DejaVuNeueCaps;
+    font-size: 0.9em;
+    font-weight: bold;
 }
