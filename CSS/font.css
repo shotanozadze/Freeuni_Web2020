@@ -22,3 +22,11 @@
     font-family: bpg2;
     src: url(fonts/bpg2.otf);
 }
+@font-face {
+    font-family: archy;
+    src: url(fonts/ar-archy-regular.ttf);
+}
+@font-face {
+    font-family: archy-bold;
+    src: url(fonts/ar-archy-semibold.ttf);
+}
