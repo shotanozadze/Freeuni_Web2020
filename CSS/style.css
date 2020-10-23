@@ -34,11 +34,38 @@ body {
     transition: 1s;
 }
 
-.menu {
+#menu {
     height: 60px;
     background: #33464e;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+}
+
+#menu > li {
+  display: inline-block;
+  float: left;
+  margin: 0;
+  border-right: 1px solid #153d4d;
+}
+
+#menu > li > a {
+  color: #FFF;
+  height: 60px;
+  line-height: 60px;
+  font-family: DejaVuNeueCaps;
+  padding: 0 15px;
+  display: block;
+  transition: 0.2s;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+#menu .has-sub {
+  z-index: 1;
+}
+
+#menu .has-sub:hover > ul {
+  display: block;
 }
 
 .mainbody {
