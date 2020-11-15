@@ -6,27 +6,33 @@ body {
 #main-container {
     width: 75%;
     background: white;
-    margin: 0 auto;
     border: 1px solid #e2e2e2;
-    border-radius: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     box-shadow: 0 2px 6px 0 rgba(0,0,0,0.11), 0 0 35px 0 rgba(0,0,0,0.06);
-    margin-top: 5px;
     margin-bottom: 10px;
+    position: relative;
+    margin-top: 130px;
+    float: left;
+    margin-left: 12.5%;
 }
 
 #header {
     width: 100%;
-    height: 150px;
+    height: 90px;
     background: #232323;
-    border-bottom: 7px solid #f6c246;
+    border-bottom: 5px solid #f6c246;
+    position: fixed;
+    z-index: 10;
+    margin-top: 0;
 }
 
 #header img {
-    width: 9.5%;
+    width: 6%;
     height: auto;
-    margin-left: 40%;
+    margin-left: 44%;
     transition: 1s;
-    margin-top: 10px;
+    margin-top: 4px;
 }
 
 #header img:hover{
@@ -35,29 +41,50 @@ body {
 }
 
 #menu {
-    height: 60px;
+    position: fixed;
+    height: 35px;
     background: #33464e;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    margin-top: 95px;
+    width: 100%;
+    z-index: 9;
+    color: white;
+    border-bottom: 1px solid #0f4f9b;
+    padding-left:12.5%;
 }
 
 #menu > li {
     display: inline-block;
     float: left;
     margin: 0;
-    border-right: 1px solid #153d4d;
+    border-right: 1px solid #2b3d44;
+    border-left: 1px solid #354a52;
+    transition: 1s;
+    padding-top: 4px;
+    width: 9%;
+    text-align: center;
 }
+
+#menu > li:hover{
+	background-color: #212e33;
+	transition: 1s;
+}
+
 
 #menu > li > a {
     color: #FFF;
-    height: 60px;
-    line-height: 60px;
+    line-height: 31px;
     font-family: DejaVuNeueCaps;
-    padding: 0 15px;
     display: block;
     transition: 0.2s;
-    font-size: 1.2em;
+    font-size: 0.9em;
     text-decoration: none;
+    transition: 1s;
+}
+
+#menu > li > a:hover {
+    color: #f6c246;
+    transition: 1s;
+    font-weight: bold;
 }
 
 #menu .has-sub {
@@ -85,7 +112,7 @@ body {
     width: 31%;
     float: right;
     margin-top: 1%;
-    z-index: 1;
+    z-index: 2;
 }
 
 #footer {
