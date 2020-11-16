@@ -30,9 +30,12 @@ body {
 #header img {
     width: 6%;
     height: auto;
-    margin-left: 44%;
     transition: 1s;
     margin-top: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
 }
 
 #header img:hover{
@@ -48,7 +51,7 @@ body {
     width: 100%;
     z-index: 9;
     color: white;
-    border-bottom: 1px solid #0f4f9b;
+    border-bottom: 1px solid #232323;
     padding-left:12.5%;
 }
 
@@ -60,8 +63,9 @@ body {
     border-left: 1px solid #354a52;
     transition: 1s;
     padding-top: 4px;
-    width: 9%;
+    width: auto;
     text-align: center;
+    padding-right: 1%;
 }
 
 #menu > li:hover{
@@ -81,6 +85,14 @@ body {
     transition: 1s;
 }
 
+#menu > li > a img {
+    height: 65%;
+    padding-top: 2%;
+    float: left;
+    padding-left: 10%;
+    padding-right: 5%;
+}
+
 #menu > li > a:hover {
     color: #f6c246;
     transition: 1s;
@@ -93,6 +105,11 @@ body {
 
 #menu .has-sub:hover > ul {
     display: block;
+}
+
+.menuline {
+    line-height: 31px;
+    float: left;
 }
 
 #main {
