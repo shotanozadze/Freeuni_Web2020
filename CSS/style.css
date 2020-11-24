@@ -85,40 +85,29 @@ body {
         z-index: 9;
         color: white;
         border-bottom: 1px solid #232323;
-        padding-left:12.5%;
+        padding-left: 12.5%;
+        padding-right: 12.5%;
     }
 
-    #menu > li {
-        display: inline-block;
+    #menu > a {
         float: left;
         margin: 0;
         border-right: 1px solid #2b3d44;
         border-left: 1px solid #354a52;
-        transition: 1s;
         padding-top: 4px;
-        width: auto;
         text-align: center;
         padding-right: 1%;
-    }
-
-    #menu > li:hover{
-        background-color: #212e33;
-        transition: 1s;
-    }
-
-
-    #menu > li > a {
         color: #FFF;
         line-height: 31px;
         font-family: DejaVuNeueCaps;
         display: block;
-        transition: 0.2s;
         font-size: 0.9em;
         text-decoration: none;
         transition: 1s;
+        position: relative;
     }
 
-    #menu > li > a img {
+    #menu > a img {
         height: 65%;
         padding-top: 2%;
         float: left;
@@ -126,23 +115,28 @@ body {
         padding-right: 5%;
     }
 
-    #menu > li > a:hover {
+    #menu > a:hover {
         color: #f6c246;
         transition: 1s;
         font-weight: bold;
-    }
-
-    #menu .has-sub {
-        z-index: 1;
-    }
-
-    #menu .has-sub:hover > ul {
-        display: block;
+        background-color: #212e33;
     }
 
     .menuline {
         line-height: 31px;
         float: left;
+    }
+
+    .darkTheme {
+        height: 85%;
+        float: right;
+        background: white;
+        border-radius: 50%;
+        margin-top: 3px;
+    }
+
+    .darkTheme img {
+        height: 100%;
     }
 }
 
@@ -208,7 +202,6 @@ body {
         top: 0;
         bottom: 0;
         width: 31%;
-        background: #ffffff;
     }
 
     .right_bg:before {
@@ -312,7 +305,6 @@ body {
         line-height: 26px;
         cursor: pointer;
         font-size: 13px;
-        -webkit-text-stroke: thin;
         font-family: bpg1;
         border: 1px solid #e2e2e2;
         color: #2d2d2d;
@@ -322,21 +314,27 @@ body {
     .matchestb tbody>tr>td {
         width: 10%;
         text-align: center;
+        border-right: 1px solid #e2e2e2;
     }
     .matchestb tbody>tr>td:nth-child(2n) {
         width: 35%;
         text-align: right;
-        border-left: 1px solid #e2e2e2;
+        border-right: none;
     }
     .matchestb tbody>tr>td:nth-child(3n) {
         width: 10%;
         color: #cd2f2a;
+        border-right: none;
     }
 
     .matchestb tbody>tr>td:nth-child(4n) {
         width: 35%;
         text-align: left;
-        border-left: none;
+        border-right: none;
+    }
+
+    .matchestb tbody>tr>td:nth-child(5n) {
+        border-right: none;
     }
 
     .matchestb tbody>tr:hover {
