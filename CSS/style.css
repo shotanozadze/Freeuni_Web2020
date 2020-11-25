@@ -91,17 +91,14 @@ body {
 
     #menu > a {
         float: left;
-        margin: 0;
         border-right: 1px solid #2b3d44;
         border-left: 1px solid #354a52;
         padding-top: 4px;
-        text-align: center;
         padding-right: 1%;
         color: #FFF;
-        line-height: 31px;
         font-family: DejaVuNeueCaps;
         display: block;
-        font-size: 0.9em;
+        font-size: 13px;
         text-decoration: none;
         transition: 1s;
         position: relative;
@@ -117,7 +114,6 @@ body {
 
     #menu > a:hover {
         color: #f6c246;
-        transition: 1s;
         font-weight: bold;
         background-color: #212e33;
     }
@@ -133,6 +129,9 @@ body {
         background: white;
         border-radius: 50%;
         margin-top: 3px;
+        outline: none;
+        cursor: pointer;
+        width: auto;
     }
 
     .darkTheme img {

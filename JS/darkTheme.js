@@ -1,4 +1,4 @@
-let moon = document.querySelector('#menu > div');
+let moon = document.querySelector('#menu > button');
 var isDark = false;
 let bg = document.querySelector('body');
 let maincont = document.querySelector('#main-container');
