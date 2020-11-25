@@ -13,7 +13,7 @@ body {
         box-shadow: 0 2px 6px 0 rgba(0,0,0,0.11), 0 0 35px 0 rgba(0,0,0,0.06);
         margin-bottom: 10px;
         position: relative;
-        margin-top: 126px;
+        margin-top: 125px;
         float: left;
         margin-left: 12.5%;
     }
@@ -28,7 +28,7 @@ body {
         border-bottom-right-radius: 5px;
         box-shadow: 0 2px 6px 0 rgba(0,0,0,0.11), 0 0 35px 0 rgba(0,0,0,0.06);
         position: relative;
-        margin-top: 126px;
+        margin-top: 125px;
         float: left;
     }
 }
@@ -42,7 +42,7 @@ body {
         border-bottom-right-radius: 5px;
         box-shadow: 0 2px 6px 0 rgba(0,0,0,0.11), 0 0 35px 0 rgba(0,0,0,0.06);
         position: relative;
-        margin-top: 126px;
+        margin-top: 125px;
         float: left;
     }
 }
@@ -202,6 +202,7 @@ body {
         top: 0;
         bottom: 0;
         width: 31%;
+        border-left: 1px solid #e7e7e7;
     }
 
     .right_bg:before {
@@ -209,7 +210,6 @@ body {
         position: absolute;
         left: 0; top: 0; bottom: 0;
         width: 1px; height: 100%;
-        background: #e7e7e7;
         z-index: 1;
     }
     
@@ -223,7 +223,40 @@ body {
     }
 }
 
+.navItem {
+    font-size: 15px;
+    font-family: 'bpg1';
+    font-weight: bold;
+}
 
+.navItem a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    height: 40px;
+    border-top: 1px solid #e7e7e7;
+    transition: 1s;
+}
+
+.navItem a:hover{
+	background: #f6c246;
+}
+
+.navItem > a img{
+    height: 70%;
+    width: auto;
+    float: left;
+    padding-top: 2%;
+    padding-left: 2%;
+    vertical-align: middle;
+    filter: drop-shadow(0px 0px 2px white);
+}
+
+.navLine {
+    float: left;
+    line-height: 40px;
+    padding-left: 2%;
+}
 
 .clearfix::after {
     content: "";
@@ -235,7 +268,6 @@ body {
     .barsection {
         margin-left: 3%;
         margin-right: 3%;
-        border-radius: 5px;
         border: 1px solid #e2e2e2;
         margin-bottom: 2%;
     }
@@ -245,7 +277,6 @@ body {
         color: #e2e2e2;
         font-weight: bold;
         font-size: 15px;
-        border-radius: 4px 4px 0 0;
         font-family: DejaVuNeueCaps;
         padding-left: 4%;
         padding-top: 5%;
@@ -298,7 +329,7 @@ body {
         height: 25px;
         width: 25px;
         vertical-align: middle;
-        filter: drop-shadow(0px 0px 5px);
+        filter: drop-shadow(0px 0px 2px);
     }
 
     .matchestb tbody>tr {
