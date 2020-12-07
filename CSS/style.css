@@ -529,8 +529,7 @@ body {
 
 .match-inner {
     overflow: hidden;
-    width: 98%;
-    margin: 1%;
+    width: 100%;
 }
 
 .match-inner > .item {
@@ -724,4 +723,73 @@ body {
 		font-size: 6px;
 		width: 24.8%
 	}
+}
+
+.lineups {
+    width: 100%;
+    font-family: DejaVuNeue;
+    border-collapse: collapse;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 2%;
+}
+
+.lineups thead>tr {
+    cursor: pointer;
+    background-color: #d8d8d8;
+    color: #000000;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 32px;
+    font-family: bpg1;
+    text-align: center;
+    border-top: 1px solid #e2e2e2;
+}
+
+.lineups thead>tr>td {
+    border-right:1px solid #e2e2e2;
+}
+
+.lineups thead>tr>td:nth-child(2n) {
+    border-right: none;
+}
+
+.lineups thead>tr>td img {
+    height: 25px;
+    width: 25px;
+    vertical-align: middle;
+    filter: drop-shadow(0px 0px 2px);
+}
+
+.lineups tbody>tr {
+    line-height: 26px;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: bpg1;
+    border-bottom: 1px solid #e2e2e2;
+    color: #2d2d2d;
+    transition: 1s;
+}
+
+.lineups tbody>tr>td {
+    width: 7%;
+    text-align: center;
+    color: #cd2f2a;
+}
+.lineups tbody>tr>td:nth-child(2n) {
+    width: 43%;
+    text-align: left;
+    border-right: 1px solid #e2e2e2;
+    color: #2d2d2d;
+}
+.lineups tbody>tr>td:nth-child(3n) {
+    width: 7%;
+    border-right: none;
+}
+
+.lineups tbody>tr>td:nth-child(4n) {
+    width: 43%;
+    text-align: left;
+    border-right: none;
+    color: #2d2d2d;
 }
