@@ -102,14 +102,15 @@ body {
         text-decoration: none;
         transition: 1s;
         position: relative;
+        padding-left: 1%;
+        padding-right: 1%;
     }
 
     #menu > a img {
         height: 65%;
-        padding-top: 2%;
+        padding-top: 4%;
         float: left;
-        padding-left: 10%;
-        padding-right: 5%;
+        padding-right: 7px;
     }
 
     #menu > a:hover {
