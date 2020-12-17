@@ -795,12 +795,6 @@ body {
     color: #2d2d2d;
 }
 
-
-
-
-
-
-
 .matchSummary {
     width: 100%;
     font-family: DejaVuNeue;
@@ -808,6 +802,7 @@ body {
     overflow: hidden;
     margin-top: 10px;
     margin-bottom: 2%;
+    display: none;
 }
 
 .matchSummary thead>tr {
@@ -873,4 +868,45 @@ body {
 	color: #868686;
 	font-size: 12px;
 	display: block;
+}
+
+.matchSelector {
+    float: left;
+    background: #33464e;
+    color: #dedfdf;
+    padding: 1%;
+    padding-top: 2%;
+    font-size: 15px;
+    margin-top: 0.5%;
+    font-family: DejaVuNeueCaps;
+    margin-left: 1%;
+    cursor: pointer;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: 1s;
+}
+
+.matchSelectorMain {
+    float: left;
+    background: #f6c246;
+    color: #232323;
+    padding: 1%;
+    padding-top: 2%;
+    font-size: 15px;
+    margin-top: 0.5%;
+    font-family: DejaVuNeueCaps;
+    margin-left: 1%;
+    cursor: pointer;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: 1s;
+}
+
+.mSelector{
+    background: #232323;
+    float: left;
+    width: 100%;
+    margin-top: 1%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
 }
