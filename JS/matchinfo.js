@@ -4,11 +4,12 @@ let details = document.querySelector('#left > div.mSelector > div:nth-child(3)')
 
 let squadTable = document.querySelector('#left > table.lineups');
 let goalsTable = document.querySelector('#left > table.matchSummary');
-//let detailsTable = document.querySelector();
+let detailsTable = document.querySelector('#left > table.matchDet');
 
 squad.addEventListener('click', function(){
     squadTable.style.display = "table";
     goalsTable.style.display = "none";
+    detailsTable.style.display = "none";
 
     squad.style.color = "#232323";
     squad.style.backgroundColor = "#f6c246";
@@ -21,6 +22,7 @@ squad.addEventListener('click', function(){
 goals.addEventListener('click', function(){
     goalsTable.style.display = "table";
     squadTable.style.display = "none";
+    detailsTable.style.display = "none";
 
     goals.style.color = "#232323";
     goals.style.backgroundColor = "#f6c246";
@@ -31,6 +33,7 @@ goals.addEventListener('click', function(){
 });
 
 details.addEventListener('click', function(){
+    detailsTable.style.display = "table";
     squadTable.style.display = "none";
     goalsTable.style.display = "none";
 
