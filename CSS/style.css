@@ -307,9 +307,16 @@ body {
     #left{
         float: left;
         width: 99%;
-        margin-top: 1%;
+        margin-top: 2%;
         margin-left: 0.5%;
         position: relative;;
+    }
+
+    #footer {
+        padding: 7% !important;
+        font-family: DejaVuNeueCaps !important;
+        font-size: 1.9em !important;
+        font-weight: bold !important;
     }
 }
 
@@ -389,7 +396,8 @@ body {
 }
 
 .navItem a:hover{
-	background: #f6c246;
+    background: #f6c246;
+    color: black !important;
 }
 
 .navItem > a img{
@@ -439,8 +447,8 @@ body {
         border-radius: 5px;
         border: 1px solid #e2e2e2;
         margin-bottom: 2%;
-        width: 99%;
-        margin-left: 0.3%;
+        width: 98%;
+        margin-left: 0.8%;
     }
     
     .barname {
@@ -472,6 +480,7 @@ body {
     
     .navItem a:hover{
         background: #f6c246;
+        color: black !important;
     }
     
     .navItem > a img{
@@ -567,7 +576,8 @@ body {
 
 @media (max-width:1000px){
     .matchestb {
-        width: 99.9%;
+        width: 99%;
+        margin-left: 0.4%;
         font-family: DejaVuNeue;
         border-collapse: collapse;
         overflow: hidden;
@@ -662,10 +672,6 @@ body {
     font-weight: bold;
     line-height: 25px;
     font-family: bpg1;
-    border-left: 1px solid #c6c6c6;
-    border-right: 1px solid #c6c6c6;
-    border-top: 1px solid #c6c6c6;
-    border-bottom: 1px solid #f2be45;
 }
 
 .maintables thead>tr>td img {
@@ -684,7 +690,7 @@ body {
     font-size: 13px;
     -webkit-text-stroke: thin;
     font-family: bpg1;
-    border-bottom: 1px solid #e2e2e2;
+    border-top: 1px solid #e2e2e2;
     transition: 1s;
 }
 
@@ -740,6 +746,98 @@ body {
 .maintables .pos .rel {
 	background: #d7180f;
     color: #fff;
+}
+
+@media (max-width: 1000px) {
+    .maintables {
+        width: 100%; 
+        font-family: DejaVuNeue;
+        border: 0;
+        border-collapse: collapse;
+        overflow: hidden;
+    }
+    
+    .maintables thead>tr {
+        cursor: pointer;
+        background-color: #dadada;
+        font-size: 30px;
+        color: #000000;
+        font-weight: bold;
+        line-height: 50px;
+        font-family: bpg1;
+    }
+    
+    .maintables thead>tr>td img {
+        float: left;
+        height: 33px;
+        width: 33px;
+        margin-top: 7px;
+        margin-right: 7px;
+    }
+    
+    .maintables tbody>tr {
+        line-height: 70px;
+        background: #fff;
+        color: #2d2d2d;
+        cursor: pointer;
+        font-size: 30px;
+        font-family: bpg1;
+        border-top: 1px solid #e2e2e2;
+        transition: 1s;
+    }
+    
+    .maintables tbody>tr:nth-child(2n) {
+        background: #f5f5f5;
+    }
+    
+    .maintables tbody>tr:hover {
+        background: #fdde4c;
+        font-size: 32px;
+        transition: 1s;
+    }
+    
+    .maintables tbody>tr>td img {
+        float: left;
+        height: 50px;
+        width: 50px;
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+    
+    .maintables .pos span{
+        padding: 5px;
+        margin-left: 4px;
+        color: #000;
+        margin: auto;
+        font-size: 25px;
+        border-radius: 33px;
+        background: #ccc;
+    }
+    
+    .maintables .pos .ucl {
+        background: #49a600;
+        color: #fff;
+    }
+    
+    .maintables .pos .ucl2 {
+        background: #9ED176;
+        color: #fff;
+    }
+    
+    .maintables .pos .uel {
+        background: #0087b1;
+        color: #fff;
+    }
+    
+    .maintables .pos .mid {
+        background: #cccccc;
+        color: #000;
+    }
+    
+    .maintables .pos .rel {
+        background: #d7180f;
+        color: #fff;
+    }
 }
 
 .match-inner {
