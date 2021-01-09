@@ -1012,6 +1012,36 @@ body {
     text-align: right;
 }
 
+@media (max-width: 1000px) {
+    .matchHome{
+        font-size: 27px;
+    }
+
+    .matchAway{
+        font-size: 27px;
+    }
+
+    .HomeScore{
+        font-size: 60px;
+    }
+    
+    .AwayScore{
+        font-size: 60px;
+    }
+
+    .MatchDate{
+        font-size: 20px;
+    }
+
+    .MatchTour{
+        font-size: 20px;
+    }
+
+    .MatchStadium{
+        font-size: 20px;
+    }
+}
+
 @media only screen and (max-width:700px) {
 	.matchHome, .matchAway{
 		font-size: 12px
@@ -1102,6 +1132,83 @@ body {
     color: #2d2d2d;
 }
 
+
+
+@media (max-width: 1000px) {
+
+    .lineups {
+        width: 100%;
+        font-family: DejaVuNeue;
+        border-collapse: collapse;
+        overflow: hidden;
+        margin-top: 10px;
+        margin-bottom: 2%;
+
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    
+    .lineups thead>tr {
+        cursor: pointer;
+        background-color: #d8d8d8;
+        color: #000000;
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 80px;
+        font-family: bpg1;
+        text-align: center;
+    }
+    
+    .lineups thead>tr>td img {
+        height: 25px;
+        width: 25px;
+        vertical-align: middle;
+        filter: drop-shadow(0px 0px 2px);
+    }
+    
+    .lineups tbody>tr {
+        line-height: 80px;
+        cursor: pointer;
+        font-size: 25px;
+        font-family: bpg1;
+        font-weight: bold;
+        border-bottom: 1px solid #e2e2e2;
+        color: #2d2d2d;
+        transition: 1s;
+    }
+    
+    .lineups tbody>tr>td {
+        width: 7%;
+        text-align: center;
+        color: #cd2f2a;
+    }
+    
+    .lineups tbody>tr>td:nth-child(2n) {
+        width: 43%;
+        text-align: left;
+        border-right: 1px solid #e2e2e2;
+        color: #2d2d2d;
+    }
+    
+    .lineups tbody>tr>td:nth-child(3n) {
+        width: 7%;
+        border-right: none;
+    }
+    
+    .lineups tbody>tr>td:nth-child(4n) {
+        width: 43%;
+        text-align: left;
+        border-right: none;
+        color: #2d2d2d;
+    }
+
+}
+
+
 .matchSummary {
     width: 100%;
     font-family: DejaVuNeue;
@@ -1110,34 +1217,6 @@ body {
     margin-top: 10px;
     margin-bottom: 2%;
     display: none;
-}
-
-.matchSummary thead>tr {
-    cursor: pointer;
-    background-color: #33464e;
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: bold;
-    line-height: 32px;
-    font-family: bpg1;
-    text-align: center;
-    border-top: 1px solid #e2e2e2;
-    border-bottom: 1px solid #f6c246;
-}
-
-.matchSummary thead>tr>td {
-    border-right:1px solid #e2e2e2;
-}
-
-.matchSummary thead>tr>td:nth-child(2n) {
-    border-right: none;
-}
-
-.matchSummary thead>tr>td img {
-    height: 25px;
-    width: 25px;
-    vertical-align: middle;
-    filter: drop-shadow(0px 0px 2px);
 }
 
 .matchSummary tbody>tr {
@@ -1178,6 +1257,66 @@ body {
 	color: #868686;
 	font-size: 12px;
 	display: block;
+}
+
+@media (max-width: 1000px) {
+    .matchSummary {
+        width: 100%;
+        font-family: DejaVuNeue;
+        border-collapse: collapse;
+        overflow: hidden;
+        margin-top: 10px;
+        margin-bottom: 2%;
+        display: none;
+
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    
+    
+    .matchSummary tbody>tr {
+        line-height: 35px;
+        cursor: pointer;
+        font-size: 25px;
+        font-family: bpg1;
+        border-bottom: 2px solid #f6c246;
+        color: #2d2d2d;
+        transition: 1s;
+    }
+    
+    .matchSummary tbody>tr>td {
+        width: 45%;
+        text-align: right;
+        padding-right: 2%;
+        background: #333333;
+        color: white;
+    }
+    
+    .matchSummary tbody>tr>td:nth-child(2n) {
+        width: 10%;
+        text-align: center;
+        color: #f6c246;
+        background: #232323;
+        font-size: 30px;
+        padding-left: 2%;
+    }
+    
+    .matchSummary tbody>tr>td:nth-child(3n) {
+        width: 45%;
+        border-right: none;
+        text-align: left;
+        padding-left: 2%;
+    }
+    
+    .matchSummary tbody>tr>td>span{
+        color: #868686;
+        font-size: 18px;
+        display: block;
+    }
 }
 
 .matchSelector {
@@ -1221,6 +1360,56 @@ body {
     border-top-right-radius: 7px;
 }
 
+@media (max-width: 1000px) {
+    .matchSelector {
+        float: left;
+        background: #33464e;
+        color: #dedfdf;
+        padding: 1%;
+        padding-top: 2%;
+        font-size: 25px;
+        margin-top: 0.5%;
+        font-family: DejaVuNeueCaps;
+        margin-left: 1%;
+        cursor: pointer;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        transition: 1s;
+    }
+    
+    .matchSelectorMain {
+        float: left;
+        background: #f6c246;
+        color: #232323;
+        padding: 1%;
+        padding-top: 2%;
+        font-size: 25px;
+        margin-top: 0.5%;
+        font-family: DejaVuNeueCaps;
+        margin-left: 1%;
+        cursor: pointer;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        transition: 1s;
+    }
+    
+    .mSelector{
+        background: #232323;
+        float: left;
+        width: 100%;
+        margin-top: 1%;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+}
+
 .matchDet {
     width: 100%;
     font-family: DejaVuNeue;
@@ -1240,14 +1429,6 @@ body {
     line-height: 32px;
     font-family: bpg1;
     text-align: center;
-    border-top: 1px solid #e2e2e2;
-}
-
-.matchDet thead>tr>td img {
-    height: 25px;
-    width: 25px;
-    vertical-align: middle;
-    filter: drop-shadow(0px 0px 2px);
 }
 
 .matchDet tbody>tr {
@@ -1274,4 +1455,54 @@ body {
     color: #2d2d2d;
     border-right: none;
     padding-left: 2%;
+}
+
+@media (max-width: 1000px) {
+    .matchDet {
+        width: 100%;
+        font-family: DejaVuNeue;
+        border-collapse: collapse;
+        overflow: hidden;
+        margin-top: 10px;
+        margin-bottom: 2%;
+        display: none;
+    }
+    
+    .matchDet thead>tr {
+        cursor: pointer;
+        background-color: #d8d8d8;
+        color: #000000;
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 80px;
+        font-family: bpg1;
+        text-align: center;
+    }
+    
+    .matchDet tbody>tr {
+        line-height: 80px;
+        cursor: pointer;
+        font-size: 25px;
+        font-family: bpg1;
+        border-bottom: 1px solid #e2e2e2;
+        color: #2d2d2d;
+        transition: 1s;
+        font-weight: bold;
+    }
+    
+    .matchDet tbody>tr>td {
+        width: 40%;
+        text-align: right;
+        border-right: 1px solid #e2e2e2;
+        color: #cd2f2a;
+        padding-right: 2%;
+    }
+    
+    .matchDet tbody>tr>td:nth-child(2n) {
+        width: 60%;
+        text-align: left;
+        color: #2d2d2d;
+        border-right: none;
+        padding-left: 2%;
+    }
 }
