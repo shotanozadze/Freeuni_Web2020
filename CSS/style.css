@@ -1058,15 +1058,6 @@ body {
     line-height: 32px;
     font-family: bpg1;
     text-align: center;
-    border-top: 1px solid #e2e2e2;
-}
-
-.lineups thead>tr>td {
-    border-right:1px solid #e2e2e2;
-}
-
-.lineups thead>tr>td:nth-child(2n) {
-    border-right: none;
 }
 
 .lineups thead>tr>td img {
