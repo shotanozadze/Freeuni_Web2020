@@ -50,37 +50,39 @@ function makeDark(){
     mobMoon.style.filter = "none";
     document.querySelector('#main > div.right_bg').style.borderLeft = '1px solid #2f3336';
 
-    // match lineups table
-    let Lineupbody = lineupsTable.getElementsByTagName('tbody');
-    for (let i=0; i<Lineupbody.length; i++){
-        let Lineupbodyrows = Lineupbody[i].getElementsByTagName('tr');
-        for(let j=0; j<Lineupbodyrows.length; j++){
-            Lineupbodyrows[j].style.borderBottom = '1px solid #2f3336';
-            let Lineupbodyrowscolumn = Lineupbodyrows[j].getElementsByTagName('td')[1];
-            Lineupbodyrowscolumn.style.color = '#ffffff';
-            Lineupbodyrowscolumn.style.borderRight = '1px solid #2f3336';
+    if(lineupsTable != null){
+        // match lineups table
+        let Lineupbody = lineupsTable.getElementsByTagName('tbody');
+        for (let i=0; i<Lineupbody.length; i++){
+            let Lineupbodyrows = Lineupbody[i].getElementsByTagName('tr');
+            for(let j=0; j<Lineupbodyrows.length; j++){
+                Lineupbodyrows[j].style.borderBottom = '1px solid #2f3336';
+                let Lineupbodyrowscolumn = Lineupbodyrows[j].getElementsByTagName('td')[1];
+                Lineupbodyrowscolumn.style.color = '#ffffff';
+                Lineupbodyrowscolumn.style.borderRight = '1px solid #2f3336';
 
-            let Lineupbodyrowscol = Lineupbodyrows[j].getElementsByTagName('td')[3];
-            Lineupbodyrowscol.style.color = '#ffffff';
+                let Lineupbodyrowscol = Lineupbodyrows[j].getElementsByTagName('td')[3];
+                Lineupbodyrowscol.style.color = '#ffffff';
+            }
         }
-    }
 
-    let Lineuphead = lineupsTable.getElementsByTagName('thead');
-    for (let i=0; i<Lineuphead.length; i++){
-        let Lineupheadrow = Lineuphead[i].getElementsByTagName('tr')[0];
-        Lineupheadrow.style.color = '#ffffff';
-        Lineupheadrow.style.backgroundColor = '#2f3336';
-    }
+        let Lineuphead = lineupsTable.getElementsByTagName('thead');
+        for (let i=0; i<Lineuphead.length; i++){
+            let Lineupheadrow = Lineuphead[i].getElementsByTagName('tr')[0];
+            Lineupheadrow.style.color = '#ffffff';
+            Lineupheadrow.style.backgroundColor = '#2f3336';
+        }
 
-    // match details table
-    let MatchDetbody = matchdetTable.getElementsByTagName('tbody')[0];
-    let MatchDetrows = MatchDetbody.getElementsByTagName('tr');
+        // match details table
+        let MatchDetbody = matchdetTable.getElementsByTagName('tbody')[0];
+        let MatchDetrows = MatchDetbody.getElementsByTagName('tr');
 
-    for(let i=0; i<MatchDetrows.length; i++){
-        MatchDetrows[i].style.borderBottom = '1px solid #2f3336';
-        MatchDetrows[i].getElementsByTagName('td')[0].style.borderRight = '1px solid #2f3336';
-        let MatchDetrowscol = MatchDetrows[i].getElementsByTagName('td')[1];
-        MatchDetrowscol.style.color = '#ffffff';
+        for(let i=0; i<MatchDetrows.length; i++){
+            MatchDetrows[i].style.borderBottom = '1px solid #2f3336';
+            MatchDetrows[i].getElementsByTagName('td')[0].style.borderRight = '1px solid #2f3336';
+            let MatchDetrowscol = MatchDetrows[i].getElementsByTagName('td')[1];
+            MatchDetrowscol.style.color = '#ffffff';
+        }
     }
 
     isDark = true;
@@ -127,36 +129,38 @@ function makeLight(){
     document.querySelector('#main > div.right_bg').style.borderLeft = '1px solid #e7e7e7';
 
     // match lineups table
-    let Lineupbody = lineupsTable.getElementsByTagName('tbody');
-    for (let i=0; i<Lineupbody.length; i++){
-        let Lineupbodyrows = Lineupbody[i].getElementsByTagName('tr');
-        for(let j=0; j<Lineupbodyrows.length; j++){
-            Lineupbodyrows[j].style.borderBottom = '1px solid #e2e2e2';
-            let Lineupbodyrowscolumn = Lineupbodyrows[j].getElementsByTagName('td')[1];
-            Lineupbodyrowscolumn.style.color = '#2d2d2d';
-            Lineupbodyrowscolumn.style.borderRight = '1px solid #e2e2e2';
+    if(lineupsTable != null){
+        let Lineupbody = lineupsTable.getElementsByTagName('tbody');
+        for (let i=0; i<Lineupbody.length; i++){
+            let Lineupbodyrows = Lineupbody[i].getElementsByTagName('tr');
+            for(let j=0; j<Lineupbodyrows.length; j++){
+                Lineupbodyrows[j].style.borderBottom = '1px solid #e2e2e2';
+                let Lineupbodyrowscolumn = Lineupbodyrows[j].getElementsByTagName('td')[1];
+                Lineupbodyrowscolumn.style.color = '#2d2d2d';
+                Lineupbodyrowscolumn.style.borderRight = '1px solid #e2e2e2';
 
-            let Lineupbodyrowscol = Lineupbodyrows[j].getElementsByTagName('td')[3];
-            Lineupbodyrowscol.style.color = '#2d2d2d';
+                let Lineupbodyrowscol = Lineupbodyrows[j].getElementsByTagName('td')[3];
+                Lineupbodyrowscol.style.color = '#2d2d2d';
+            }
         }
-    }
 
-    let Lineuphead = lineupsTable.getElementsByTagName('thead');
-    for (let i=0; i<Lineuphead.length; i++){
-        let Lineupheadrow = Lineuphead[i].getElementsByTagName('tr')[0];
-        Lineupheadrow.style.color = '#000000';
-        Lineupheadrow.style.backgroundColor = '#d8d8d8';
-    }
+        let Lineuphead = lineupsTable.getElementsByTagName('thead');
+        for (let i=0; i<Lineuphead.length; i++){
+            let Lineupheadrow = Lineuphead[i].getElementsByTagName('tr')[0];
+            Lineupheadrow.style.color = '#000000';
+            Lineupheadrow.style.backgroundColor = '#d8d8d8';
+        }
 
-    // match details table
-    let MatchDetbody = matchdetTable.getElementsByTagName('tbody')[0];
-    let MatchDetrows = MatchDetbody.getElementsByTagName('tr');
+        // match details table
+        let MatchDetbody = matchdetTable.getElementsByTagName('tbody')[0];
+        let MatchDetrows = MatchDetbody.getElementsByTagName('tr');
 
-    for(let i=0; i<MatchDetrows.length; i++){
-        MatchDetrows[i].style.borderBottom = '1px solid #e2e2e2';
-        MatchDetrows[i].getElementsByTagName('td')[0].style.borderRight = '1px solid #e2e2e2';
-        let MatchDetrowscol = MatchDetrows[i].getElementsByTagName('td')[1];
-        MatchDetrowscol.style.color = '#2d2d2d';
+        for(let i=0; i<MatchDetrows.length; i++){
+            MatchDetrows[i].style.borderBottom = '1px solid #e2e2e2';
+            MatchDetrows[i].getElementsByTagName('td')[0].style.borderRight = '1px solid #e2e2e2';
+            let MatchDetrowscol = MatchDetrows[i].getElementsByTagName('td')[1];
+            MatchDetrowscol.style.color = '#2d2d2d';
+        }
     }
 
     isDark = false;
@@ -199,37 +203,39 @@ function makeDarkMob(){
     mobMoon.style.filter = "none";
     document.querySelector('#main > div.right_bg').style.borderLeft = '2px solid #2f3336';
 
-    // match lineups table
-    let Lineupbody = lineupsTable.getElementsByTagName('tbody');
-    for (let i=0; i<Lineupbody.length; i++){
-        let Lineupbodyrows = Lineupbody[i].getElementsByTagName('tr');
-        for(let j=0; j<Lineupbodyrows.length; j++){
-            Lineupbodyrows[j].style.borderBottom = '2px solid #2f3336';
-            let Lineupbodyrowscolumn = Lineupbodyrows[j].getElementsByTagName('td')[1];
-            Lineupbodyrowscolumn.style.color = '#ffffff';
-            Lineupbodyrowscolumn.style.borderRight = '2px solid #2f3336';
+    if(lineupsTable != null){
+        // match lineups table
+        let Lineupbody = lineupsTable.getElementsByTagName('tbody');
+        for (let i=0; i<Lineupbody.length; i++){
+            let Lineupbodyrows = Lineupbody[i].getElementsByTagName('tr');
+            for(let j=0; j<Lineupbodyrows.length; j++){
+                Lineupbodyrows[j].style.borderBottom = '2px solid #2f3336';
+                let Lineupbodyrowscolumn = Lineupbodyrows[j].getElementsByTagName('td')[1];
+                Lineupbodyrowscolumn.style.color = '#ffffff';
+                Lineupbodyrowscolumn.style.borderRight = '2px solid #2f3336';
 
-            let Lineupbodyrowscol = Lineupbodyrows[j].getElementsByTagName('td')[3];
-            Lineupbodyrowscol.style.color = '#ffffff';
+                let Lineupbodyrowscol = Lineupbodyrows[j].getElementsByTagName('td')[3];
+                Lineupbodyrowscol.style.color = '#ffffff';
+            }
         }
-    }
 
-    let Lineuphead = lineupsTable.getElementsByTagName('thead');
-    for (let i=0; i<Lineuphead.length; i++){
-        let Lineupheadrow = Lineuphead[i].getElementsByTagName('tr')[0];
-        Lineupheadrow.style.color = '#ffffff';
-        Lineupheadrow.style.backgroundColor = '#2f3336';
-    }
+        let Lineuphead = lineupsTable.getElementsByTagName('thead');
+        for (let i=0; i<Lineuphead.length; i++){
+            let Lineupheadrow = Lineuphead[i].getElementsByTagName('tr')[0];
+            Lineupheadrow.style.color = '#ffffff';
+            Lineupheadrow.style.backgroundColor = '#2f3336';
+        }
 
-    // match details table
-    let MatchDetbody = matchdetTable.getElementsByTagName('tbody')[0];
-    let MatchDetrows = MatchDetbody.getElementsByTagName('tr');
+        // match details table
+        let MatchDetbody = matchdetTable.getElementsByTagName('tbody')[0];
+        let MatchDetrows = MatchDetbody.getElementsByTagName('tr');
 
-    for(let i=0; i<MatchDetrows.length; i++){
-        MatchDetrows[i].style.borderBottom = '2px solid #2f3336';
-        MatchDetrows[i].getElementsByTagName('td')[0].style.borderRight = '2px solid #2f3336';
-        let MatchDetrowscol = MatchDetrows[i].getElementsByTagName('td')[1];
-        MatchDetrowscol.style.color = '#ffffff';
+        for(let i=0; i<MatchDetrows.length; i++){
+            MatchDetrows[i].style.borderBottom = '2px solid #2f3336';
+            MatchDetrows[i].getElementsByTagName('td')[0].style.borderRight = '2px solid #2f3336';
+            let MatchDetrowscol = MatchDetrows[i].getElementsByTagName('td')[1];
+            MatchDetrowscol.style.color = '#ffffff';
+        }
     }
 
     isDark = true;
@@ -272,37 +278,39 @@ function makeLightMob(){
     mobMoon.style.filter = "invert(100%)";
     document.querySelector('#main > div.right_bg').style.borderLeft = '2px solid #e7e7e7';
 
-    // match lineups table
-    let Lineupbody = lineupsTable.getElementsByTagName('tbody');
-    for (let i=0; i<Lineupbody.length; i++){
-        let Lineupbodyrows = Lineupbody[i].getElementsByTagName('tr');
-        for(let j=0; j<Lineupbodyrows.length; j++){
-            Lineupbodyrows[j].style.borderBottom = '2px solid #e2e2e2';
-            let Lineupbodyrowscolumn = Lineupbodyrows[j].getElementsByTagName('td')[1];
-            Lineupbodyrowscolumn.style.color = '#2d2d2d';
-            Lineupbodyrowscolumn.style.borderRight = '2px solid #e2e2e2';
+    if(lineupsTable != null){
+        // match lineups table
+        let Lineupbody = lineupsTable.getElementsByTagName('tbody');
+        for (let i=0; i<Lineupbody.length; i++){
+            let Lineupbodyrows = Lineupbody[i].getElementsByTagName('tr');
+            for(let j=0; j<Lineupbodyrows.length; j++){
+                Lineupbodyrows[j].style.borderBottom = '2px solid #e2e2e2';
+                let Lineupbodyrowscolumn = Lineupbodyrows[j].getElementsByTagName('td')[1];
+                Lineupbodyrowscolumn.style.color = '#2d2d2d';
+                Lineupbodyrowscolumn.style.borderRight = '2px solid #e2e2e2';
 
-            let Lineupbodyrowscol = Lineupbodyrows[j].getElementsByTagName('td')[3];
-            Lineupbodyrowscol.style.color = '#2d2d2d';
+                let Lineupbodyrowscol = Lineupbodyrows[j].getElementsByTagName('td')[3];
+                Lineupbodyrowscol.style.color = '#2d2d2d';
+            }
         }
-    }
 
-    let Lineuphead = lineupsTable.getElementsByTagName('thead');
-    for (let i=0; i<Lineuphead.length; i++){
-        let Lineupheadrow = Lineuphead[i].getElementsByTagName('tr')[0];
-        Lineupheadrow.style.color = '#000000';
-        Lineupheadrow.style.backgroundColor = '#d8d8d8';
-    }
+        let Lineuphead = lineupsTable.getElementsByTagName('thead');
+        for (let i=0; i<Lineuphead.length; i++){
+            let Lineupheadrow = Lineuphead[i].getElementsByTagName('tr')[0];
+            Lineupheadrow.style.color = '#000000';
+            Lineupheadrow.style.backgroundColor = '#d8d8d8';
+        }
 
-    // match details table
-    let MatchDetbody = matchdetTable.getElementsByTagName('tbody')[0];
-    let MatchDetrows = MatchDetbody.getElementsByTagName('tr');
+        // match details table
+        let MatchDetbody = matchdetTable.getElementsByTagName('tbody')[0];
+        let MatchDetrows = MatchDetbody.getElementsByTagName('tr');
 
-    for(let i=0; i<MatchDetrows.length; i++){
-        MatchDetrows[i].style.borderBottom = '2px solid #e2e2e2';
-        MatchDetrows[i].getElementsByTagName('td')[0].style.borderRight = '2px solid #e2e2e2';
-        let MatchDetrowscol = MatchDetrows[i].getElementsByTagName('td')[1];
-        MatchDetrowscol.style.color = '#2d2d2d';
+        for(let i=0; i<MatchDetrows.length; i++){
+            MatchDetrows[i].style.borderBottom = '2px solid #e2e2e2';
+            MatchDetrows[i].getElementsByTagName('td')[0].style.borderRight = '2px solid #e2e2e2';
+            let MatchDetrowscol = MatchDetrows[i].getElementsByTagName('td')[1];
+            MatchDetrowscol.style.color = '#2d2d2d';
+        }
     }
 
     isDark = false;
