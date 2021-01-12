@@ -3,13 +3,17 @@
         <link href="../CSS/style.css" type="text/css" rel="stylesheet">
         <link href="../CSS/font.css" type="text/css" rel="stylesheet">
         <link rel="shortcut icon" href="../images/goal.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="user-scalable=no" />
         <title>wSport.Ge</title>
     </head>
     <body>
         <div id="top">
+            <div class="mobHead"> <img src="../images/moon.png"> </div>
             <div id="header">
                 <a href=""> <img src="../images/icon2.png"> </a>
             </div>
+            <div class="mobMenu"><img src="../images/menu.png"></div>
             <div id="menu">
                 <a href="../HTML/index.html">
                     <img src="../images/goal.png">
@@ -27,20 +31,144 @@
                     <img src="../images/goal.png">
                     <div class="menuline"> მოთამაშე </div>
                 </a>
-                <button class="darkTheme"> <img src="../images/moon.png"> </button>
+                <div class="darkTheme"> <img src="../images/moon.png"> </div>
             </div>
         </div>
+        <div class="dropdown_menu">
+            <a href="../HTML/index.html">
+                <img src="../images/goal.png">
+                <div class="dropdown_item">მთავარი</div>
+            </a>
+            <a href="../HTML/match.html">
+                <img src="../images/goal.png">
+                <div class="dropdown_item">მატჩი</div>
+            </a>
+            <a href="../HTML/team.html">
+                <img src="../images/goal.png">
+                <div class="dropdown_item">გუნდი</div>
+            </a>
+            <a href="../HTML/player.html">
+                <img src="../images/goal.png">
+                <div class="dropdown_item">მოთამაშე</div>
+            </a>
+        </div>
         <div id="main-container">
+            
             <div id="main" class="clearfix">
                 <div id="left">
+                    <div class="TeamNameBar"> ბარსელონა </div>
 
+                    <div class="mSelector">
+                        <div class="matchSelectorMain">პროფილი</div>
+                        <div class="matchSelector">შემადგენლობა</div>
+                        <div class="matchSelector">მატჩები</div>
+                    </div>
+
+                    <div class="TeamProfile">
+                        <table class="matchDet" style="display: table;">
+                            <thead>
+                                <tr>
+                                    <td colspan="2">გუნდის პროფილი</td>
+                                </tr>
+                            </thead>
+                            
+                            <tbody>
+                                <tr>
+                                    <td>გუნდი</td>
+                                    <td>ბარსელონა</td>
+                                </tr>
+                                <tr>
+                                    <td>ქვეყანა</td>
+                                    <td>ესპანეთი</td>
+                                </tr>
+                                <tr>
+                                    <td>მეტსახელი</td>
+                                    <td>ბარსა, ბლაუგრანა, აზულგრანა, კულეები</td>
+                                </tr>
+                                <tr>
+                                    <td>დაარსება</td>
+                                    <td>29/11/1899</td>
+                                </tr>
+                                <tr>
+                                    <td>ფერები</td>
+                                    <td>ლურჯ-ბროწეულისფერი</td>
+                                </tr>
+                                <tr>
+                                    <td>წევრები</td>
+                                    <td>173 000</td>
+                                </tr>
+                                <tr>
+                                    <td>სტადიონი</td>
+                                    <td>კამპ ნოუ (99.354)</td>
+                                </tr>
+                                <tr>
+                                    <td>მისამართი</td>
+                                    <td>Avenida Arístides Maillol 08028 Barcelona</td>
+                                </tr>
+                                <tr>
+                                    <td>ტელეფონი</td>
+                                    <td>0 93 / 49 63 600</td>
+                                </tr>
+                                <tr>
+                                    <td>ფაქსი</td>
+                                    <td>0 93 / 41 12 219</td>
+                                </tr>
+                                <tr>
+                                    <td>ვებ-გვერდი</td>
+                                    <td>https://www.fcbarcelona.com/</td>
+                                </tr>
+                                <tr>
+                                    <td>ელ-ფოსტა</td>
+                                    <td>secretaria@club.fcbarcelona.com</td>
+                                </tr>
+                                
+                            </tbody>
+                        
+                        </table>
+                    </div>
                     
-                
+                    <div class="TeamSquad">
+
+                        <div class="pos"> მეკარეები </div>
+
+                        <a href="#">
+                            <div class="squadPlayer">
+                                <img src="https://secure.cache.images.core.optasports.com/soccer/players/150x150/119.png">
+                                <div class="name">ლიონელ მესი</div>
+                                <div class="det"> არგენტინა </div>
+                                <div class="det"> 33 წლის </div>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="squadPlayer">
+                                <img src="https://secure.cache.images.core.optasports.com/soccer/players/150x150/119.png">
+                                <div class="name">ლიონელ მესი</div>
+                                <div class="det"> არგენტინა </div>
+                                <div class="det"> 33 წლის </div>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="squadPlayer">
+                                <img src="https://secure.cache.images.core.optasports.com/soccer/players/150x150/119.png">
+                                <div class="name">ლიონელ მესი</div>
+                                <div class="det"> არგენტინა </div>
+                                <div class="det"> 33 წლის </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="TeamMatches">
+                        მატჩები
+                    </div>
+                    
                 </div>
                 <div id="right">
                     <div class="barsection">
-                        <div class="barname">ტოპ ჩემპიონატები</div>
-                        <div class="navItem"> 
+                        <div class="barname">ჩემპიონატები</div>
+                        <div class="navItem">
                             <a href="../HTML/match.html"> 
                                 <img src="https://icons.whatsthescore.com/competition/m/normal/762.png"> 
                                 <div class="navLine">მსოფლიო ჩემპიონატი</div>
@@ -97,9 +225,9 @@
                                     <td style="text-align: center;width: 7%">წ</td>
                                     <td style="text-align: center;width: 10%">+/-</td>          
                                     <td style="text-align: center;width: 9%">ქ</td>
-                                </tr>
+                                </tr>  
                             </thead>
-                            <tbody style="border: 1px solid #c6c6c6;">        
+                            <tbody>        
                                 <tr>
                                     <td class="pos" align="center"><span class="ucl">1</span></td>  
                                     <td><img src="http://tools.whatsthescore.com/medias/logos/equipe/small/8315.png">ბილბაო<br>
@@ -110,7 +238,7 @@
                                     <td style="text-align: center;">0</td>
                                     <td style="text-align: center;">0</td>          
                                     <td style="text-align: center;"><b>0</b></td>
-                                </tr>
+                                </tr>   
                         
                                 <tr>
                                     <td class="pos" align="center"><span class="ucl">2</span></td>          
@@ -122,7 +250,7 @@
                                     <td style="text-align: center;">0</td>
                                     <td style="text-align: center;">0</td>          
                                     <td style="text-align: center;"><b>0</b></td>
-                                </tr>
+                                </tr>  
                         
                                 <tr>        
                                     <td class="pos" align="center"><span class="ucl">3</span></td>                    
@@ -133,7 +261,7 @@
                                     <td style="text-align: center;">0</td>
                                     <td style="text-align: center;">0</td>          
                                     <td style="text-align: center;"><b>0</b></td>
-                                </tr>
+                                </tr>   
                                 <tr>
                                     <td class="pos" align="center"><span class="ucl2">4</span></td>          
                                     <td><img src="http://tools.whatsthescore.com/medias/logos/equipe/small/9910.png">სელტა<br>
@@ -154,7 +282,7 @@
                                     <td style="text-align: center;">0</td>
                                     <td style="text-align: center;">0</td>          
                                     <td style="text-align: center;"><b>0</b></td>
-                                </tr>
+                                </tr>           
                         
                                 <tr>
                                     <td class="pos" align="center"><span class="uel">6</span></td>          
@@ -166,7 +294,7 @@
                                     <td style="text-align: center;">0</td>
                                     <td style="text-align: center;">0</td>          
                                     <td style="text-align: center;"><b>0</b></td>
-                                </tr>
+                                </tr> 
                         
                                 <tr>
                                     <td class="pos" align="center"><span class="mid">7</span></td>          
@@ -178,7 +306,7 @@
                                     <td style="text-align: center;">0</td>
                                     <td style="text-align: center;">0</td>          
                                     <td style="text-align: center;"><b>0</b></td>
-                                </tr>
+                                </tr> 
                         
                                 <tr>
                                     <td class="pos" align="center"><span class="mid">8</span></td>          
@@ -190,7 +318,7 @@
                                     <td style="text-align: center;">0</td>
                                     <td style="text-align: center;">0</td>          
                                     <td style="text-align: center;"><b>0</b></td>
-                                </tr>
+                                </tr>  
                         
                                 <tr>
                                     <td class="pos" align="center"><span class="mid">9</span></td>          
@@ -202,7 +330,7 @@
                                     <td style="text-align: center;">0</td>
                                     <td style="text-align: center;">0</td>          
                                     <td style="text-align: center;"><b>0</b></td>
-                                </tr>
+                                </tr>   
                                 <tr>
                                     <td class="pos" align="center"><span class="mid">10</span></td>          
                                     <td><img src="http://medias.whatsthescore.com/logos/icons/teams-80/7732.png?v=2">ჟირონა<br>
@@ -213,7 +341,7 @@
                                     <td style="text-align: center;">0</td>
                                     <td style="text-align: center;">0</td>          
                                     <td style="text-align: center;"><b>0</b></td>
-                                </tr>
+                                </tr> 
                         
                                 <tr>
                                     <td class="pos" align="center"><span class="mid">11</span></td>          
@@ -225,7 +353,7 @@
                                     <td style="text-align: center;">0</td>
                                     <td style="text-align: center;">0</td>          
                                     <td style="text-align: center;"><b>0</b></td>
-                                </tr>
+                                </tr>  
                                 <tr>
                                     <td class="pos" align="center"><span class="mid">12</span></td>          
                                     <td><img src="http://tools.whatsthescore.com/medias/logos/equipe/small/7854.png">ლეგანიესი<br>
@@ -236,7 +364,7 @@
                                     <td style="text-align: center;">0</td>
                                     <td style="text-align: center;">0</td>          
                                     <td style="text-align: center;"><b>0</b></td>
-                                </tr>
+                                </tr>  
                         
                                 <tr>
                                     <td class="pos" align="center"><span class="mid">13</span></td>                 
@@ -248,7 +376,7 @@
                                     <td style="text-align: center;">0</td>
                                     <td style="text-align: center;">0</td>          
                                     <td style="text-align: center;"><b>0</b></td>
-                                </tr>
+                                </tr> 
                         
                                 <tr>
                                     <td class="pos" align="center"><span class="mid">14</span></td>          
@@ -260,7 +388,7 @@
                                     <td style="text-align: center;">0</td>
                                     <td style="text-align: center;">0</td>          
                                     <td style="text-align: center;"><b>0</b></td>
-                                </tr>
+                                </tr>        
                                 <tr>
                                     <td class="pos" align="center"><span class="mid">15</span></td>          
                                     <td><img src="http://tools.whatsthescore.com/medias/logos/equipe/small/8603.png">ბეტისი<br>
@@ -271,7 +399,7 @@
                                     <td style="text-align: center;">0</td>
                                     <td style="text-align: center;">0</td>          
                                     <td style="text-align: center;"><b>0</b></td>
-                                </tr>
+                                </tr> 
                         
                                 <tr>
                                     <td class="pos" align="center"><span class="mid">16</span></td>          
@@ -283,7 +411,7 @@
                                     <td style="text-align: center;">0</td>
                                     <td style="text-align: center;">0</td>          
                                     <td style="text-align: center;"><b>0</b></td>
-                                </tr>
+                                </tr>    
                                 <tr>
                                     <td class="pos" align="center"><span class="mid">17</span></td>          
                                     <td><img src="http://tools.whatsthescore.com/medias/logos/equipe/small/8560.png">სოსიედადი<br>
@@ -294,7 +422,7 @@
                                     <td style="text-align: center;">0</td>
                                     <td style="text-align: center;">0</td>          
                                     <td style="text-align: center;"><b>0</b></td>
-                                </tr>
+                                </tr>            
                         
                                 <tr>
                                     <td class="pos" align="center"><span class="rel">18</span></td>          
@@ -306,7 +434,7 @@
                                     <td style="text-align: center;">0</td>
                                     <td style="text-align: center;">0</td>          
                                     <td style="text-align: center;"><b>0</b></td>
-                                </tr>
+                                </tr>  
                         
                                 <tr>
                                     <td class="pos" align="center"><span class="rel">19</span></td>          
@@ -318,7 +446,7 @@
                                     <td style="text-align: center;">0</td>
                                     <td style="text-align: center;">0</td>          
                                     <td style="text-align: center;"><b>0</b></td>
-                                </tr>
+                                </tr>  
                         
                                 <tr>
                                     <td class="pos" align="center"><span class="rel">20</span></td>          
@@ -330,7 +458,7 @@
                                     <td style="text-align: center;">0</td>
                                     <td style="text-align: center;">0</td>          
                                     <td style="text-align: center;"><b>0</b></td>
-                                </tr>
+                                </tr>                                          
                             </tbody>
                         </table>
                     </div>
@@ -340,5 +468,7 @@
             <div id="footer">ყველა უფლება დაცულია | ©2020</div>
         </div>
         <script src="../JS/darkTheme.js"> </script>
+        <script src="../JS/mobMenu.js"> </script>
+        <script src="../JS/teamSelector.js"> </script>
     </body>
 </html>

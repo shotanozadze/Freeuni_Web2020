@@ -1506,3 +1506,98 @@ body {
         padding-left: 2%;
     }
 }
+
+.squadPlayer {
+    width: 48.5%;
+    height: 85px;
+    border: 1px solid #e7e7e7;
+    border-radius: 10px;
+    float: left;
+    margin-left: 1%;
+    margin-top: 10px;
+    transition: 2s;
+}
+
+.squadPlayer:hover{
+    background: #FFC107;
+    box-shadow: 0px 0px 4px 2px #d9d9d9b3;
+}
+
+.squadPlayer img {
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+    border: 5px solid #e7e7e7;
+    margin-left: 1%;
+    margin-top: 5px;
+    float: left;
+    transition: 1s;
+}
+
+.squadPlayer img:hover {
+    transform: translateZ(0) scale(1.02);
+    border-radius: 30%;
+    border: 5px solid #33464e;
+    overflow: hidden;
+}
+
+
+.squadPlayer .name {
+    font-family: 'DejaVuNeueCaps';
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 16px;
+    color: #464646;
+    padding-left: 82px;
+}
+
+.squadPlayer .det {
+    font-family: 'bpg1';
+    font-weight: bold;
+    font-size: 13px;
+    padding-top: 5px;
+    color: #000000;
+    padding-left: 90px;
+}
+
+.TeamSquad {
+    display: none;
+    float: left;
+    width: 100%;
+}
+
+.TeamSquad .pos {
+    width: 100%;
+    background: #e7e7e7;
+    margin-top: 10px;
+    padding-top: 9px;
+    padding-bottom: 5px;
+    font-family: 'DejaVuNeueCaps';
+    font-weight: bold;
+    text-align: center;
+}
+
+.TeamProfile {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.TeamMatches {
+    display: none;
+    float: left;
+    width: 100%;
+}
+
+.TeamNameBar{
+    width: 100%;
+    background: #f6c246;
+    padding-top: 12px;
+    padding-bottom: 7px;
+    font-family: 'DejaVuNeueCaps';
+    font-weight: bold;
+    text-align: center;
+    color: #232323;
+    font-size: 20px;
+    border-radius: 10px;
+}
