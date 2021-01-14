@@ -12,6 +12,8 @@ let barnames = document.getElementsByClassName('barname');
 let lineupsTable = document.querySelector('#left > table.lineups');
 let matchdetTable = document.querySelector('#left > table.matchDet');
 
+let standingsTab = document.querySelector('#right > div:nth-child(2) > table');
+
 function makeDark(){
     bg.style.background = '#232323';
     maincont.style.background = "black";
@@ -82,6 +84,17 @@ function makeDark(){
             MatchDetrows[i].getElementsByTagName('td')[0].style.borderRight = '1px solid #2f3336';
             let MatchDetrowscol = MatchDetrows[i].getElementsByTagName('td')[1];
             MatchDetrowscol.style.color = '#ffffff';
+        }
+    }
+
+    // standings dark
+    let standingsRows = standingsTab.getElementsByTagName('tr');
+
+    for (let i=1; i<standingsRows.length; i++){
+        standingsRows[i].style.color = '#ffffff';
+        standingsRows[i].style.borderTop = "1px solid #232323";
+        if (i%2 === 0) {
+           standingsRows[i].style.background = '#2f3336';
         }
     }
 
@@ -163,6 +176,17 @@ function makeLight(){
         }
     }
 
+    // standings light
+    let standingsRows = standingsTab.getElementsByTagName('tr');
+
+    for (let i=1; i<standingsRows.length; i++){
+        standingsRows[i].style.color = '#2d2d2d';
+        standingsRows[i].style.borderTop = "1px solid #e2e2e2";
+        if (i%2 === 0) {
+           standingsRows[i].style.background = '#f5f5f5';
+        }
+    }
+
     isDark = false;
 }
 
@@ -238,6 +262,17 @@ function makeDarkMob(){
         }
     }
 
+    // standings dark
+    let standingsRows = standingsTab.getElementsByTagName('tr');
+
+    for (let i=1; i<standingsRows.length; i++){
+        standingsRows[i].style.color = '#ffffff';
+        standingsRows[i].style.borderTop = "1px solid #232323";
+        if (i%2 === 0) {
+           standingsRows[i].style.background = '#2f3336';
+        }
+    }
+
     isDark = true;
 }
 
@@ -310,6 +345,17 @@ function makeLightMob(){
             MatchDetrows[i].getElementsByTagName('td')[0].style.borderRight = '2px solid #e2e2e2';
             let MatchDetrowscol = MatchDetrows[i].getElementsByTagName('td')[1];
             MatchDetrowscol.style.color = '#2d2d2d';
+        }
+    }
+
+    // standings light
+    let standingsRows = standingsTab.getElementsByTagName('tr');
+
+    for (let i=1; i<standingsRows.length; i++){
+        standingsRows[i].style.color = '#2d2d2d';
+        standingsRows[i].style.borderTop = "1px solid #e2e2e2";
+        if (i%2 === 0) {
+           standingsRows[i].style.background = '#f5f5f5';
         }
     }
 
