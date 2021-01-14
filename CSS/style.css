@@ -713,39 +713,69 @@ body {
     margin-right: 5px;
 }
 
-.maintables .pos span{
-	padding: 5px;
-	margin-left: 4px;
-    color: #000;
-    margin: auto;
+.maintables .ucl{
+    background: #4da729;
+    border-radius: 50%;
+    color: white;
+    height: 20px;
+    width: 20px;
+    margin-left: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 10px;
-    border-radius: 33px;
-    background: #ccc;
 }
 
-.maintables .pos .ucl {
-	background: #49a600;
-    color: #fff;
+.maintables .ucl2{
+    background: #9ED176;
+    border-radius: 50%;
+    color: white;
+    height: 20px;
+    width: 20px;
+    margin-left: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
 }
 
-.maintables .pos .ucl2 {
-	background: #9ED176;
-    color: #fff;
+.maintables .uel{
+    background: #0087b1;
+    border-radius: 50%;
+    color: white;
+    height: 20px;
+    width: 20px;
+    margin-left: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
 }
 
-.maintables .pos .uel {
-	background: #0087b1;
-    color: #fff;
+.maintables .mid{
+    background: #cccccc;
+    border-radius: 50%;
+    color: #232323;
+    height: 20px;
+    width: 20px;
+    margin-left: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
 }
 
-.maintables .pos .mid {
-	background: #cccccc;
-    color: #000;
-}
-
-.maintables .pos .rel {
-	background: #d7180f;
-    color: #fff;
+.maintables .rel{
+    background: #d7180f;
+    border-radius: 50%;
+    color: white;
+    height: 20px;
+    width: 20px;
+    margin-left: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
 }
 
 @media (max-width: 1000px) {
