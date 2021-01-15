@@ -1583,11 +1583,13 @@ body {
     margin-left: 1%;
     margin-top: 10px;
     transition: 2s;
+    color: #464646;
 }
 
 .squadPlayer:hover{
     background: #FFC107;
     box-shadow: 0px 0px 4px 2px #d9d9d9b3;
+    color: black !important;
 }
 
 .squadPlayer img {
@@ -1614,7 +1616,6 @@ body {
     font-weight: bold;
     font-size: 16px;
     padding-top: 16px;
-    color: #464646;
     padding-left: 82px;
 }
 
@@ -1623,8 +1624,21 @@ body {
     font-weight: bold;
     font-size: 13px;
     padding-top: 5px;
-    color: #000000;
     padding-left: 90px;
+}
+
+@media (max-width: 1000px) {
+    .squadPlayer{
+        height: 120px;
+    }
+
+    .squadPlayer .name{
+        font-size: 30px;
+    }
+
+    .squadPlayer .det{
+        font-size: 25px;
+    }
 }
 
 .TeamSquad {
@@ -1667,4 +1681,88 @@ body {
     color: #232323;
     font-size: 20px;
     border-radius: 10px;
+}
+
+.SquadTB {
+    width: 100%;
+    font-family: DejaVuNeue;
+    border-collapse: collapse;
+    overflow: hidden;
+    margin-bottom: 2%;
+}
+
+.SquadTB .num {
+    background: #33464e;
+    border-radius: 50%;
+    color: #f6c246;
+    height: 28px;
+    width: 28px;
+    margin-left: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.SquadTB thead {
+    border: 1px solid #4684b0;
+}
+
+.SquadTB thead>tr {
+    cursor: pointer;
+    background: url(../images/squadBack.png) 0 0 repeat-x;
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 32px;
+    font-family: bpg1;
+    text-align: center;
+}
+
+.SquadTB tbody>tr {
+    line-height: 35px;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: bpg1;
+    color: #2d2d2d;
+    transition: 1s;
+
+    border-left: 1px solid #b9b9b9;
+    border-right: 1px solid #b9b9b9;
+    border-bottom: 1px solid #b9b9b9;
+    border-top: 1px solid #f8f8f8;
+}
+
+.SquadTB tbody>tr>td {
+    text-align: center;
+    background: #e9e9e9;
+    width: 7%;
+}
+
+.SquadTB tbody>tr>td:nth-child(2n) {
+    width: 10%;
+    background: #ededed;
+}
+
+.SquadTB tbody>tr>td:nth-child(3n) {
+    text-align: left;
+    padding-left: 2%;
+    width: 50%;
+}
+
+.SquadTB tbody>tr>td:nth-child(4n) {
+    width: 10%;
+}
+
+.SquadTB tbody>tr>td:nth-child(5n) {
+    width: 23%;
+}
+
+.SquadTB tbody>tr>td:nth-child(2n) img {
+    width: 40px;
+    vertical-align: middle;
+}
+
+.SquadTB tbody>tr>td:nth-child(4n) img {
+    width: 25px;
+    vertical-align: middle;
 }

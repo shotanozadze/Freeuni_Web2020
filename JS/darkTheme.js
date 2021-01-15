@@ -14,6 +14,8 @@ let matchdetTable = document.querySelector('#left > table.matchDet');
 
 let standingsTab = document.querySelector('#right > div:nth-child(2) > table');
 
+let teamProfileTab = document.querySelector('#left > div.TeamProfile > table');
+
 function makeDark(){
     bg.style.background = '#232323';
     maincont.style.background = "black";
@@ -98,6 +100,20 @@ function makeDark(){
         }
     }
 
+    // team profile
+    if (teamProfileTab != null){
+        let MatchDetbody = teamProfileTab.getElementsByTagName('tbody')[0];
+        let MatchDetrows = MatchDetbody.getElementsByTagName('tr');
+
+        for(let i=0; i<MatchDetrows.length; i++){
+            MatchDetrows[i].style.borderBottom = '1px solid #2f3336';
+            MatchDetrows[i].getElementsByTagName('td')[0].style.borderRight = '1px solid #2f3336';
+            let MatchDetrowscol = MatchDetrows[i].getElementsByTagName('td')[1];
+            MatchDetrowscol.style.color = '#ffffff';
+        }
+
+    }
+
     isDark = true;
 }
 
@@ -174,6 +190,7 @@ function makeLight(){
             let MatchDetrowscol = MatchDetrows[i].getElementsByTagName('td')[1];
             MatchDetrowscol.style.color = '#2d2d2d';
         }
+
     }
 
     // standings light
@@ -185,6 +202,20 @@ function makeLight(){
         if (i%2 === 0) {
            standingsRows[i].style.background = '#f5f5f5';
         }
+    }
+
+    // team profile
+    if (teamProfileTab != null){
+        let MatchDetbody = teamProfileTab.getElementsByTagName('tbody')[0];
+        let MatchDetrows = MatchDetbody.getElementsByTagName('tr');
+
+        for(let i=0; i<MatchDetrows.length; i++){
+            MatchDetrows[i].style.borderBottom = '1px solid #e2e2e2';
+            MatchDetrows[i].getElementsByTagName('td')[0].style.borderRight = '1px solid #e2e2e2';
+            let MatchDetrowscol = MatchDetrows[i].getElementsByTagName('td')[1];
+            MatchDetrowscol.style.color = '#2d2d2d';
+        }
+
     }
 
     isDark = false;
@@ -273,6 +304,19 @@ function makeDarkMob(){
         }
     }
 
+    // team profile
+    if (teamProfileTab != null){
+        let MatchDetbody = teamProfileTab.getElementsByTagName('tbody')[0];
+        let MatchDetrows = MatchDetbody.getElementsByTagName('tr');
+
+        for(let i=0; i<MatchDetrows.length; i++){
+            MatchDetrows[i].style.borderBottom = '2px solid #2f3336';
+            MatchDetrows[i].getElementsByTagName('td')[0].style.borderRight = '2px solid #2f3336';
+            let MatchDetrowscol = MatchDetrows[i].getElementsByTagName('td')[1];
+            MatchDetrowscol.style.color = '#ffffff';
+        }
+    }
+
     isDark = true;
 }
 
@@ -356,6 +400,19 @@ function makeLightMob(){
         standingsRows[i].style.borderTop = "1px solid #e2e2e2";
         if (i%2 === 0) {
            standingsRows[i].style.background = '#f5f5f5';
+        }
+    }
+
+    // team profile
+    if (teamProfileTab != null){
+        let MatchDetbody = teamProfileTab.getElementsByTagName('tbody')[0];
+        let MatchDetrows = MatchDetbody.getElementsByTagName('tr');
+
+        for(let i=0; i<MatchDetrows.length; i++){
+            MatchDetrows[i].style.borderBottom = '2px solid #e2e2e2';
+            MatchDetrows[i].getElementsByTagName('td')[0].style.borderRight = '2px solid #e2e2e2';
+            let MatchDetrowscol = MatchDetrows[i].getElementsByTagName('td')[1];
+            MatchDetrowscol.style.color = '#2d2d2d';
         }
     }
 
