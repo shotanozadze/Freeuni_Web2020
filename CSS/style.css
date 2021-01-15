@@ -1766,3 +1766,40 @@ body {
     width: 25px;
     vertical-align: middle;
 }
+
+@media (max-width: 1000px) {
+    .SquadTB tbody>tr {
+        line-height: 80px;
+        font-size: 23px;
+        font-weight: bold;
+    }
+
+    .SquadTB tbody>tr>td:nth-child(2n) img {
+        width: 70px;
+        vertical-align: middle;
+    }
+    
+    .SquadTB tbody>tr>td:nth-child(4n) img {
+        width: 40px;
+        vertical-align: middle;
+    }
+
+    .SquadTB .num {
+        background: #33464e;
+        border-radius: 50%;
+        color: #f6c246;
+        height: 45px;
+        width: 45px;
+        margin-left: 17%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 17px;
+    }
+
+    .SquadTB thead>tr {
+        font-size: 25px;
+        line-height: 65px;
+    }
+
+}
