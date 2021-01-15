@@ -1672,15 +1672,47 @@ body {
 
 .TeamNameBar{
     width: 100%;
-    background: #f6c246;
+    background: #232323;
     padding-top: 12px;
     padding-bottom: 7px;
-    font-family: 'DejaVuNeueCaps';
-    font-weight: bold;
-    text-align: center;
-    color: #232323;
-    font-size: 20px;
-    border-radius: 10px;
+    font-family: boxo;
+    text-align: left;
+    color: #ffffff;
+    font-size: 35px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 60px;
+    margin-bottom: -13px;
+}
+
+.TeamNameBar img {
+    width: 55px;
+    vertical-align: middle;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media (max-width: 1000px) {
+    .TeamNameBar{
+        width: 100%;
+        background: #232323;
+        padding-top: 35px;
+        font-family: boxo;
+        text-align: left;
+        color: #ffffff;
+        font-size: 50px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        height: 120px;
+        margin-bottom: -13px;
+    }
+    
+    .TeamNameBar img {
+        width: 90px;
+        vertical-align: middle;
+        padding-right: 15px;
+        padding-left: 25px;
+    }
 }
 
 .SquadTB {
@@ -1704,10 +1736,6 @@ body {
     font-size: 12px;
 }
 
-.SquadTB thead {
-    border: 1px solid #4684b0;
-}
-
 .SquadTB thead>tr {
     cursor: pointer;
     background: url(../images/squadBack.png) 0 0 repeat-x;
@@ -1726,8 +1754,6 @@ body {
     color: #2d2d2d;
     transition: 1s;
 
-    border-left: 1px solid #b9b9b9;
-    border-right: 1px solid #b9b9b9;
     border-bottom: 1px solid #b9b9b9;
     border-top: 1px solid #f8f8f8;
 }

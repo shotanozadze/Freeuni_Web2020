@@ -30,3 +30,8 @@
     font-family: archy-bold;
     src: url(fonts/ar-archy-semibold.ttf);
 }
+
+@font-face {
+    font-family: boxo;
+    src: url(fonts/boxo.ttf);
+}
