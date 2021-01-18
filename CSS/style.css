@@ -1934,9 +1934,9 @@ body {
 
 .mainStandings thead>tr>td img {
     float: left;
-    height: 20px;
-    width: 20px;
-    margin-top: 6px;
+    height: 27px;
+    width: 27px;
+    margin-top: 3px;
     margin-left: 3%;
     margin-right: 5%;
 }
@@ -1998,9 +1998,9 @@ body {
 
 .mainStandings tbody>tr>td img {
 	float: left;
-    height: 20px;
-    width: 20px;
-    margin-top: 9px;
+    height: 27px;
+    width: 27px;
+    margin-top: 6px;
     margin-left: 3%;
     margin-right: 5%;
 }
