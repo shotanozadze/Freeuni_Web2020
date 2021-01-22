@@ -256,7 +256,7 @@ body {
 
 #menu > a img {
     height: 65%;
-    padding-top: 4%;
+    padding-top: 2%;
     float: left;
     padding-right: 7px;
 }
@@ -651,6 +651,11 @@ body {
         width: 35%;
         text-align: left;
         border-left: none;
+    }
+
+    .matchestb tbody>tr>td:nth-child(3n) a{
+        color: #cd2f2a;
+        text-decoration: none;
     }
 
     .matchestb tbody>tr:hover {
