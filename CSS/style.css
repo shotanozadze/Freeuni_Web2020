@@ -531,7 +531,7 @@ body {
 
     .matchestb tbody>tr {
         line-height: 26px;
-        cursor: pointer;
+        cursor: default;
         font-size: 13px;
         font-family: bpg1;
         border: 1px solid #e2e2e2;
@@ -563,6 +563,11 @@ body {
 
     .matchestb tbody>tr>td:nth-child(5n) {
         border-right: none;
+    }
+
+    .matchestb tbody>tr>td:nth-child(3n) a{
+        color: #cd2f2a;
+        text-decoration: none;
     }
 
     .matchestb tbody>tr:hover {
