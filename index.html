@@ -82,52 +82,11 @@
         <div id="main-container">
             
             <div id="main" class="clearfix">
-                <div id="left">
-                    <script>
-                        const path = window.location.search;
-                        const params = new URLSearchParams(path);
-                        const id = params.get('team_id');
-                        const x = params.has('product');
-                    </script>
+                <div id="left"> </div>
+
+                <script src="JS/LeftContainer.js"> </script>
 
 
-                    <table class="matchestb">
-                        <thead>
-                            <tr>
-                                <td colspan="5"> <img src="https://icons.whatsthescore.com/competition/s/normal/678.png"> ჩემპიონთა ლიგა </td>
-                            </tr>
-                        </thead>
-                        
-                        <tbody>
-                            <tr>
-                                <td>20:55</td>
-                                <td>ბაშაქშეჰირი</td>
-                                <td><a href="/?team_id=21">2:1</a></td>
-                                <td>მანჩესტერი</td>
-                                <td></td>
-                            </tr>
-
-                            <tr>
-                                <td>20:55</td>
-                                <td>ზენიტი</td>
-                                <td>1:1</td>
-                                <td>ლაციო</td>
-                                <td></td>
-                            </tr>
-
-                            <tr>
-                                <td>23:00</td>
-                                <td>ბარსელონა</td>
-                                <td>2:1</td>
-                                <td>დინამო კიევი</td>
-                                <td></td>
-                            </tr>
-
-                        </tbody>   
-                    </table>
-                    
-
-                </div>
                 <div id="right">
                     <div class="barsection">
                         <div class="barname">ჩემპიონატები</div>
@@ -140,7 +99,7 @@
                                 <img src="https://icons.whatsthescore.com/competition/m/normal/692.png"> 
                                 <div class="navLine">ევროპის ჩემპიონატი</div>
                             </a>
-                            <a href="/?competition_id=3"> 
+                            <a href="/?competition_id=3&season=2019"> 
                                 <img src="https://icons.whatsthescore.com/competition/m/normal/685.png"> 
                                 <div class="navLine">კოპა ამერიკა</div>
                             </a>
