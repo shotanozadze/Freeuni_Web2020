@@ -427,30 +427,44 @@ function changeTheme(){
         } else{
             makeDark();
         }
+        sessionStorage.setItem("theme", "dark");
     }else {
         if(mb.matches){
             makeLightMob();
         } else{
             makeLight();
         }
+        sessionStorage.setItem("theme", "light");
     }
 }
 
-const mob = window.matchMedia("(max-width: 1000px)");
+function main(){
+    const mob = window.matchMedia("(max-width: 1000px)");
+    let theme = sessionStorage.getItem("theme");
 
-if(isDark){
-    if(mob.matches){
-        makeDarkMob();
+    if (theme=="dark"){
+        isDark = true;
     } else{
-        makeDark();
+        isDark = false;
     }
-} else{
-    if(mob.matches){
-        makeLightMob();
+
+    if(isDark){
+        if(mob.matches){
+            makeDarkMob();
+        } else{
+            makeDark();
+        }
     } else{
-        makeLight();
+        if(mob.matches){
+            makeLightMob();
+        } else{
+            makeLight();
+        }
     }
+
+    moon.addEventListener('click', changeTheme);
+    mobMoon.addEventListener('click', changeTheme);
+
 }
 
-moon.addEventListener('click', changeTheme);
-mobMoon.addEventListener('click', changeTheme);
+main();
