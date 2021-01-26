@@ -427,7 +427,6 @@ function changeTheme(){
         } else{
             makeDark();
         }
-        //sessionStorage.setItem("theme", "dark");
         setCookie("theme", "dark", 30);
     }else {
         if(mb.matches){
@@ -435,7 +434,6 @@ function changeTheme(){
         } else{
             makeLight();
         }
-        //sessionStorage.setItem("theme", "light");
         setCookie("theme", "light", 30);
     }
 }
@@ -465,7 +463,6 @@ function getCookie(cname) {
 
 function main(){
     const mob = window.matchMedia("(max-width: 1000px)");
-    //let theme = sessionStorage.getItem("theme");
 
     let theme = getCookie("theme");
     if (theme == "dark"){
