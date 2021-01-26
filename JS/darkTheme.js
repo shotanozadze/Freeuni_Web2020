@@ -427,22 +427,48 @@ function changeTheme(){
         } else{
             makeDark();
         }
-        sessionStorage.setItem("theme", "dark");
+        //sessionStorage.setItem("theme", "dark");
+        setCookie("theme", "dark", 30);
     }else {
         if(mb.matches){
             makeLightMob();
         } else{
             makeLight();
         }
-        sessionStorage.setItem("theme", "light");
+        //sessionStorage.setItem("theme", "light");
+        setCookie("theme", "light", 30);
     }
+}
+
+function setCookie(cname,cvalue,exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires=" + d.toGMTString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+  
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+        }
+    }
+    return "";
 }
 
 function main(){
     const mob = window.matchMedia("(max-width: 1000px)");
-    let theme = sessionStorage.getItem("theme");
+    //let theme = sessionStorage.getItem("theme");
 
-    if (theme=="dark"){
+    let theme = getCookie("theme");
+    if (theme == "dark"){
         isDark = true;
     } else{
         isDark = false;
