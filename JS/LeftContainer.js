@@ -113,6 +113,39 @@ function competition(id, season, stage){
         });
 }
 
+function MainPage(){
+    let comp = 'data/main.json';
+    let inner = '';
+    fetch(comp)
+        .then(response => response.json())
+        .then((result) => {
+            for(let i=0; i<result.length; i++){
+                let Competition = result[i].name;
+                let img = result[i].image;
+                let matches = result[i].matches;
+
+                inner += '<table class="matchestb">';
+                inner += '<thead> <tr> <td colspan="4">';
+                inner += '<img src="' + img + '">' + Competition + '</td> </tr> </thead>';
+                inner += '<tbody>';
+                
+                for(let j=0; j<matches.length; j++){
+                    
+                    inner += '<tr><td>'+ matches[j].date +'</td>';
+                    inner += '<td>'+ matches[j].home +'</td>';
+                    inner += '<td>'+ matches[j].score +'</td>';
+                    inner += '<td>'+ matches[j].away +'</td></tr>';
+
+                }
+
+                inner += '</tbody>';
+                inner += '</table>';
+            }
+
+            left.innerHTML = inner;
+    });
+}
+
 function main(){
     const path = window.location.search;
     const params = new URLSearchParams(path);
@@ -134,7 +167,7 @@ function main(){
     } else if(params.has('player_id')){
 
     } else{
-        // main
+        MainPage();
     }
 }
 
