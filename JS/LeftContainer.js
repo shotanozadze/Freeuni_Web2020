@@ -15,7 +15,7 @@ function competition(id, season, stage){
                         standing = stagesArr[stage].table;
                         
                         let inner = '';
-                        inner += '<div class="innerTitle">'+ result.name +'</div>';
+                        inner += '<div class="innerTitle"> <img src="' + result.image + '">' + result.name +'</div>';
 
                         inner += '<select class="boxSelector" onchange="location = this.value;">';
                         for (let i=0; i<result.seasons.length; i++){
@@ -130,7 +130,7 @@ function MainPage(){
                 inner += '<tbody>';
                 
                 for(let j=0; j<matches.length; j++){
-                    
+
                     inner += '<tr><td>'+ matches[j].date +'</td>';
                     inner += '<td>'+ matches[j].home +'</td>';
                     inner += '<td>'+ matches[j].score +'</td>';

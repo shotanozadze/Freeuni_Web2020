@@ -293,14 +293,12 @@ body {
     position: relative;
 }
 
-@media (min-width:1000px){
-    #left{
-        float: left;
-        width: 67%;
-        margin-top: 1%;
-        margin-left: 1%;
-        position: relative;
-    }
+#left{
+    float: left;
+    width: 67%;
+    margin-top: 1%;
+    margin-left: 1%;
+    position: relative;
 }
 
 @media (max-width:1000px){
@@ -309,7 +307,8 @@ body {
         width: 99%;
         margin-top: 2%;
         margin-left: 0.5%;
-        position: relative;;
+        position: relative;
+        min-height: 1900px;
     }
 
     #footer {
@@ -320,26 +319,25 @@ body {
     }
 }
 
-
-@media (min-width:1000px){
-    #right {
-        position: relative;
-        width: 31%;
-        float: right;
-        margin-top: 1%;
-        z-index: 2;
-    }
+#right {
+    position: relative;
+    width: 31%;
+    float: right;
+    margin-top: 1%;
+    z-index: 2;
 }
 
 @media (max-width:1000px){
     #right {
         position: relative;
-        width: 100%;
+        width: 98%;
+        margin-left: 1%;
         float: left;
         margin-top: 1%;
         z-index: 2;
-        border-top: 5px solid #f6c246;
-        padding-top: 2%;
+        border-top: 40px solid #f6c246;
+        padding-top: 7%;
+        margin-top: 7%;
     }
 }
 
@@ -461,6 +459,7 @@ body {
         padding-left: 2%;
         padding-top: 5%;
         padding-bottom: 3%;
+        user-select: none;
     }   
     
     .navItem {
@@ -526,6 +525,7 @@ body {
     width: 25px;
     vertical-align: middle;
     filter: drop-shadow(0px 0px 2px);
+    margin-right: 1%;
 }
 
 .matchestb tbody>tr {
@@ -539,12 +539,12 @@ body {
 }
 
 .matchestb tbody>tr>td {
-    width: 14%;
+    width: 12%;
     text-align: center;
     border-right: 1px solid #e2e2e2;
 }
 .matchestb tbody>tr>td:nth-child(2n) {
-    width: 38%;
+    width: 39%;
     text-align: right;
     border-right: none;
 }
@@ -555,7 +555,7 @@ body {
 }
 
 .matchestb tbody>tr>td:nth-child(4n) {
-    width: 38%;
+    width: 39%;
     text-align: left;
     border-right: none;
 }
@@ -611,6 +611,7 @@ body {
         width: 40px;
         vertical-align: middle;
         filter: drop-shadow(0px 0px 5px);
+        margin-right: 1%;
     }
 
     .matchestb tbody>tr {
@@ -2154,26 +2155,37 @@ body {
 
 .innerTitle {
     width: 97%;
-    background: #232323;
+    background: #2f3336;
     margin-bottom: 10px;
     color: #dadada;
-    font-family: 'DejaVuNeueCaps';
+    font-family: boxo;
     font-weight: bold;
-    font-size: 25px;
-    padding-top: 20px;
-    padding-bottom: 15px;
+    font-size: 27px;
+    padding-top: 9px;
+    padding-bottom: 11px;
     padding-left: 3%;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+    border-radius: 3px;
+}
+
+.innerTitle img {
+    vertical-align: middle;
+    height: 45px;
+    padding-right: 3%;
 }
 
 @media (max-width: 1000px) {
 
     .innerTitle{
-        padding-top: 40px;
+        padding-top: 30px;
         padding-bottom: 25px;
-        font-size: 40px;
+        font-size: 45px;
         user-select: none;
+    }
+
+    .innerTitle img {
+        vertical-align: middle;
+        height: 70px;
+        padding-right: 3%;
     }
 }
 
