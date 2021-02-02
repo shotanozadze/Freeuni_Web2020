@@ -1,0 +1,148 @@
+[
+    {
+        "id": 1,
+        "home": "ბრაზილია",
+        "away": "ბოლივია",
+        "homeLogo": "https://s.hs-data.com/bilder/wappen/mittel/60.gif?fallback=png",
+        "awayLogo": "https://s.hs-data.com/bilder/wappen/mittel/59.gif?fallback=png",
+        "homeScore": 3,
+        "awayScore": 0,
+        "date": "15/06/2019, 01:30",
+        "stadium": "მორუმბი",
+        "league": "კოპა ამერიკა",
+        "stage": "A ჯგუფი, 1-ლი ტური",
+        "attendence": 47.260,
+        "referee": "ნესტორ პიტანა (არგენტინა)",
+        "assistant": "ჰერმან მაიდანა (არგენტინა)",
+        "assistant2": "ხუან პაბლო ბელატი (არგენტინა)",
+        "starters": [
+            {
+                "homeId": 1,
+                "homeNum": 1,
+                "homeName": "ალისონი",
+                "homeSub": "",
+
+                "awayId": 2,
+                "awayNum": 1,
+                "awayName": "კარლოს ლამპე",
+                "awaySub": ""
+            },
+            {
+                "homeId": 3,
+                "homeNum": 2,
+                "homeName": "ტიაგო სილვა",
+                "homeSub": "",
+
+                "awayId": 4,
+                "awayNum": 4,
+                "awayName": "ლუის ჰაკინი",
+                "awaySub": ""
+            },
+            {
+                "homeId": 5,
+                "homeNum": 4,
+                "homeName": "მარკინიოსი",
+                "homeSub": "",
+
+                "awayId": 6,
+                "awayNum": 17,
+                "awayName": "მარვინ ბეხარნო",
+                "awaySub": ""
+            },
+            {
+                "homeId": 7,
+                "homeNum": 6,
+                "homeName": "ფელიპე ლუისი",
+                "homeSub": "",
+
+                "awayId": 8,
+                "awayNum": 22,
+                "awayName": "ადრიან ხუსინო",
+                "awaySub": ""
+            },
+            {
+                "homeId": 9,
+                "homeNum": 13,
+                "homeName": "დანი ალვესი",
+                "homeSub": "",
+
+                "awayId": 10,
+                "awayNum": 6,
+                "awayName": "ერვინ საავედრა",
+                "awaySub": "64'"
+            },
+            {
+                "homeId": 11,
+                "homeNum": 5,
+                "homeName": "კაზემირო",
+                "homeSub": "",
+
+                "awayId": 12,
+                "awayNum": 7,
+                "awayName": "ლეონელ ხუსტინიანო",
+                "awaySub": ""
+            },
+            {
+                "homeId": 13,
+                "homeNum": 11,
+                "homeName": "კოუტინიო",
+                "homeSub": "",
+
+                "awayId": 14,
+                "awayNum": 8,
+                "awayName": "დიეგო ბეხარნო",
+                "awaySub": ""
+            },
+            {
+                "homeId": 15,
+                "homeNum": 17,
+                "homeName": "ფერნანდინიო",
+                "homeSub": "",
+
+                "awayId": 16,
+                "awayNum": 14,
+                "awayName": "რაულ კასტრო",
+                "awaySub": "75'"
+            },
+            {
+                "homeId": 17,
+                "homeNum": 7,
+                "homeName": "დავიდ ნერეში",
+                "homeSub": "81'",
+
+                "awayId": 18,
+                "awayNum": 20,
+                "awayName": "ფერნანდო საუსედო",
+                "awaySub": "59'"
+            },
+            {
+                "homeId": 19,
+                "homeNum": 20,
+                "homeName": "რობერტო ფირმინო",
+                "homeSub": "65'",
+
+                "awayId": 20,
+                "awayNum": 9,
+                "awayName": "მარსელო მორენო",
+                "awaySub": ""
+            },
+            {
+                "homeId": 21,
+                "homeNum": 21,
+                "homeName": "რიჩარლისონი",
+                "homeSub": "84'",
+
+                "awayId": 22,
+                "awayNum": 3,
+                "awayName": "ალეხანდრო კუმასერო",
+                "awaySub": ""
+            }
+        ],
+
+        "subs": [
+            
+        ]
+
+
+    }
+]

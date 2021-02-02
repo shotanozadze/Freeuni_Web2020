@@ -87,10 +87,11 @@ function competition(id, season, stage){
                                 let home = roundMatches[j].home;
                                 let away = roundMatches[j].away;
                                 let score = roundMatches[j].score;
+                                let matchID = "/?match_id=" + roundMatches[j].match_id;
 
                                 inner += '<tr> <td>' + date + '</td>';
                                 inner += '<td>'+ home +'</td>';
-                                inner += '<td>'+ score +'</td>';
+                                inner += '<td> <a href="'+ matchID +'">'+ score +'</a></td>';
                                 inner += '<td>'+ away +'</td>';
                                 inner += '</tr>';
                             }
@@ -146,6 +147,27 @@ function MainPage(){
     });
 }
 
+function matchPage(id){
+    let comp = 'data/matches.json';
+    let inner = '';
+    fetch(comp)
+        .then(response => response.json())
+        .then((result) => {
+            for (let i=0; i<result.length; i++){
+                let currMatch = result[i];
+                if(currMatch.id == id){
+                    inner += '<div class="match-inner" role="listbox"> <div class="item active"> <div class="matchHome">' + currMatch.home;
+                    inner += '</div><div class="HomeIcon"><img src="' + currMatch.homeLogo + '"></div><div class="HomeScore">';
+                    inner += currMatch.homeScore + '</div><div class="matchAway">' + currMatch.away + '</div> <div class="AwayIcon"> <img src="';
+                    inner += currMatch.awayLogo + '"></div><div class="AwayScore">' + currMatch.awayScore + '</div><div class="MatchDate">';
+                    inner += currMatch.date + '</div><div class="MatchTour">' + currMatch.league + '</div><div class="MatchStadium">';
+                    inner += currMatch.stadium + '</div><div class="cover"> <img src="../images/match.png" style="width: 100%;"></div></div></div>';
+                    left.innerHTML = inner;
+                }
+            }
+    });
+}
+
 function main(){
     const path = window.location.search;
     const params = new URLSearchParams(path);
@@ -163,7 +185,7 @@ function main(){
     } else if(params.has('team_id')){
 
     } else if(params.has('match_id')){
-
+        matchPage(params.get('match_id'));
     } else if(params.has('player_id')){
 
     } else{
