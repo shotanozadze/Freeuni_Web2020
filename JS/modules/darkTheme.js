@@ -8,12 +8,7 @@ let footer = document.querySelector('#footer');
 let nav = document.querySelector('#right > div:nth-child(1) > div.navItem');
 let bars = document.getElementsByClassName('barsection');
 let barnames = document.getElementsByClassName('barname');
-
-let lineupsTable = document.querySelector('#left > table.lineups');
-let matchdetTable = document.querySelector('#left > table.matchDet');
-
 let standingsTab = document.querySelector('#right > div:nth-child(2) > table');
-
 let teamProfileTab = document.querySelector('#left > div.TeamProfile > table');
 
 function makeDark(){
@@ -54,9 +49,9 @@ function makeDark(){
     mobMoon.style.filter = "none";
     document.querySelector('#main > div.right_bg').style.borderLeft = '1px solid #2f3336';
 
-    if(lineupsTable != null){
+    if(document.querySelector('#left > table.lineups') != null){
         // match lineups table
-        let Lineupbody = lineupsTable.getElementsByTagName('tbody');
+        let Lineupbody = document.querySelector('#left > table.lineups').getElementsByTagName('tbody');
         for (let i=0; i<Lineupbody.length; i++){
             let Lineupbodyrows = Lineupbody[i].getElementsByTagName('tr');
             for(let j=0; j<Lineupbodyrows.length; j++){
@@ -70,7 +65,7 @@ function makeDark(){
             }
         }
 
-        let Lineuphead = lineupsTable.getElementsByTagName('thead');
+        let Lineuphead = document.querySelector('#left > table.lineups').getElementsByTagName('thead');
         for (let i=0; i<Lineuphead.length; i++){
             let Lineupheadrow = Lineuphead[i].getElementsByTagName('tr')[0];
             Lineupheadrow.style.color = '#ffffff';
@@ -78,7 +73,7 @@ function makeDark(){
         }
 
         // match details table
-        let MatchDetbody = matchdetTable.getElementsByTagName('tbody')[0];
+        let MatchDetbody = document.querySelector('#left > table.matchDet').getElementsByTagName('tbody')[0];
         let MatchDetrows = MatchDetbody.getElementsByTagName('tr');
 
         for(let i=0; i<MatchDetrows.length; i++){
@@ -158,8 +153,8 @@ function makeLight(){
     document.querySelector('#main > div.right_bg').style.borderLeft = '1px solid #e7e7e7';
 
     // match lineups table
-    if(lineupsTable != null){
-        let Lineupbody = lineupsTable.getElementsByTagName('tbody');
+    if(document.querySelector('#left > table.lineups') != null){
+        let Lineupbody = document.querySelector('#left > table.lineups').getElementsByTagName('tbody');
         for (let i=0; i<Lineupbody.length; i++){
             let Lineupbodyrows = Lineupbody[i].getElementsByTagName('tr');
             for(let j=0; j<Lineupbodyrows.length; j++){
@@ -173,7 +168,7 @@ function makeLight(){
             }
         }
 
-        let Lineuphead = lineupsTable.getElementsByTagName('thead');
+        let Lineuphead = document.querySelector('#left > table.lineups').getElementsByTagName('thead');
         for (let i=0; i<Lineuphead.length; i++){
             let Lineupheadrow = Lineuphead[i].getElementsByTagName('tr')[0];
             Lineupheadrow.style.color = '#000000';
@@ -181,7 +176,7 @@ function makeLight(){
         }
 
         // match details table
-        let MatchDetbody = matchdetTable.getElementsByTagName('tbody')[0];
+        let MatchDetbody = document.querySelector('#left > table.matchDet').getElementsByTagName('tbody')[0];
         let MatchDetrows = MatchDetbody.getElementsByTagName('tr');
 
         for(let i=0; i<MatchDetrows.length; i++){
@@ -258,9 +253,9 @@ function makeDarkMob(){
     mobMoon.style.filter = "none";
     document.querySelector('#main > div.right_bg').style.borderLeft = '2px solid #2f3336';
 
-    if(lineupsTable != null){
+    if(document.querySelector('#left > table.lineups') != null){
         // match lineups table
-        let Lineupbody = lineupsTable.getElementsByTagName('tbody');
+        let Lineupbody = document.querySelector('#left > table.lineups').getElementsByTagName('tbody');
         for (let i=0; i<Lineupbody.length; i++){
             let Lineupbodyrows = Lineupbody[i].getElementsByTagName('tr');
             for(let j=0; j<Lineupbodyrows.length; j++){
@@ -274,7 +269,7 @@ function makeDarkMob(){
             }
         }
 
-        let Lineuphead = lineupsTable.getElementsByTagName('thead');
+        let Lineuphead = document.querySelector('#left > table.lineups').getElementsByTagName('thead');
         for (let i=0; i<Lineuphead.length; i++){
             let Lineupheadrow = Lineuphead[i].getElementsByTagName('tr')[0];
             Lineupheadrow.style.color = '#ffffff';
@@ -282,7 +277,7 @@ function makeDarkMob(){
         }
 
         // match details table
-        let MatchDetbody = matchdetTable.getElementsByTagName('tbody')[0];
+        let MatchDetbody = document.querySelector('#left > table.matchDet').getElementsByTagName('tbody')[0];
         let MatchDetrows = MatchDetbody.getElementsByTagName('tr');
 
         for(let i=0; i<MatchDetrows.length; i++){
@@ -357,9 +352,9 @@ function makeLightMob(){
     mobMoon.style.filter = "invert(100%)";
     document.querySelector('#main > div.right_bg').style.borderLeft = '2px solid #e7e7e7';
 
-    if(lineupsTable != null){
+    if(document.querySelector('#left > table.lineups') != null){
         // match lineups table
-        let Lineupbody = lineupsTable.getElementsByTagName('tbody');
+        let Lineupbody = document.querySelector('#left > table.lineups').getElementsByTagName('tbody');
         for (let i=0; i<Lineupbody.length; i++){
             let Lineupbodyrows = Lineupbody[i].getElementsByTagName('tr');
             for(let j=0; j<Lineupbodyrows.length; j++){
@@ -373,7 +368,7 @@ function makeLightMob(){
             }
         }
 
-        let Lineuphead = lineupsTable.getElementsByTagName('thead');
+        let Lineuphead = document.querySelector('#left > table.lineups').getElementsByTagName('thead');
         for (let i=0; i<Lineuphead.length; i++){
             let Lineupheadrow = Lineuphead[i].getElementsByTagName('tr')[0];
             Lineupheadrow.style.color = '#000000';
@@ -381,7 +376,7 @@ function makeLightMob(){
         }
 
         // match details table
-        let MatchDetbody = matchdetTable.getElementsByTagName('tbody')[0];
+        let MatchDetbody = document.querySelector('#left > table.matchDet').getElementsByTagName('tbody')[0];
         let MatchDetrows = MatchDetbody.getElementsByTagName('tr');
 
         for(let i=0; i<MatchDetrows.length; i++){
@@ -461,7 +456,7 @@ function getCookie(cname) {
     return "";
 }
 
-function main(){
+function switchTheme(){
     const mob = window.matchMedia("(max-width: 1000px)");
 
     let theme = getCookie("theme");
@@ -490,6 +485,4 @@ function main(){
 
 }
 
-window.onload = function(){
-    main();
-}
+export {switchTheme as switch};

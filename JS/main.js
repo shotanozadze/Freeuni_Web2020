@@ -1,4 +1,12 @@
+import * as dark from './modules/darkTheme.js';
+import * as mSelector from './modules/matchSelector.js';
+import * as tSelector from './modules/teamSelector.js';
 let left = document.querySelector('#left');
+
+function postFetchum(){
+    mSelector.mSelect();
+    dark.switch();
+}
 
 function competition(id, season, stage){
     let comp = 'data/competitions/' + id + '.json';
@@ -6,27 +14,27 @@ function competition(id, season, stage){
         .then(response => response.json())
         .then((result) => {
             for(let s=0; s<result.seasons.length; s++){
-                ssn = result.seasons[s].season;
+                let ssn = result.seasons[s].season;
                 if (ssn == season){
 
-                    stagesArr = result.seasons[s].stages;
+                    let stagesArr = result.seasons[s].stages;
 
                     if (stage >= 0 && stage < stagesArr.length ){
-                        standing = stagesArr[stage].table;
+                        let standing = stagesArr[stage].table;
                         
                         let inner = '';
                         inner += '<div class="innerTitle"> <img src="' + result.image + '">' + result.name +'</div>';
 
                         inner += '<select class="boxSelector" onchange="location = this.value;">';
                         for (let i=0; i<result.seasons.length; i++){
-                            sn = result.seasons[i].season;
+                            let sn = result.seasons[i].season;
                             inner += '<option value="/?competition_id='+ id + '&season=' + i +'&stage='+ 0 +'" selected>'+ sn +'</option>';
                         }
                         inner += '</select>';
 
                         inner += '<select class="boxSelector" onchange="location = this.value;">';
                         for (let i=0; i<stagesArr.length; i++){
-                            stg = stagesArr[i].name;
+                            let stg = stagesArr[i].name;
                             let sel = '';
                             if (i==stage){
                                 sel = 'selected';
@@ -110,8 +118,9 @@ function competition(id, season, stage){
                     // not found
                 }
             }
-            
-        });
+        postFetchum();
+    });
+    
 }
 
 function MainPage(){
@@ -143,7 +152,8 @@ function MainPage(){
                 inner += '</table>';
             }
 
-            left.innerHTML = inner;
+        left.innerHTML = inner;
+        postFetchum();
     });
 }
 
@@ -162,9 +172,36 @@ function matchPage(id){
                     inner += currMatch.awayLogo + '"></div><div class="AwayScore">' + currMatch.awayScore + '</div><div class="MatchDate">';
                     inner += currMatch.date + '</div><div class="MatchTour">' + currMatch.league + '</div><div class="MatchStadium">';
                     inner += currMatch.stadium + '</div><div class="cover"> <img src="../images/match.png" style="width: 100%;"></div></div></div>';
+
+                    inner += '<div class="mSelector"><div class="matchSelectorMain">შემადგენლობები</div><div class="matchSelector">მიმდინარეობა</div><div class="matchSelector">დეტალები</div></div>';
+
+                    let starters = currMatch.starters;
+                    inner += '<table class="lineups"><thead><tr><td colspan="2">' + currMatch.home + '</td><td colspan="2">';
+                    inner += currMatch.away + ' </td></tr></thead><tbody>';
+                    
+                    for (let j=0; j<starters.length; j++){
+                        let elem = starters[j];
+                        inner += '<tr><td>' + elem.homeNum + '</td><td>' + elem.homeName + '<span>'+ elem.homeSub +'</span></td>';
+                        inner += '<td>' + elem.awayNum + '</td><td>' + elem.awayName + '<span>'+ elem.awaySub +'</span></td></tr>';
+                    }
+
+                    inner += '</tbody> </table>';
+                    
+
+                    inner += '<table class="matchSummary"><tbody><tr><td></td><td>0:1</td>';
+                    inner += '<td>12 კოუტინიო <span>მარჯვენა ფეხით | მალკომი</span></td></tr></tbody></table>';
+                    
+
+                    inner += '<table class="matchDet"><thead><tr><td colspan="2">ინფორმაცია</td></tr></thead>';
+                    inner += '<tbody><tr><td>ტურნირი</td><td>ლა ლიგა, 30-ე ტური</td></tr></tbody></table>';                        
+                    
+                    
+                    
+
                     left.innerHTML = inner;
                 }
             }
+        postFetchum();
     });
 }
 
@@ -191,6 +228,7 @@ function main(){
     } else{
         MainPage();
     }
+    
 }
 
 main();
