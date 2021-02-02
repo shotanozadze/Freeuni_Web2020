@@ -176,6 +176,8 @@ function matchPage(id){
                     inner += '<div class="mSelector"><div class="matchSelectorMain">შემადგენლობები</div><div class="matchSelector">მიმდინარეობა</div><div class="matchSelector">დეტალები</div></div>';
 
                     let starters = currMatch.starters;
+                    let subs = currMatch.subs;
+                    let summary = currMatch.summary;
                     inner += '<table class="lineups"><thead><tr><td colspan="2">' + currMatch.home + '</td><td colspan="2">';
                     inner += currMatch.away + ' </td></tr></thead><tbody>';
                     
@@ -185,19 +187,37 @@ function matchPage(id){
                         inner += '<td>' + elem.awayNum + '</td><td>' + elem.awayName + '<span>'+ elem.awaySub +'</span></td></tr>';
                     }
 
-                    inner += '</tbody> </table>';
+                    inner += '</tbody> <thead><tr><td colspan="4"> სათადარიგო შემადგენლობა </td></tr></thead><tbody>';
+                    for(let j=0; j<subs.length; j++){
+                        let elem = subs[j];
+                        inner += '<tr><td>' + elem.homeNum + '</td><td>' + elem.homeName + '<span style="color: #4da729;">'+ elem.homeSub +'</span></td>';
+                        inner += '<td>' + elem.awayNum + '</td><td>' + elem.awayName + '<span style="color: #4da729;">'+ elem.awaySub +'</span></td></tr>';
+                    }
+                    inner += '</tbody></table>';
+            
                     
 
-                    inner += '<table class="matchSummary"><tbody><tr><td></td><td>0:1</td>';
-                    inner += '<td>12 კოუტინიო <span>მარჯვენა ფეხით | მალკომი</span></td></tr></tbody></table>';
+                    inner += '<table class="matchSummary"><tbody>';
+
+                    for(let j=0; j<summary.length; j++){
+                        let elem = summary[j];
+                        inner += '<tr><td>'+ elem.homeEvent +'<span>' + elem.homeDet + '</span></td><td>' + elem.result + '</td>';
+                        inner += '<td>'+ elem.awayEvent +'<span>' + elem.awayDet + '</span></td></tr>';
+                    }
+                    
+                    inner += '</tbody></table>';
                     
 
-                    inner += '<table class="matchDet"><thead><tr><td colspan="2">ინფორმაცია</td></tr></thead>';
-                    inner += '<tbody><tr><td>ტურნირი</td><td>ლა ლიგა, 30-ე ტური</td></tr></tbody></table>';                        
+                    inner += '<table class="matchDet"><thead><tr><td colspan="2">ინფორმაცია</td></tr></thead><tbody>';
+                    inner += '<tr><td>ტურნირი</td><td>' + currMatch.league + '</td></tr>';
+                    inner += '<tr><td>თარიღი</td><td>' + currMatch.date + '</td></tr>';
+                    inner += '<tr><td>სტადიონი</td><td>' + currMatch.stadium + '</td></tr>';
+                    inner += '<tr><td>დასწრება</td><td>' + currMatch.attendence + '</td></tr>';
+                    inner += '<tr><td>მსაჯი</td><td>' + currMatch.referee + '</td></tr>';
+                    inner += '<tr><td>ლაინსმენი</td><td>' + currMatch.assistant + '</td></tr>';
+                    inner += '<tr><td>ლაინსმენი</td><td>' + currMatch.assistant2 + '</td></tr>';
+                    inner += '</tbody></table>';
                     
-                    
-                    
-
                     left.innerHTML = inner;
                 }
             }

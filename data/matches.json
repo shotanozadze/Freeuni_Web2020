@@ -11,7 +11,7 @@
         "stadium": "მორუმბი",
         "league": "კოპა ამერიკა",
         "stage": "A ჯგუფი, 1-ლი ტური",
-        "attendence": 47.260,
+        "attendence": "47.260",
         "referee": "ნესტორ პიტანა (არგენტინა)",
         "assistant": "ჰერმან მაიდანა (არგენტინა)",
         "assistant2": "ხუან პაბლო ბელატი (არგენტინა)",
@@ -140,9 +140,175 @@
         ],
 
         "subs": [
-            
+            {
+                "homeId": 23,
+                "homeNum": 10,
+                "homeName": "ვილიანი",
+                "homeSub": "84'",
+
+                "awayId": 24,
+                "awayNum": 16,
+                "awayName": "დიეგო ვაიარი",
+                "awaySub": "59'"
+            },
+            {
+                "homeId": 25,
+                "homeNum": 9,
+                "homeName": "გაბრიელ ჟესუსი",
+                "homeSub": "65'",
+
+                "awayId": 26,
+                "awayNum": 19,
+                "awayName": "რამირო ვაკა",
+                "awaySub": "75'"
+            },
+            {
+                "homeId": 27,
+                "homeNum": 19,
+                "homeName": "ევერტონი",
+                "homeSub": "81'",
+
+                "awayId": 28,
+                "awayNum": 11,
+                "awayName": "ლეონარდო ვაკა",
+                "awaySub": "64'"
+            },
+            {
+                "homeId": 29,
+                "homeNum": 16,
+                "homeName": "კასიო",
+                "homeSub": "",
+
+                "awayId": 30,
+                "awayNum": 12,
+                "awayName": "რუბენ კორდანო",
+                "awaySub": ""
+            },
+            {
+                "homeId": 31,
+                "homeNum": 3,
+                "homeName": "მირანდა",
+                "homeSub": "",
+
+                "awayId": 32,
+                "awayNum": 23,
+                "awayName": "ხავიერ როხასი",
+                "awaySub": ""
+            },
+            {
+                "homeId": 33,
+                "homeNum": 12,
+                "homeName": "ალექს სანდრო",
+                "homeSub": "",
+
+                "awayId": 34,
+                "awayNum": 2,
+                "awayName": "საულ ტორესი",
+                "awaySub": ""
+            },
+            {
+                "homeId": 35,
+                "homeNum": 14,
+                "homeName": "ედერ მილიტაო",
+                "homeSub": "",
+
+                "awayId": 36,
+                "awayNum": 5,
+                "awayName": "მარიო კუელარი",
+                "awaySub": ""
+            },
+            {
+                "homeId": 37,
+                "homeNum": 22,
+                "homeName": "ფაგნერი",
+                "homeSub": "",
+
+                "awayId": 38,
+                "awayNum": 21,
+                "awayName": "რობერტო ფერნანდესი",
+                "awaySub": ""
+            },
+            {
+                "homeId": 39,
+                "homeNum": 8,
+                "homeName": "არტური",
+                "homeSub": "",
+
+                "awayId": 40,
+                "awayNum": 10,
+                "awayName": "სამუელ გალენდო",
+                "awaySub": ""
+            },
+            {
+                "homeId": 41,
+                "homeNum": 15,
+                "homeName": "ალანი",
+                "homeSub": "",
+
+                "awayId": 42,
+                "awayNum": 13,
+                "awayName": "ხოსე კარასკო",
+                "awaySub": ""
+            },
+            {
+                "homeId": 43,
+                "homeNum": 18,
+                "homeName": "ლუკას პაკეტა",
+                "homeSub": "",
+
+                "awayId": 44,
+                "awayNum": 15,
+                "awayName": "კრისტიან არანო",
+                "awaySub": ""
+            },
+            {
+                "homeId": "",
+                "homeNum": "",
+                "homeName": "",
+                "homeSub": "",
+
+                "awayId": 46,
+                "awayNum": 18,
+                "awayName": "ჟილბერტ ალვარესი",
+                "awaySub": ""
+            }
+        ],
+        "summary": [
+            {
+                "homeEvent": "",
+                "homeDet": "",
+                "result": "-",
+                "awayEvent": "20' ფერნანდო საუსედო",
+                "awayDet": "ყვითელი ბარათი"
+            },
+            {
+                "homeEvent": "50' კოუტინიო",
+                "homeDet": "პენალტი",
+                "result": "1:0",
+                "awayEvent": "",
+                "awayDet": ""
+            },
+            {
+                "homeEvent": "53' კოუტინიო",
+                "homeDet": "თავით | რობერტო ფირმინო",
+                "result": "2:0",
+                "awayEvent": "",
+                "awayDet": ""
+            },
+            {
+                "homeEvent": "66' კოუტინიო",
+                "homeDet": "ყვითელი ბარათი",
+                "result": "-",
+                "awayEvent": "",
+                "awayDet": ""
+            },
+            {
+                "homeEvent": "85' ევერტონი",
+                "homeDet": "მარჯვენა ფეხით | ფერნანდინიო",
+                "result": "3:0",
+                "awayEvent": "",
+                "awayDet": ""
+            }
         ]
-
-
     }
 ]
