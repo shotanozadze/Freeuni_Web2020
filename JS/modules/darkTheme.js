@@ -9,7 +9,7 @@ let nav = document.querySelector('#right > div:nth-child(1) > div.navItem');
 let bars = document.getElementsByClassName('barsection');
 let barnames = document.getElementsByClassName('barname');
 let standingsTab = document.querySelector('#right > div:nth-child(2) > table');
-let teamProfileTab = document.querySelector('#left > div.TeamProfile > table');
+
 
 function makeDark(){
     bg.style.background = '#232323';
@@ -96,6 +96,7 @@ function makeDark(){
     }
 
     // team profile
+    let teamProfileTab = document.querySelector('#left > div.TeamProfile > table');
     if (teamProfileTab != null){
         let MatchDetbody = teamProfileTab.getElementsByTagName('tbody')[0];
         let MatchDetrows = MatchDetbody.getElementsByTagName('tr');
@@ -200,6 +201,7 @@ function makeLight(){
     }
 
     // team profile
+    let teamProfileTab = document.querySelector('#left > div.TeamProfile > table');
     if (teamProfileTab != null){
         let MatchDetbody = teamProfileTab.getElementsByTagName('tbody')[0];
         let MatchDetrows = MatchDetbody.getElementsByTagName('tr');
@@ -300,6 +302,7 @@ function makeDarkMob(){
     }
 
     // team profile
+    let teamProfileTab = document.querySelector('#left > div.TeamProfile > table');
     if (teamProfileTab != null){
         let MatchDetbody = teamProfileTab.getElementsByTagName('tbody')[0];
         let MatchDetrows = MatchDetbody.getElementsByTagName('tr');
@@ -399,6 +402,7 @@ function makeLightMob(){
     }
 
     // team profile
+    let teamProfileTab = document.querySelector('#left > div.TeamProfile > table');
     if (teamProfileTab != null){
         let MatchDetbody = teamProfileTab.getElementsByTagName('tbody')[0];
         let MatchDetrows = MatchDetbody.getElementsByTagName('tr');

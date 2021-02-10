@@ -5,6 +5,7 @@ let left = document.querySelector('#left');
 
 function postFetchum(){
     mSelector.mSelect();
+    tSelector.tSelect();
     dark.switch();
 }
 
@@ -219,9 +220,95 @@ function matchPage(id){
                     inner += '</tbody></table>';
                     
                     left.innerHTML = inner;
+                    break;
                 }
             }
         postFetchum();
+    });
+}
+
+function teamPage(id){
+    let comp = 'data/teams.json';
+    let inner = '';
+    fetch(comp)
+        .then(response => response.json())
+        .then((result) => {
+            for (let i=0; i<result.length; i++){
+                let currTeam = result[i];
+                if (currTeam.id == id){
+                    inner += '<div class="TeamNameBar"><img src="https://secure.cache.images.core.optasports.com/soccer/teams/150x150/2017.png">ბარსელონა </div>';
+                    inner += '<div class="mSelector"><div class="matchSelectorMain">პროფილი</div><div class="matchSelector">შემადგენლობა</div><div class="matchSelector">მატჩები</div></div>';
+                    inner += '<div class="TeamProfile"><table class="matchDet" style="display: table; margin-top: 0;"><thead>';
+                    inner += '<tr><td colspan="2">გუნდის პროფილი</td></tr></thead><tbody>';
+                    inner += '<tr><td>გუნდი</td><td>' + currTeam.name + '</td></tr>';
+                    inner += '<tr><td>ქვეყანა</td><td>' + currTeam.country + '</td></tr>';
+                    inner += '<tr><td>მეტსახელი</td><td>' + currTeam.nicknames + '</td></tr>';
+                    inner += '<tr><td>დაარსება</td><td>' + currTeam.found + '</td></tr>';
+                    inner += '<tr><td>ფერები</td><td>' + currTeam.colors + '</td></tr>';
+                    inner += '<tr><td>წევრები</td><td>' + currTeam.members + '</td></tr>';
+                    inner += '<tr><td>სტადიონი</td><td>' + currTeam.stadium + '</td></tr>';
+                    inner += '<tr><td>მისამართი</td><td>' + currTeam.address + '</td></tr>';
+                    inner += '<tr><td>ტელეფონი</td><td>' + currTeam.phone + '</td></tr>';
+                    inner += '<tr><td>ფაქსი</td><td>' + currTeam.fax + '</td></tr>';
+                    inner += '<tr><td>ვებ-გვერდი</td><td>' + currTeam.web + '</td></tr>';
+                    inner += '<tr><td>ელ-ფოსტა</td><td>' + currTeam.mail + '</td></tr>';
+                    inner += '</tbody></table></div>';
+
+                    inner += '<div class="TeamSquad">';
+                    inner += '<table class="SquadTB"><thead><tr><td colspan="5"> მეკარეები </td></tr></thead><tbody>';
+                    let goalkeepers = currTeam.goalkeepers;
+                    for (let j=0; j<goalkeepers.length; j++){
+                        let player = goalkeepers[j];
+                        inner += '<tr><td> <div class="num">'+ player.num +'</div> </td>';
+                        inner += '<td> <img src="' + player.img + '"> </td>';
+                        inner += '<td>'+ player.name +'</td>';
+                        inner += '<td> <img src="../images/spain.png"> </td>';
+                        inner += '<td>'+ player.born +'</td></tr>';
+                    }
+                    inner += '</tbody><thead><tr><td colspan="5"> მცველები </td></tr></thead><tbody>';
+
+                    let defenders = currTeam.defenders;
+                    for (let j=0; j<defenders.length; j++){
+                        let player = defenders[j];
+                        inner += '<tr><td> <div class="num">'+ player.num +'</div> </td>';
+                        inner += '<td> <img src="' + player.img + '"> </td>';
+                        inner += '<td>'+ player.name +'</td>';
+                        inner += '<td> <img src="../images/spain.png"> </td>';
+                        inner += '<td>'+ player.born +'</td></tr>';
+                    }
+                    inner += '</tbody><thead><tr><td colspan="5"> ნახევარმცველები </td></tr></thead><tbody>';
+
+                    let mids = currTeam.midfielders;
+                    for (let j=0; j<mids.length; j++){
+                        let player = mids[j];
+                        inner += '<tr><td> <div class="num">'+ player.num +'</div> </td>';
+                        inner += '<td> <img src="' + player.img + '"> </td>';
+                        inner += '<td>'+ player.name +'</td>';
+                        inner += '<td> <img src="../images/spain.png"> </td>';
+                        inner += '<td>'+ player.born +'</td></tr>';
+                    }
+                    inner += '</tbody><thead><tr><td colspan="5"> თავდამსხმელები </td></tr></thead><tbody>';
+
+                    let attackers = currTeam.attackers;
+                    for (let j=0; j<attackers.length; j++){
+                        let player = attackers[j];
+                        inner += '<tr><td> <div class="num">'+ player.num +'</div> </td>';
+                        inner += '<td> <img src="' + player.img + '"> </td>';
+                        inner += '<td>'+ player.name +'</td>';
+                        inner += '<td> <img src="../images/spain.png"> </td>';
+                        inner += '<td>'+ player.born +'</td></tr>';
+                    }
+                    inner += '</tbody><thead><tr><td colspan="5"> მთავარი მწვრთნელი </td></tr></thead></table></div>';
+                    
+
+                    inner += '<div class="TeamMatches"><table class="matchestb"><thead><tr><td colspan="4"> ბოლო მატჩები </td></tr></thead>';
+                    inner += '<tbody><tr><td>25.02</td><td>ელჩე</td><td>3:3</td><td>სელტა</td></tr></tbody></table></div>';
+
+                    left.innerHTML = inner;
+                    break;
+                }
+            }
+        postFetchum(); 
     });
 }
 
@@ -240,7 +327,7 @@ function main(){
             competition(id, season, stage);
         }
     } else if(params.has('team_id')){
-
+        teamPage(params.get('team_id'));
     } else if(params.has('match_id')){
         matchPage(params.get('match_id'));
     } else if(params.has('player_id')){

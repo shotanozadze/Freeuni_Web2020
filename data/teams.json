@@ -1,0 +1,43 @@
+[
+    {   
+        "id": 1,
+        "name": "ბარსელონა",
+        "icon": "",
+        "country": "ესპანეთი",
+        "nicknames": "ბარსა, ბლაუგრანა, აზულგრანა, კულეები",
+        "found": "29/11/1899",
+        "colors": "ლურჯ-ბროწეულისფერი",
+        "members": "173 000",
+        "stadium": "კამპ ნოუ (99.354)",
+        "address": "Avenida Arístides Maillol 08028 Barcelona",
+        "phone": "0 93 / 49 63 600",
+        "fax": "0 93 / 41 12 219",
+        "web": "https://www.fcbarcelona.com/",
+        "mail": "secretaria@club.fcbarcelona.com",
+        "goalkeepers": [
+            {
+                "id": 1,
+                "name": "ტერ შტეგენი",
+                "num": 1,
+                "country": "Germany",
+                "born": "25/06/1992",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/102525.png"
+            }
+        ],
+        "defenders": [
+
+        ],
+        "midfielders": [
+
+        ],
+        "attackers": [
+
+        ],
+        "coach": {
+
+        },
+        "matches": [
+
+        ]
+    }
+]
