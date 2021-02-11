@@ -2228,3 +2228,51 @@ body {
     border-radius: 5px;
     margin-left: 10%;
 }
+
+.playerProfile{
+    width: 55%;
+    background: #000000c4;
+    position: absolute;
+    z-index: 1;
+    color: white;
+    font-family: 'boxo';
+    margin: 3%;
+    border: 1px solid #33474f;
+    border-collapse: collapse;
+    overflow: hidden;
+    cursor: default;
+}
+
+.playerProfile tbody>tr{
+    border-top: 1px solid #33474f;
+    line-height: 25px;
+    transition: 1s;
+}
+
+.playerProfile tbody>tr:hover{
+    background: #f6c246;
+    color: #2f3336;
+}
+
+.playerProfile tbody>tr>td{
+    border-right: 1px solid #33474f;
+    padding-left: 10px;
+    width: 35%;
+}
+
+.playerProfile tbody>tr>td:nth-child(2n){
+    width: 65%;
+}
+
+.playerPh {
+    position: absolute;
+    z-index: 1;
+    right: 2%;
+    width: 30%;
+    margin-top: 3%;
+}
+
+.playerPh img {
+    width: 100%;
+    height: auto;
+}
