@@ -316,6 +316,7 @@ body {
         font-family: DejaVuNeueCaps !important;
         font-size: 1.9em !important;
         font-weight: bold !important;
+        user-select: none;
     }
 }
 
@@ -1602,6 +1603,13 @@ body {
         margin-top: 10px;
         margin-bottom: 2%;
         display: none;
+
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
     }
     
     .matchDet thead>tr {
@@ -1752,6 +1760,7 @@ body {
     border-top-right-radius: 10px;
     height: 60px;
     margin-bottom: -15px;
+    font-weight: bold;
 }
 
 .TeamNameBar img {
@@ -1769,11 +1778,13 @@ body {
         font-family: boxo;
         text-align: left;
         color: #ffffff;
-        font-size: 50px;
+        font-size: 60px;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         height: 120px;
         margin-bottom: -13px;
+        user-select: none;
+        font-weight: bold;
     }
     
     .TeamNameBar img {
@@ -2103,6 +2114,10 @@ body {
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
+        width: 99%;
+        margin-left: 0.4%;
+        margin-bottom: 50px;
+        margin-top: 50px;
     }
 
     .mainStandings thead>tr {

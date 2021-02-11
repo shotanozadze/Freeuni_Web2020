@@ -35,3 +35,8 @@
     font-family: boxo;
     src: url(fonts/boxo.ttf);
 }
+
+@font-face {
+    font-family: nums;
+    src: url(fonts/nums.ttf);
+}

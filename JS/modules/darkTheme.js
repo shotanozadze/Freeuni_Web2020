@@ -110,6 +110,22 @@ function makeDark(){
 
     }
 
+    // main standins dark
+    let stands = document.getElementsByClassName('mainStandings');
+    if (stands.length>0){
+        let tb = stands[0];
+        tb.style.border = '1px solid #2f3336';
+        let standRows = tb.getElementsByTagName('tr');
+
+        for (let i=1; i<standRows.length; i++){
+            standRows[i].style.color = '#ffffff';
+            standRows[i].style.borderTop = "1px solid #232323";
+            if (i%2 === 0) {
+                standRows[i].style.background = '#2f3336';
+            }
+        }
+    }
+
     isDark = true;
 }
 
@@ -215,6 +231,22 @@ function makeLight(){
 
     }
 
+    // main standins dark
+    let stands = document.getElementsByClassName('mainStandings');
+    if (stands.length>0){
+        let tb = stands[0];
+        tb.style.border = '1px solid #e2e2e2';
+        let standRows = tb.getElementsByTagName('tr');
+
+        for (let i=1; i<standRows.length; i++){
+            standRows[i].style.color = '#2d2d2d';
+            standRows[i].style.borderTop = "1px solid #e2e2e2";
+            if (i%2 === 0) {
+                standRows[i].style.background = '#f5f5f5';
+            }
+        }
+    }
+
     isDark = false;
 }
 
@@ -315,6 +347,22 @@ function makeDarkMob(){
         }
     }
 
+    // main standins dark
+    let stands = document.getElementsByClassName('mainStandings');
+    if (stands.length>0){
+        let tb = stands[0];
+        tb.style.border = '2px solid #2f3336';
+        let standRows = tb.getElementsByTagName('tr');
+
+        for (let i=1; i<standRows.length; i++){
+            standRows[i].style.color = '#ffffff';
+            standRows[i].style.borderTop = "2px solid #232323";
+            if (i%2 === 0) {
+                standRows[i].style.background = '#2f3336';
+            }
+        }
+    }
+
     isDark = true;
 }
 
@@ -412,6 +460,22 @@ function makeLightMob(){
             MatchDetrows[i].getElementsByTagName('td')[0].style.borderRight = '2px solid #e2e2e2';
             let MatchDetrowscol = MatchDetrows[i].getElementsByTagName('td')[1];
             MatchDetrowscol.style.color = '#2d2d2d';
+        }
+    }
+
+    // main standins dark
+    let stands = document.getElementsByClassName('mainStandings');
+    if (stands.length>0){
+        let tb = stands[0];
+        tb.style.border = '2px solid #e2e2e2';
+        let standRows = tb.getElementsByTagName('tr');
+
+        for (let i=1; i<standRows.length; i++){
+            standRows[i].style.color = '#2d2d2d';
+            standRows[i].style.borderTop = "2px solid #e2e2e2";
+            if (i%2 === 0) {
+                standRows[i].style.background = '#f5f5f5';
+            }
         }
     }
 
