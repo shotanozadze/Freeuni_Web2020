@@ -2229,6 +2229,21 @@ body {
     margin-left: 10%;
 }
 
+.playerTitle{
+    width: 97%;
+    background: #2f3336;
+    color: #dadada;
+    font-family: boxo;
+    font-weight: bold;
+    font-size: 27px;
+    padding-top: 13px;
+    padding-bottom: 11px;
+    padding-left: 3%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom: 5px solid #f6c246;
+}
+
 .playerProfile{
     width: 55%;
     background: #000000c4;
@@ -2270,9 +2285,12 @@ body {
     right: 2%;
     width: 30%;
     margin-top: 3%;
+    border: 2px solid #f7f7f7;
+    border-radius: 9px;
 }
 
 .playerPh img {
     width: 100%;
     height: auto;
+    border-radius: 7px;
 }
