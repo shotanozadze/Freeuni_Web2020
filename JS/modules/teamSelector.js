@@ -7,7 +7,7 @@ function teamSelect(){
     let squads = document.querySelector('#left > div.TeamSquad');
     let matches = document.querySelector('#left > div.TeamMatches');
 
-    if(profileButt!=null){
+    if(profile!=null && squads!=null && matches!=null){
         profileButt.addEventListener('click', function(){
             profile.style.display = "block";
             squads.style.display = "none";

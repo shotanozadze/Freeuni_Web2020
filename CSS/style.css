@@ -2294,3 +2294,72 @@ body {
     height: auto;
     border-radius: 7px;
 }
+
+.playerStats{
+    width: 100%;
+    font-family: 'boxo';
+    border: 0;
+    border-collapse: collapse;
+    overflow: hidden;
+    color: #2d2d2d;
+    cursor: default;
+}
+
+.playerStats thead>tr{
+    line-height: 35px;
+    border-bottom: 1px solid #e7e7e7;
+    background: #dadada;
+    font-size: 20px;
+}
+
+.playerStats tbody>tr{
+    line-height: 38px;
+    border-bottom: 1px solid #e7e7e7;
+    transition: 1s;
+}
+
+.playerStats tbody>tr:hover{
+    background: #f6c246;
+}
+
+.playerStats thead>tr>td{
+    text-align: center;
+}
+
+.playerStats thead>tr>td img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 20px;
+    max-width: 48%;
+}
+
+.playerStats tbody>tr>td{
+    padding-left: 2%;
+    width: 28%;
+    font-size: 15px;
+}
+
+.playerStats tbody>tr>td:nth-child(2n){
+    padding: 0;
+    text-align: center;
+    width: 8%;
+}
+
+.playerStats tbody>tr>td:nth-child(3n){
+    padding: 0;
+    text-align: center;
+    width: 8%;
+}
+
+.playerStats tbody>tr>td:nth-child(5n){
+    padding: 0;
+    text-align: center;
+    width: 8%;
+}
+
+.playerStats tbody>tr>td:nth-child(7n){
+    padding: 0;
+    text-align: center;
+    width: 8%;
+}

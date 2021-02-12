@@ -7,7 +7,7 @@ function matchSelector(){
     let goalsTable = document.querySelector('#left > table.matchSummary');
     let detailsTable = document.querySelector('#left > table.matchDet');
     
-    if (squad!=null){
+    if (squadTable!=null && goalsTable!=null && detailsTable!=null){
         squad.addEventListener('click', function(){
             if (squadTable!=null){
                 squadTable.style.display = "table";

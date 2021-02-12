@@ -1,11 +1,14 @@
 import * as dark from './modules/darkTheme.js';
 import * as mSelector from './modules/matchSelector.js';
 import * as tSelector from './modules/teamSelector.js';
+import * as pSelector from './modules/playerSelector.js';
+
 let left = document.querySelector('#left');
 
 function postFetchum(){
     mSelector.mSelect();
     tSelector.tSelect();
+    pSelector.pSelect();
     dark.switch();
 }
 
@@ -312,6 +315,78 @@ function teamPage(id){
     });
 }
 
+function playerPage(id){
+    let comp = 'data/players.json';
+    let inner = '';
+    fetch(comp)
+        .then(response => response.json())
+        .then((result) => {
+            for (let i=0; i<result.length; i++){
+                let currPlayer = result[i];
+                if (currPlayer.id == id){
+                    inner += '<div class="playerTitle">'+ currPlayer.firstname + ' ' + currPlayer.lastname + '</div>';
+                    inner += '<div class="match-inner" role="listbox"><div class="item active"><table class="playerProfile"><tbody>';
+                    inner += '<tr><td>სახელი</td><td>'+ currPlayer.firstname +'</td></tr>';
+                    inner += '<tr><td>გვარი</td><td>'+ currPlayer.lastname +'</td></tr>';
+                    inner += '<tr><td>დაბ. თარიღი</td><td>'+ currPlayer.bornday +'</td></tr>';
+                    inner += '<tr><td>დაბ. ადგილი</td><td>'+ currPlayer.bornplace +'</td></tr>';
+                    inner += '<tr><td>ეროვნება</td><td>'+ currPlayer.country +'</td></tr>';
+                    inner += '<tr><td>სიმაღლე</td><td>'+ currPlayer.height +' სმ</td></tr>';
+                    inner += '<tr><td>წონა</td><td>'+ currPlayer.weight +' კგ</td></tr>';
+                    inner += '<tr><td>პოზიცია</td><td>'+ currPlayer.position +'</td></tr>';
+                    inner += '<tr><td>ფეხი</td><td>'+ currPlayer.foot +'</td></tr>';
+                    inner += '</tbody></table><div class="playerPh"> <img src="' + currPlayer.image + '"> </div>';
+                    inner += '<div class="cover"> <img src="../images/playerbg.png" style="width: 100%;"></div></div></div>';
+                    inner += '<div class="mSelector"><div class="matchSelectorMain">საკლუბო სტატისტიკა</div><div class="matchSelector">სანაკრებო სტატისტიკა</div></div>';
+
+                    inner += '<table class="playerStats" id="clubStats"><thead><tr><td>ჩემპიონატი</td><td> </td><td><img src="../images/black_kit.png"></td>';
+                    inner += '<td><img src="../images/goal.png"></td><td><img src="../images/green_kit.png"></td><td><img src="../images/sub_in.png"></td><td><img src="../images/sub_out.png"></td>';
+                    inner += '<td><img src="../images/yellow_card.png"></td><td><img src="../images/yr_card.png"></td><td><img src="../images/red_card.png"></td></tr></thead><tbody>';
+
+                    let clubst = currPlayer.clubStats;
+                    for(let j=0; j<clubst.length; j++){
+                        let currCompet = clubst[j];
+                        inner += '<tr><td>'+ currCompet.competition +'</td><td></td>';
+                        inner += '<td>'+ currCompet.matches +'</td>';
+                        inner += '<td>'+ currCompet.goals +'</td>';
+                        inner += '<td>'+ currCompet.lineup +'</td>';
+                        inner += '<td>'+ currCompet.subin +'</td>';
+                        inner += '<td>'+ currCompet.subout +'</td>';
+                        inner += '<td>'+ currCompet.yellow +'</td>';
+                        inner += '<td>'+ currCompet.yellowred +'</td>';
+                        inner += '<td>'+ currCompet.red +'</td></tr>';
+                    }
+
+                    inner += '</tbody></table>';
+
+                    inner += '<table class="playerStats" id="nationalStats" style="display: none;"><thead><tr><td>ჩემპიონატი</td><td> </td><td><img src="../images/black_kit.png"></td>';
+                    inner += '<td><img src="../images/goal.png"></td><td><img src="../images/green_kit.png"></td><td><img src="../images/sub_in.png"></td><td><img src="../images/sub_out.png"></td>';
+                    inner += '<td><img src="../images/yellow_card.png"></td><td><img src="../images/yr_card.png"></td><td><img src="../images/red_card.png"></td></tr></thead><tbody>';
+
+                    let nationalst = currPlayer.nationalStats;
+                    for(let j=0; j<nationalst.length; j++){
+                        let currCompet = nationalst[j];
+                        inner += '<tr><td>'+ currCompet.competition +'</td><td></td>';
+                        inner += '<td>'+ currCompet.matches +'</td>';
+                        inner += '<td>'+ currCompet.goals +'</td>';
+                        inner += '<td>'+ currCompet.lineup +'</td>';
+                        inner += '<td>'+ currCompet.subin +'</td>';
+                        inner += '<td>'+ currCompet.subout +'</td>';
+                        inner += '<td>'+ currCompet.yellow +'</td>';
+                        inner += '<td>'+ currCompet.yellowred +'</td>';
+                        inner += '<td>'+ currCompet.red +'</td></tr>';
+                    }
+
+                    inner += '</tbody></table>';
+
+                    left.innerHTML = inner;
+                    break;
+                }
+            }
+        postFetchum(); 
+    });
+}
+
 function main(){
     const path = window.location.search;
     const params = new URLSearchParams(path);
@@ -331,7 +406,7 @@ function main(){
     } else if(params.has('match_id')){
         matchPage(params.get('match_id'));
     } else if(params.has('player_id')){
-
+        playerPage(params.get('player_id'));
     } else{
         MainPage();
     }

@@ -1,0 +1,85 @@
+[
+    {
+        "id": 1,
+        "firstname": "ლიონელ ანდრეს",
+        "lastname": "მესი",
+        "bornday": "24/06/1987",
+        "bornplace": "როსარიო, არგენტინა",
+        "country": "არგენტინა",
+        "height": "170",
+        "weight": "72",
+        "position": "ნახევარმცველი",
+        "foot": "მარცხენა",
+        "image": "https://s.hs-data.com/bilder/spieler/gross/26622.jpg?fallback=png",
+        "clubStats": [
+            {
+                "competition": "ჩემპიონთა ლიგა",
+                "matches": 1,
+                "goals": 1,
+                "lineup": 1,
+                "subin": 1,
+                "subout": 1,
+                "yellow": 1,
+                "yellowred": 1,
+                "red": 1                
+            },
+            {
+                "competition": "ლა ლიგა",
+                "matches": 1,
+                "goals": 1,
+                "lineup": 1,
+                "subin": 1,
+                "subout": 1,
+                "yellow": 1,
+                "yellowred": 1,
+                "red": 1                
+            },
+            {
+                "competition": "სამეფო თასი",
+                "matches": 1,
+                "goals": 1,
+                "lineup": 1,
+                "subin": 1,
+                "subout": 1,
+                "yellow": 1,
+                "yellowred": 1,
+                "red": 1                
+            }
+        ],
+        "nationalStats": [
+            {
+                "competition": "მსოფლიო ჩემპიონატი",
+                "matches": 1,
+                "goals": 1,
+                "lineup": 1,
+                "subin": 1,
+                "subout": 1,
+                "yellow": 1,
+                "yellowred": 1,
+                "red": 1                
+            },
+            {
+                "competition": "კოპა ამერიკა",
+                "matches": 1,
+                "goals": 1,
+                "lineup": 1,
+                "subin": 1,
+                "subout": 1,
+                "yellow": 1,
+                "yellowred": 1,
+                "red": 1                
+            },
+            {
+                "competition": "შესარჩევი",
+                "matches": 1,
+                "goals": 1,
+                "lineup": 1,
+                "subin": 1,
+                "subout": 1,
+                "yellow": 1,
+                "yellowred": 1,
+                "red": 1                
+            }
+        ]
+    }
+]
