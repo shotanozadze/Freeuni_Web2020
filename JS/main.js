@@ -4,6 +4,7 @@ import * as tSelector from './modules/teamSelector.js';
 import * as pSelector from './modules/playerSelector.js';
 
 let left = document.querySelector('#left');
+let compets = [3];
 
 function postFetchum(){
     mSelector.mSelect();
@@ -12,8 +13,20 @@ function postFetchum(){
     dark.switch();
 }
 
+function notFoundPage(){
+    left.innerHTML = '<div class="notFound"><div class="notFound_title"> ყურადღება! აღმოჩენილია შეცდომა </div><div>ამ მისამართზე გვერდი ვერ მოიძებნა...</div></div>';
+    postFetchum();
+}
+
 function competition(id, season, stage){
+    if (!compets.includes(id)){
+        notFoundPage();
+        return;
+    }
+
+    let found = false;
     let comp = 'data/competitions/' + id + '.json';
+
     fetch(comp)
         .then(response => response.json())
         .then((result) => {
@@ -113,16 +126,17 @@ function competition(id, season, stage){
                         inner += '</tbody>  </table>';
 
                         left.innerHTML = inner;
-
-                    } else{
-                        // not found
+                        found = true;
+                        break;
                     }
 
-                } else{
-                    // not found
                 }
             }
-        postFetchum();
+        if (found){
+            postFetchum();
+        } else{
+            notFoundPage();
+        }
     });
     
 }
@@ -164,6 +178,7 @@ function MainPage(){
 function matchPage(id){
     let comp = 'data/matches.json';
     let inner = '';
+    let found = false;
     fetch(comp)
         .then(response => response.json())
         .then((result) => {
@@ -223,14 +238,22 @@ function matchPage(id){
                     inner += '</tbody></table>';
                     
                     left.innerHTML = inner;
+                    found = true;
                     break;
                 }
             }
-        postFetchum();
+
+        if (found){
+            postFetchum();
+        } else{
+            notFoundPage();
+        }
+        
     });
 }
 
 function teamPage(id){
+    let found = false;
     let comp = 'data/teams.json';
     let inner = '';
     fetch(comp)
@@ -308,14 +331,21 @@ function teamPage(id){
                     inner += '<tbody><tr><td>25.02</td><td>ელჩე</td><td>3:3</td><td>სელტა</td></tr></tbody></table></div>';
 
                     left.innerHTML = inner;
+                    found = true;
                     break;
                 }
             }
-        postFetchum(); 
+        
+        if (found){
+            postFetchum();
+        } else{
+            notFoundPage();
+        } 
     });
 }
 
 function playerPage(id){
+    let found = false;
     let comp = 'data/players.json';
     let inner = '';
     fetch(comp)
@@ -388,10 +418,15 @@ function playerPage(id){
                     }
                     inner += '</tbody></table>';
                     left.innerHTML = inner;
+                    found = true;
                     break;
                 }
             }
-        postFetchum(); 
+        if (found){
+            postFetchum();
+        } else{
+            notFoundPage();
+        } 
     });
 }
 
@@ -407,7 +442,7 @@ function main(){
             if(params.has('stage')){
                 stage = parseInt(params.get('stage'));
             }
-            competition(id, season, stage);
+            competition(parseInt(id), season, stage);
         }
     } else if(params.has('team_id')){
         teamPage(params.get('team_id'));

@@ -2415,3 +2415,24 @@ body {
 .playerCareer tbody> tr> td img {
     max-height: 30px;
 }
+
+.notFound{
+    background: #f6c246;
+    width: 95%;
+    padding-left: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'boxo';
+    border-radius: 10px;
+    border-bottom: 5px solid #cd2f2a;
+    border-top: 5px solid #cd2f2a;
+    font-size: 18px;
+    color: #232324;
+}
+
+.notFound_title {
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #cd2f2a;
+}
