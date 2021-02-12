@@ -376,9 +376,17 @@ function playerPage(id){
                         inner += '<td>'+ currCompet.yellowred +'</td>';
                         inner += '<td>'+ currCompet.red +'</td></tr>';
                     }
-
                     inner += '</tbody></table>';
 
+                    inner += '<table class="playerCareer"><thead><tr><td colspan="3">საკლუბო კარიერა</td></tr></thead><tbody>';
+                    let clubCareer = currPlayer.clubCareer;
+                    for(let j=0; j<clubCareer.length; j++){
+                        let currClub = clubCareer[j];
+                        inner += '<tr><td>'+ currClub.time +'</td>';
+                        inner += '<td> <img src="'+ currClub.logo +'"></td>';
+                        inner += '<td>'+ currClub.team +'</td></tr>';
+                    }
+                    inner += '</tbody></table>';
                     left.innerHTML = inner;
                     break;
                 }
