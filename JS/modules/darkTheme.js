@@ -126,6 +126,29 @@ function makeDark(){
         }
     }
 
+    // player page dark
+    let statsTbs = document.getElementsByClassName('playerStats');
+    for(let i=0; i<statsTbs.length; i++){
+        let statTb = statsTbs[i];
+        let statTbrows = statTb.getElementsByTagName('tr');
+
+        for(let j=1; j<statTbrows.length; j++){
+            statTbrows[j].style.color = "#dadada";
+            statTbrows[j].style.borderBottom = "1px solid #2f3336";
+        }
+    }
+
+    let careerTb = document.getElementById("plcareer");
+    if (careerTb!=null){
+        careerTb.style.border = "1px solid #2f3336";
+
+        let careerRows = careerTb.getElementsByTagName('tr');
+        for(let j=1; j<careerRows.length; j++){
+            careerRows[j].style.color = "#dadada";
+            careerRows[j].style.borderTop = "1px solid #2f3336";
+        }
+    }
+
     isDark = true;
 }
 
@@ -231,7 +254,7 @@ function makeLight(){
 
     }
 
-    // main standins dark
+    // main standins light
     let stands = document.getElementsByClassName('mainStandings');
     if (stands.length>0){
         let tb = stands[0];
@@ -244,6 +267,29 @@ function makeLight(){
             if (i%2 === 0) {
                 standRows[i].style.background = '#f5f5f5';
             }
+        }
+    }
+
+    // player page light
+    let statsTbs = document.getElementsByClassName('playerStats');
+    for(let i=0; i<statsTbs.length; i++){
+        let statTb = statsTbs[i];
+        let statTbrows = statTb.getElementsByTagName('tr');
+
+        for(let j=1; j<statTbrows.length; j++){
+            statTbrows[j].style.color = "#2d2d2d";
+            statTbrows[j].style.borderBottom = "1px solid #e7e7e7";
+        }
+    }
+
+    let careerTb = document.getElementById("plcareer");
+    if (careerTb!=null){
+        careerTb.style.border = "1px solid #e7e7e7";
+
+        let careerRows = careerTb.getElementsByTagName('tr');
+        for(let j=1; j<careerRows.length; j++){
+            careerRows[j].style.color = "#2d2d2d";
+            careerRows[j].style.borderTop = "1px solid #e7e7e7";
         }
     }
 
@@ -363,6 +409,29 @@ function makeDarkMob(){
         }
     }
 
+    // player page dark
+    let statsTbs = document.getElementsByClassName('playerStats');
+    for(let i=0; i<statsTbs.length; i++){
+        let statTb = statsTbs[i];
+        let statTbrows = statTb.getElementsByTagName('tr');
+
+        for(let j=1; j<statTbrows.length; j++){
+            statTbrows[j].style.color = "#dadada";
+            statTbrows[j].style.borderBottom = "2px solid #2f3336";
+        }
+    }
+
+    let careerTb = document.getElementById("plcareer");
+    if (careerTb!=null){
+        careerTb.style.border = "2px solid #2f3336";
+
+        let careerRows = careerTb.getElementsByTagName('tr');
+        for(let j=1; j<careerRows.length; j++){
+            careerRows[j].style.color = "#dadada";
+            careerRows[j].style.borderTop = "2px solid #2f3336";
+        }
+    }
+
     isDark = true;
 }
 
@@ -463,7 +532,7 @@ function makeLightMob(){
         }
     }
 
-    // main standins dark
+    // main standins light
     let stands = document.getElementsByClassName('mainStandings');
     if (stands.length>0){
         let tb = stands[0];
@@ -476,6 +545,29 @@ function makeLightMob(){
             if (i%2 === 0) {
                 standRows[i].style.background = '#f5f5f5';
             }
+        }
+    }
+
+    // player page light
+    let statsTbs = document.getElementsByClassName('playerStats');
+    for(let i=0; i<statsTbs.length; i++){
+        let statTb = statsTbs[i];
+        let statTbrows = statTb.getElementsByTagName('tr');
+
+        for(let j=1; j<statTbrows.length; j++){
+            statTbrows[j].style.color = "#2d2d2d";
+            statTbrows[j].style.borderBottom = "2px solid #e7e7e7";
+        }
+    }
+
+    let careerTb = document.getElementById("plcareer");
+    if (careerTb!=null){
+        careerTb.style.border = "2px solid #e7e7e7";
+
+        let careerRows = careerTb.getElementsByTagName('tr');
+        for(let j=1; j<careerRows.length; j++){
+            careerRows[j].style.color = "#2d2d2d";
+            careerRows[j].style.borderTop = "2px solid #e7e7e7";
         }
     }
 

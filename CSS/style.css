@@ -2244,6 +2244,17 @@ body {
     border-bottom: 5px solid #f6c246;
 }
 
+
+@media (max-width: 1000px) {
+    .playerTitle{
+        font-size: 45px;
+        padding-top: 20px;
+        padding-bottom: 17px;
+        border-bottom: 10px solid #f6c246;
+        user-select: none;
+    }
+}
+
 .playerProfile{
     width: 55%;
     background: #000000c4;
@@ -2261,6 +2272,7 @@ body {
 .playerProfile tbody>tr{
     border-top: 1px solid #33474f;
     line-height: 25px;
+    font-size: 15px;
     transition: 1s;
 }
 
@@ -2277,6 +2289,19 @@ body {
 
 .playerProfile tbody>tr>td:nth-child(2n){
     width: 65%;
+}
+
+@media (max-width: 1000px) {
+    .playerProfile{
+        width: 60%;
+        user-select: none;
+    }
+
+    .playerProfile tbody>tr{
+        border-top: 2px solid #33474f;
+        line-height: 45px;
+        font-size: 25px;
+    }
 }
 
 .playerPh {
@@ -2301,7 +2326,6 @@ body {
     border: 0;
     border-collapse: collapse;
     overflow: hidden;
-    color: #2d2d2d;
     cursor: default;
 }
 
@@ -2309,6 +2333,7 @@ body {
     line-height: 35px;
     border-bottom: 1px solid #e7e7e7;
     background: #dadada;
+    color: #2d2d2d;
     font-size: 20px;
 }
 
@@ -2317,15 +2342,34 @@ body {
     border-bottom: 1px solid #e7e7e7;
     transition: 1s;
     font-size: 15px;
+    color: #2d2d2d;
 }
 
 .playerStats tbody>tr:hover{
     background: #f6c246;
+    color: #2d2d2d !important;
     font-size: 16px;
 }
 
 .playerStats thead>tr>td{
+    width: 36%;
     text-align: center;
+}
+
+.playerStats thead>tr>td:nth-child(2n){
+    width: 8%;
+}
+
+.playerStats thead>tr>td:nth-child(3n){
+    width: 8%;
+}
+
+.playerStats thead>tr>td:nth-child(5n){
+    width: 8%;
+}
+
+.playerStats thead>tr>td:nth-child(7n){
+    width: 8%;
 }
 
 .playerStats thead>tr>td img{
@@ -2338,7 +2382,7 @@ body {
 
 .playerStats tbody>tr>td{
     padding-left: 2%;
-    width: 28%;
+    width: 36%;
 }
 
 .playerStats tbody>tr>td:nth-child(2n){
@@ -2363,6 +2407,28 @@ body {
     padding: 0;
     text-align: center;
     width: 8%;
+}
+
+@media (max-width: 1000px) {
+    .playerStats{
+        user-select: none;
+    }
+
+    .playerStats thead>tr{
+        line-height: 70px;
+        border-bottom: 2px solid #e7e7e7;
+        font-size: 30px;
+    }
+
+    .playerStats tbody>tr{
+        line-height: 80px;
+        border-bottom: 2px solid #e7e7e7;
+        font-size: 25px;
+    }
+    
+    .playerStats tbody>tr:hover{
+        font-size: 27px;
+    }
 }
 
 .playerCareer{
@@ -2396,6 +2462,7 @@ body {
 .playerCareer tbody> tr:hover {
     background: #f6c246;
     font-size: 16px;
+    color: #2d2d2d !important;
 }
 
 .playerCareer tbody> tr> td {
@@ -2414,6 +2481,27 @@ body {
 
 .playerCareer tbody> tr> td img {
     max-height: 30px;
+}
+
+@media (max-width: 1000px) {
+    .playerCareer{
+        user-select: none;
+    }
+
+    .playerCareer thead>tr{
+        line-height: 70px;
+        font-size: 30px;
+    }
+
+    .playerCareer tbody> tr {
+        line-height: 80px;
+        font-size: 30px;
+        border-top: 2px solid #e7e7e7;
+    }
+
+    .playerCareer tbody> tr:hover {
+        font-size: 33px;
+    }
 }
 
 .notFound{
@@ -2435,4 +2523,27 @@ body {
     margin-bottom: 15px;
     font-weight: bold;
     color: #cd2f2a;
+}
+
+@media (max-width: 1000px) {
+    .notFound{
+        user-select: none;
+        font-size: 30px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        border-bottom: 15px solid #cd2f2a;
+        border-top: 15px solid #cd2f2a;
+        margin-top: 30px;
+        width: 83%;
+        margin-left: 5%;
+    }
+
+    .notFound_title {
+        font-size: 35px;
+        margin-bottom: 25px;
+    }
+
+    .match-inner {
+        user-select: none;
+    }
 }

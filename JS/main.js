@@ -369,14 +369,14 @@ function playerPage(id){
                     inner += '<div class="cover"> <img src="../images/playerbg.png" style="width: 100%;"></div></div></div>';
                     inner += '<div class="mSelector"><div class="matchSelectorMain">საკლუბო სტატისტიკა</div><div class="matchSelector">სანაკრებო სტატისტიკა</div></div>';
 
-                    inner += '<table class="playerStats" id="clubStats"><thead><tr><td>ჩემპიონატი</td><td> </td><td><img src="../images/black_kit.png"></td>';
+                    inner += '<table class="playerStats" id="clubStats"><thead><tr><td>ჩემპიონატი</td><td><img src="../images/black_kit.png"></td>';
                     inner += '<td><img src="../images/goal.png"></td><td><img src="../images/green_kit.png"></td><td><img src="../images/sub_in.png"></td><td><img src="../images/sub_out.png"></td>';
                     inner += '<td><img src="../images/yellow_card.png"></td><td><img src="../images/yr_card.png"></td><td><img src="../images/red_card.png"></td></tr></thead><tbody>';
 
                     let clubst = currPlayer.clubStats;
                     for(let j=0; j<clubst.length; j++){
                         let currCompet = clubst[j];
-                        inner += '<tr><td>'+ currCompet.competition +'</td><td></td>';
+                        inner += '<tr><td>'+ currCompet.competition +'</td>';
                         inner += '<td>'+ currCompet.matches +'</td>';
                         inner += '<td>'+ currCompet.goals +'</td>';
                         inner += '<td>'+ currCompet.lineup +'</td>';
@@ -389,14 +389,14 @@ function playerPage(id){
 
                     inner += '</tbody></table>';
 
-                    inner += '<table class="playerStats" id="nationalStats" style="display: none;"><thead><tr><td>ჩემპიონატი</td><td> </td><td><img src="../images/black_kit.png"></td>';
+                    inner += '<table class="playerStats" id="nationalStats" style="display: none;"><thead><tr><td>ჩემპიონატი</td><td><img src="../images/black_kit.png"></td>';
                     inner += '<td><img src="../images/goal.png"></td><td><img src="../images/green_kit.png"></td><td><img src="../images/sub_in.png"></td><td><img src="../images/sub_out.png"></td>';
                     inner += '<td><img src="../images/yellow_card.png"></td><td><img src="../images/yr_card.png"></td><td><img src="../images/red_card.png"></td></tr></thead><tbody>';
 
                     let nationalst = currPlayer.nationalStats;
                     for(let j=0; j<nationalst.length; j++){
                         let currCompet = nationalst[j];
-                        inner += '<tr><td>'+ currCompet.competition +'</td><td></td>';
+                        inner += '<tr><td>'+ currCompet.competition +'</td>';
                         inner += '<td>'+ currCompet.matches +'</td>';
                         inner += '<td>'+ currCompet.goals +'</td>';
                         inner += '<td>'+ currCompet.lineup +'</td>';
@@ -408,7 +408,7 @@ function playerPage(id){
                     }
                     inner += '</tbody></table>';
 
-                    inner += '<table class="playerCareer"><thead><tr><td colspan="3">საკლუბო კარიერა</td></tr></thead><tbody>';
+                    inner += '<table class="playerCareer" id="plcareer"><thead><tr><td colspan="3">საკლუბო კარიერა</td></tr></thead><tbody>';
                     let clubCareer = currPlayer.clubCareer;
                     for(let j=0; j<clubCareer.length; j++){
                         let currClub = clubCareer[j];
@@ -443,6 +443,8 @@ function main(){
                 stage = parseInt(params.get('stage'));
             }
             competition(parseInt(id), season, stage);
+        } else{
+            notFoundPage();
         }
     } else if(params.has('team_id')){
         teamPage(params.get('team_id'));
