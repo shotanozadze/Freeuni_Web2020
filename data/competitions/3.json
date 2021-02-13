@@ -1,9 +1,8 @@
 {
     "name": "კოპა ამერიკა",
-    "id": 1,
     "image": "https://icons.whatsthescore.com/competition/m/normal/685.png",
     "seasons":[
-        {   
+        {
             "season": 2019,
             "stages": [
                 {

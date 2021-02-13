@@ -4,7 +4,7 @@ import * as tSelector from './modules/teamSelector.js';
 import * as pSelector from './modules/playerSelector.js';
 
 let left = document.querySelector('#left');
-let compets = [3];
+let compets = [1, 3];
 
 function postFetchum(){
     mSelector.mSelect();
@@ -35,7 +35,6 @@ function competition(id, season, stage){
                 if (ssn == season){
 
                     let stagesArr = result.seasons[s].stages;
-
                     if (stage >= 0 && stage < stagesArr.length ){
                         let standing = stagesArr[stage].table;
                         
