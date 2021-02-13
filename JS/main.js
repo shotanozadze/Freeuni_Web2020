@@ -41,23 +41,23 @@ function competition(id, season, stage){
                         let inner = '';
                         inner += '<div class="innerTitle"> <img src="' + result.image + '">' + result.name +'</div>';
 
-                        inner += '<select class="boxSelector" onchange="location = this.value;">';
-                        for (let i=0; i<result.seasons.length; i++){
-                            let sn = result.seasons[i].season;
-                            inner += '<option value="/?competition_id='+ id + '&season=' + i +'&stage='+ 0 +'" selected>'+ sn +'</option>';
-                        }
-                        inner += '</select>';
+                        // inner += '<select class="boxSelector" onchange="location = this.value;">';
+                        // for (let i=0; i<result.seasons.length; i++){
+                        //     let sn = result.seasons[i].season;
+                        //     inner += '<option value="/?competition_id='+ id + '&season=' + i +'&stage='+ 0 +'" selected>'+ sn +'</option>';
+                        // }
+                        // inner += '</select>';
 
-                        inner += '<select class="boxSelector" onchange="location = this.value;">';
-                        for (let i=0; i<stagesArr.length; i++){
-                            let stg = stagesArr[i].name;
-                            let sel = '';
-                            if (i==stage){
-                                sel = 'selected';
-                            }
-                            inner += '<option value="/?competition_id='+ id + '&season=' + ssn +'&stage='+ i +'"' + sel + '>'+ stg +'</option>';
-                        }
-                        inner += '</select>';
+                        // inner += '<select class="boxSelector" onchange="location = this.value;">';
+                        // for (let i=0; i<stagesArr.length; i++){
+                        //     let stg = stagesArr[i].name;
+                        //     let sel = '';
+                        //     if (i==stage){
+                        //         sel = 'selected';
+                        //     }
+                        //     inner += '<option value="/?competition_id='+ id + '&season=' + ssn +'&stage='+ i +'"' + sel + '>'+ stg +'</option>';
+                        // }
+                        // inner += '</select>';
 
                         inner += '<table class="mainStandings">';
                         inner += '<thead> <tr> <td>#</td> <td><img src="../images/clubcr.png">' + stagesArr[stage].name + '</td> <td>თ</td>';
@@ -196,8 +196,8 @@ function matchPage(id){
                     let starters = currMatch.starters;
                     let subs = currMatch.subs;
                     let summary = currMatch.summary;
-                    inner += '<table class="lineups"><thead><tr><td colspan="2">' + currMatch.home + '</td><td colspan="2">';
-                    inner += currMatch.away + ' </td></tr></thead><tbody>';
+                    inner += '<table class="lineups"><thead><tr><td colspan="2">' + currMatch.homeCoach + '</td><td colspan="2">';
+                    inner += currMatch.awayCoach + ' </td></tr></thead><tbody>';
                     
                     for (let j=0; j<starters.length; j++){
                         let elem = starters[j];
