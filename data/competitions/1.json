@@ -101,8 +101,8 @@
                                     "date": "I ტური",
                                     "home": "ჩელსი",
                                     "away": "ლივერპული",
-                                    "home_id": 1,
-                                    "away_id": 1,
+                                    "home_id": 2,
+                                    "away_id": 3,
                                     "score": "0:2",
                                     "match_id": 1
                                 },
@@ -110,8 +110,8 @@
                                     "date": "I ტური",
                                     "home": "მანჩესტერი",
                                     "away": "ტოტენჰემი",
-                                    "home_id": 1,
-                                    "away_id": 1,
+                                    "home_id": 5,
+                                    "away_id": 6,
                                     "score": "1:6",
                                     "match_id": 2
                                 },
@@ -119,7 +119,7 @@
                                     "date": "I ტური",
                                     "home": "სიტი",
                                     "away": "არსენალი",
-                                    "home_id": 1,
+                                    "home_id": 4,
                                     "away_id": 1,
                                     "score": "1:0",
                                     "match_id": 3
@@ -133,7 +133,7 @@
                                     "date": "II ტური",
                                     "home": "ლივერპული",
                                     "away": "არსენალი",
-                                    "home_id": 1,
+                                    "home_id": 3,
                                     "away_id": 1,
                                     "score": "3:1",
                                     "match_id": 4
@@ -142,8 +142,8 @@
                                     "date": "II ტური",
                                     "home": "მანჩესტერი",
                                     "away": "ჩელსი",
-                                    "home_id": 1,
-                                    "away_id": 1,
+                                    "home_id": 5,
+                                    "away_id": 2,
                                     "score": "0:0",
                                     "match_id": 5
                                 },
@@ -151,8 +151,8 @@
                                     "date": "II ტური",
                                     "home": "ტოტენჰემი",
                                     "away": "სიტი",
-                                    "home_id": 1,
-                                    "away_id": 1,
+                                    "home_id": 6,
+                                    "away_id": 4,
                                     "score": "2:0",
                                     "match_id": 6
                                 }
@@ -165,7 +165,7 @@
                                     "date": "III ტური",
                                     "home": "მანჩესტერი",
                                     "away": "არსენალი",
-                                    "home_id": 1,
+                                    "home_id": 5,
                                     "away_id": 1,
                                     "score": "0:1",
                                     "match_id": 7
@@ -174,8 +174,8 @@
                                     "date": "III ტური",
                                     "home": "სიტი",
                                     "away": "ლივერპული",
-                                    "home_id": 1,
-                                    "away_id": 1,
+                                    "home_id": 4,
+                                    "away_id": 3,
                                     "score": "1:1",
                                     "match_id": 8
                                 },
@@ -183,8 +183,8 @@
                                     "date": "III ტური",
                                     "home": "ჩელსი",
                                     "away": "ტოტენჰემი",
-                                    "home_id": 1,
-                                    "away_id": 1,
+                                    "home_id": 2,
+                                    "away_id": 6,
                                     "score": "0:0",
                                     "match_id": 9
                                 }
@@ -197,7 +197,7 @@
                                     "date": "IV ტური",
                                     "home": "ტოტენჰემი",
                                     "away": "არსენალი",
-                                    "home_id": 1,
+                                    "home_id": 6,
                                     "away_id": 1,
                                     "score": "2:0",
                                     "match_id": 10
@@ -206,8 +206,8 @@
                                     "date": "IV ტური",
                                     "home": "ჩელსი",
                                     "away": "სიტი",
-                                    "home_id": 1,
-                                    "away_id": 1,
+                                    "home_id": 2,
+                                    "away_id": 4,
                                     "score": "1:3",
                                     "match_id": 11
                                 },
@@ -215,8 +215,8 @@
                                     "date": "IV ტური",
                                     "home": "ლივერპული",
                                     "away": "მანჩესტერი",
-                                    "home_id": 1,
-                                    "away_id": 1,
+                                    "home_id": 3,
+                                    "away_id": 5,
                                     "score": "0:0",
                                     "match_id": 12
                                 }
@@ -229,8 +229,8 @@
                                     "date": "V ტური",
                                     "home": "ლივერპული",
                                     "away": "ტოტენჰემი",
-                                    "home_id": 1,
-                                    "away_id": 1,
+                                    "home_id": 3,
+                                    "away_id": 6,
                                     "score": "2:1",
                                     "match_id": 13
                                 },
@@ -239,7 +239,7 @@
                                     "home": "არსენალი",
                                     "away": "ჩელსი",
                                     "home_id": 1,
-                                    "away_id": 1,
+                                    "away_id": 2,
                                     "score": "3:1",
                                     "match_id": 14
                                 },
@@ -247,8 +247,8 @@
                                     "date": "V ტური",
                                     "home": "მანჩესტერი",
                                     "away": "სიტი",
-                                    "home_id": 1,
-                                    "away_id": 1,
+                                    "home_id": 5,
+                                    "away_id": 4,
                                     "score": "0:0",
                                     "match_id": 15
                                 }
@@ -261,8 +261,8 @@
                                     "date": "VI ტური",
                                     "home": "ტოტენჰემი",
                                     "away": "ჩელსი",
-                                    "home_id": 1,
-                                    "away_id": 1,
+                                    "home_id": 6,
+                                    "away_id": 2,
                                     "score": "0:1",
                                     "match_id": 16
                                 },
@@ -270,8 +270,8 @@
                                     "date": "VI ტური",
                                     "home": "ლივერპული",
                                     "away": "სიტი",
-                                    "home_id": 1,
-                                    "away_id": 1,
+                                    "home_id": 3,
+                                    "away_id": 4,
                                     "score": "1:4",
                                     "match_id": 17
                                 },
@@ -280,7 +280,7 @@
                                     "home": "არსენალი",
                                     "away": "მანჩესტერი",
                                     "home_id": 1,
-                                    "away_id": 1,
+                                    "away_id": 5,
                                     "score": "0:0",
                                     "match_id": 18
                                 }
@@ -293,8 +293,8 @@
                                     "date": "VII ტური",
                                     "home": "ტოტენჰემი",
                                     "away": "ლივერპული",
-                                    "home_id": 1,
-                                    "away_id": 1,
+                                    "home_id": 6,
+                                    "away_id": 3,
                                     "score": "1:3",
                                     "match_id": 19
                                 },
@@ -302,8 +302,8 @@
                                     "date": "VII ტური",
                                     "home": "ჩელსი",
                                     "away": "მანჩესტერი",
-                                    "home_id": 1,
-                                    "away_id": 1,
+                                    "home_id": 2,
+                                    "away_id": 5,
                                     "score": "-:-",
                                     "match_id": 20
                                 },
@@ -312,7 +312,7 @@
                                     "home": "არსენალი",
                                     "away": "სიტი",
                                     "home_id": 1,
-                                    "away_id": 1,
+                                    "away_id": 4,
                                     "score": "-:-",
                                     "match_id": 21
                                 }
@@ -325,8 +325,8 @@
                                     "date": "VIII ტური",
                                     "home": "სიტი",
                                     "away": "ტოტენჰემი",
-                                    "home_id": 1,
-                                    "away_id": 1,
+                                    "home_id": 4,
+                                    "away_id": 6,
                                     "score": "-:-",
                                     "match_id": 22
                                 },
@@ -334,8 +334,8 @@
                                     "date": "VIII ტური",
                                     "home": "მანჩესტერი",
                                     "away": "ლივერპული",
-                                    "home_id": 1,
-                                    "away_id": 1,
+                                    "home_id": 5,
+                                    "away_id": 3,
                                     "score": "-:-",
                                     "match_id": 23
                                 },
@@ -343,7 +343,7 @@
                                     "date": "VIII ტური",
                                     "home": "ჩელსი",
                                     "away": "არსენალი",
-                                    "home_id": 1,
+                                    "home_id": 2,
                                     "away_id": 1,
                                     "score": "-:-",
                                     "match_id": 24
@@ -357,8 +357,8 @@
                                     "date": "IX ტური",
                                     "home": "ტოტენჰემი",
                                     "away": "მანჩესტერი",
-                                    "home_id": 1,
-                                    "away_id": 1,
+                                    "home_id": 6,
+                                    "away_id": 5,
                                     "score": "-:-",
                                     "match_id": 25
                                 },
@@ -366,8 +366,8 @@
                                     "date": "IX ტური",
                                     "home": "სიტი",
                                     "away": "ჩელსი",
-                                    "home_id": 1,
-                                    "away_id": 1,
+                                    "home_id": 4,
+                                    "away_id": 2,
                                     "score": "-:-",
                                     "match_id": 26
                                 },
@@ -376,7 +376,7 @@
                                     "home": "არსენალი",
                                     "away": "ლივერპული",
                                     "home_id": 1,
-                                    "away_id": 1,
+                                    "away_id": 3,
                                     "score": "-:-",
                                     "match_id": 27
                                 }
@@ -389,8 +389,8 @@
                                     "date": "X ტური",
                                     "home": "სიტი",
                                     "away": "მანჩესტერი",
-                                    "home_id": 1,
-                                    "away_id": 1,
+                                    "home_id": 4,
+                                    "away_id": 5,
                                     "score": "-:-",
                                     "match_id": 28
                                 },
@@ -399,7 +399,7 @@
                                     "home": "არსენალი",
                                     "away": "ტოტენჰემი",
                                     "home_id": 1,
-                                    "away_id": 1,
+                                    "away_id": 6,
                                     "score": "-:-",
                                     "match_id": 29
                                 },
@@ -407,8 +407,8 @@
                                     "date": "X ტური",
                                     "home": "ლივერპული",
                                     "away": "ჩელსი",
-                                    "home_id": 1,
-                                    "away_id": 1,
+                                    "home_id": 3,
+                                    "away_id": 2,
                                     "score": "-:-",
                                     "match_id": 30
                                 }

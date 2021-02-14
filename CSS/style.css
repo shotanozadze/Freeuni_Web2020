@@ -544,11 +544,18 @@ body {
     text-align: center;
     border-right: 1px solid #e2e2e2;
 }
+
+.matchestb tbody>tr>td a{
+    text-decoration: none;
+    color: currentcolor;
+}
+
 .matchestb tbody>tr>td:nth-child(2n) {
     width: 39%;
     text-align: right;
     border-right: none;
 }
+
 .matchestb tbody>tr>td:nth-child(3n) {
     width: 10%;
     color: #cd2f2a;
@@ -559,6 +566,11 @@ body {
     width: 39%;
     text-align: left;
     border-right: none;
+}
+
+.matchestb tbody>tr>td:nth-child(4n) a{
+    text-decoration: none;
+    color: currentcolor;
 }
 
 .matchestb tbody>tr>td:nth-child(5n) {
@@ -2003,6 +2015,11 @@ body {
 .mainStandings tbody>tr>td {
     width: 7%;
     text-align: center;
+}
+
+.mainStandings tbody>tr>td a{
+    text-decoration: none;
+    color: currentcolor;
 }
 
 .mainStandings tbody>tr>td:nth-child(2n) {

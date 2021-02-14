@@ -1,6 +1,1550 @@
 [
-    {   
+    {
         "id": 1,
+        "name": "არსენალი",
+        "coach": "მიკელ არტეტა",
+        "icon": "https://s.hs-data.com/bilder/wappen/mittel/555.gif?fallback=png",
+        "country": "ინგლისი",
+        "city": "ლონდონი",
+        "nicknames": "მეთოფეები",
+        "found": "01/10/1886",
+        "colors": "თეთრი, წითელი",
+        "stadium": "ემირეითსი (60.362)",
+        "address": "Drayton Park, 75 Highbury, N5 1BU London",
+        "phone": "0 20 / 76 19 50 03",
+        "fax": "0 20 / 77 04 40 01",
+        "web": "https://www.arsenal.com/",
+        "mail": "contactafc@arsenal.co.uk",
+        "goalkeepers": [
+            {
+                "name": "ბერნდ ლენო",
+                "num": 1,
+                "born": "04/03/1992",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/102533.png"
+            },
+            {
+                "name": "ალექს რუნარსონი",
+                "num": 13,
+                "born": "18/02/1995",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/213029.png"
+            }
+        ],
+        "defenders": [
+            {
+                "name": "სედრიკ სოარეში",
+                "num": 17,
+                "born": "31/08/1991",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/134612.png"
+            },
+            {
+                "name": "კალუმ ჩემბერსი",
+                "num": 21,
+                "born": "20/01/1995",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/235617.png"
+            },
+            {
+                "name": "დავიდ ლუისი",
+                "num": 23,
+                "born": "22/04/1987",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/16580.png"
+            },
+            {
+                "name": "გაბრიელი",
+                "num": 6,
+                "born": "19/12/1997",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/433485.png"
+            },
+            {
+                "name": "ექტორ ბელერინი",
+                "num": 2,
+                "born": "19/03/1995",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/235942.png"
+            },
+            {
+                "name": "რობ ჰოლდინგი",
+                "num": 16,
+                "born": "20/09/1995",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/401408.png"
+            },
+            {
+                "name": "პაბლო მარი",
+                "num": 22,
+                "born": "31/08/1993",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/166646.png"
+            },
+            {
+                "name": "კიერან ტირნი",
+                "num": 3,
+                "born": "05/06/1997",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/323402.png"
+            }
+        ],
+        "midfielders": [
+            {
+                "name": "დანი სებალიოსი",
+                "num": 8,
+                "born": "07/08/1996",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/335457.png"
+            },
+            {
+                "name": "მოჰამედ ელნენი",
+                "num": 25,
+                "born": "11/07/1992",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/153493.png"
+            },
+            {
+                "name": "მარტინ ედეგორი",
+                "num": 11,
+                "born": "17/12/1998",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/334861.png"
+            },
+            {
+                "name": "ტომას პარტეი",
+                "num": 18,
+                "born": "13/06/1993",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/250434.png"
+            },
+            {
+                "name": "ბუკაიო საკა",
+                "num": 7,
+                "born": "05/09/2001",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/496730.png"
+            },
+            {
+                "name": "ემილ სმიტ როუვი",
+                "num": 32,
+                "born": "28/07/2000",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/453125.png"
+            },
+            {
+                "name": "გრანიტ ჯაკა",
+                "num": 34,
+                "born": "27/09/1992",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/102647.png"
+            }
+        ],
+        "attackers": [
+            {
+                "name": "პიერ-ემერიკ ობამეიანგი",
+                "num": 14,
+                "born": "18/06/1989",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/37644.png"
+            },
+            {
+                "name": "გაბრიელ მარტინელი",
+                "num": 35,
+                "born": "18/06/2001",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/533164.png"
+            },
+            {
+                "name": "ალექსანდრ ლაკაზეტი",
+                "num": 9,
+                "born": "28/05/1991",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/87653.png"
+            },
+            {
+                "name": "რაის ნელსონი",
+                "num": 24,
+                "born": "10/12/1999",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/420816.png"
+            },
+            {
+                "name": "ედი ნკეტია",
+                "num": 30,
+                "born": "30/05/1999",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/376605.png"
+            },
+            {
+                "name": "ნიკოლას პეპე",
+                "num": 19,
+                "born": "29/05/1995",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/280626.png"
+            },
+            {
+                "name": "ვილიანი",
+                "num": 12,
+                "born": "09/08/1988",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/9051.png"
+            }
+        ],
+        "matches": [
+            {
+                "date": "20.05",
+                "home": "არსენალი",
+                "away": "ტოტენჰემი",
+                "home_id": 1,
+                "away_id": 6,
+                "score": "-:-",
+                "match_id": 29
+            },
+            {
+                "date": "21.04",
+                "home": "არსენალი",
+                "away": "ლივერპული",
+                "home_id": 1,
+                "away_id": 3,
+                "score": "-:-",
+                "match_id": 27
+            },
+            {
+                "date": "08.04",
+                "home": "ჩელსი",
+                "away": "არსენალი",
+                "home_id": 2,
+                "away_id": 1,
+                "score": "-:-",
+                "match_id": 24
+            },
+            {
+                "date": "28.03",
+                "home": "არსენალი",
+                "away": "სიტი",
+                "home_id": 1,
+                "away_id": 4,
+                "score": "-:-",
+                "match_id": 21
+            },
+            {
+                "date": "30.01",
+                "home": "არსენალი",
+                "away": "მანჩესტერი",
+                "home_id": 1,
+                "away_id": 5,
+                "score": "0:0",
+                "match_id": 18
+            },
+            {
+                "date": "26.12",
+                "home": "არსენალი",
+                "away": "ჩელსი",
+                "home_id": 1,
+                "away_id": 2,
+                "score": "3:1",
+                "match_id": 14
+            },
+            {
+                "date": "06.12",
+                "home": "ტოტენჰემი",
+                "away": "არსენალი",
+                "home_id": 6,
+                "away_id": 1,
+                "score": "2:0",
+                "match_id": 10
+            },
+            {
+                "date": "01.11",
+                "home": "მანჩესტერი",
+                "away": "არსენალი",
+                "home_id": 5,
+                "away_id": 1,
+                "score": "0:1",
+                "match_id": 7
+            },
+            {
+                "date": "17.10",
+                "home": "სიტი",
+                "away": "არსენალი",
+                "home_id": 4,
+                "away_id": 1,
+                "score": "1:0",
+                "match_id": 3
+            },
+            {
+                "date": "28.09",
+                "home": "ლივერპული",
+                "away": "არსენალი",
+                "home_id": 3,
+                "away_id": 1,
+                "score": "3:1",
+                "match_id": 4
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "ჩელსი",
+        "coach": "ტომას ტუხელი",
+        "icon": "https://s.hs-data.com/bilder/wappen/mittel/544.gif?fallback=png",
+        "country": "ინგლისი",
+        "city": "ლონდონი",
+        "nicknames": "არისტოკრატები, ლურჯები",
+        "found": "14/03/1905",
+        "colors": "ლურჯი, თეთრი",
+        "stadium": "სტემფორდ ბრიჯი (41.837)",
+        "address": "Fulham Road, SW6 1HS London",
+        "phone": "0 20 / 87 19 84 19 55",
+        "fax": "0 20 / 73 81 48 31",
+        "web": "https://www.chelseafc.com/",
+        "mail": "contact@chelsea.co.uk",
+        "goalkeepers": [
+            {
+                "name": "კეპა",
+                "num": 1,
+                "born": "03/10/1994",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/200705.png"
+            },
+            {
+                "name": "ვილი კაბალიერო",
+                "num": 13,
+                "born": "28/09/1981",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/58907.png"
+            },
+            {
+                "name": "ედუარდ მენდი",
+                "num": 16,
+                "born": "01/03/1992",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/213222.png"
+            }
+        ],
+        "defenders": [
+            {
+                "name": "ასპილიკუეტა",
+                "num": 28,
+                "born": "28/08/1989",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/18099.png"
+            },
+            {
+                "name": "ბენ ჩილველი",
+                "num": 21,
+                "born": "21/12/1996",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/383419.png"
+            },
+            {
+                "name": "ანდრეას კრისტენსენი",
+                "num": 4,
+                "born": "10/04/1996",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/213104.png"
+            },
+            {
+                "name": "ემერსონი",
+                "num": 33,
+                "born": "03/08/1994",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/180822.png"
+            },
+            {
+                "name": "რიის ჯეიმსი",
+                "num": 24,
+                "born": "08/12/1999",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/453252.png"
+            },
+            {
+                "name": "მარკოს ალონსო",
+                "num": 3,
+                "born": "28/12/1990",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/125007.png"
+            },
+            {
+                "name": "ანტონიო რიუდიგერი",
+                "num": 2,
+                "born": "03/03/1993",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/192187.png"
+            },
+            {
+                "name": "ტიაგო სილვა",
+                "num": 6,
+                "born": "22/09/1984",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/9136.png"
+            },
+            {
+                "name": "კურტ ზუმა",
+                "num": 15,
+                "born": "27/10/1994",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/162511.png"
+            }
+        ],
+        "midfielders": [
+            {
+                "name": "ბილი გილმური",
+                "num": 23,
+                "born": "11/06/2001",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/486637.png"
+            },
+            {
+                "name": "კაი ჰავერცი",
+                "num": 29,
+                "born": "11/06/1999",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/440864.png"
+            },
+            {
+                "name": "ჟორჟინიო",
+                "num": 5,
+                "born": "20/12/1991",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/169273.png"
+            },
+            {
+                "name": "ნგოლო კანტე",
+                "num": 7,
+                "born": "29/03/1991",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/214469.png"
+            },
+            {
+                "name": "მატეო კოვაჩიჩი",
+                "num": 17,
+                "born": "06/05/1994",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/156567.png"
+            },
+            {
+                "name": "მეისონ მაუნტი",
+                "num": 19,
+                "born": "10/01/1999",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/376697.png"
+            }
+        ],
+        "attackers": [
+            {
+                "name": "ტემი აბრაამი",
+                "num": 9,
+                "born": "02/10/1997",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/372977.png"
+            },
+            {
+                "name": "ოლივიე ჟირუ",
+                "num": 18,
+                "born": "30/09/1986",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/59504.png"
+            },
+            {
+                "name": "კალუმ ჰადსონ-ოდოი",
+                "num": 20,
+                "born": "07/11/2000",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/455314.png"
+            },
+            {
+                "name": "კრისტიან პულიშიჩი",
+                "num": 10,
+                "born": "18/09/1998",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/413835.png"
+            },
+            {
+                "name": "ტიმო ვერნერი",
+                "num": 11,
+                "born": "06/03/1996",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/242778.png"
+            },
+            {
+                "name": "ჰაკიმ ზიეჩი",
+                "num": 22,
+                "born": "19/03/1993",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/255713.png"
+            }
+        ],
+        "matches": [
+            {
+                "date": "21.05",
+                "home": "ლივერპული",
+                "away": "ჩელსი",
+                "home_id": 3,
+                "away_id": 2,
+                "score": "-:-",
+                "match_id": 30
+            },
+            {
+                "date": "21.04",
+                "home": "სიტი",
+                "away": "ჩელსი",
+                "home_id": 4,
+                "away_id": 2,
+                "score": "-:-",
+                "match_id": 26
+            },
+            {
+                "date": "08.04",
+                "home": "ჩელსი",
+                "away": "არსენალი",
+                "home_id": 2,
+                "away_id": 1,
+                "score": "-:-",
+                "match_id": 24
+            },
+            {
+                "date": "27.03",
+                "home": "ჩელსი",
+                "away": "მანჩესტერი",
+                "home_id": 2,
+                "away_id": 5,
+                "score": "-:-",
+                "match_id": 20
+            },
+            {
+                "date": "04.02",
+                "home": "ტოტენჰემი",
+                "away": "ჩელსი",
+                "home_id": 6,
+                "away_id": 2,
+                "score": "0:1",
+                "match_id": 16
+            },
+            {
+                "date": "03.01",
+                "home": "ჩელსი",
+                "away": "სიტი",
+                "home_id": 2,
+                "away_id": 4,
+                "score": "1:3",
+                "match_id": 11
+            },
+            {
+                "date": "26.12",
+                "home": "არსენალი",
+                "away": "ჩელსი",
+                "home_id": 1,
+                "away_id": 2,
+                "score": "3:1",
+                "match_id": 14
+            },
+            {
+                "date": "29.11",
+                "home": "ჩელსი",
+                "away": "ტოტენჰემი",
+                "home_id": 2,
+                "away_id": 6,
+                "score": "0:0",
+                "match_id": 9
+            },
+            {
+                "date": "24.10",
+                "home": "მანჩესტერი",
+                "away": "ჩელსი",
+                "home_id": 5,
+                "away_id": 2,
+                "score": "0:0",
+                "match_id": 5
+            },
+            {
+                "date": "20.09",
+                "home": "ჩელსი",
+                "away": "ლივერპული",
+                "home_id": 2,
+                "away_id": 3,
+                "score": "0:2",
+                "match_id": 1
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "ლივერპული",
+        "coach": "იურგენ კლოპი",
+        "icon": "https://s.hs-data.com/bilder/wappen/mittel/550.gif?fallback=png",
+        "country": "ინგლისი",
+        "city": "ლივერპული",
+        "nicknames": "წითლები",
+        "found": "15/03/1892",
+        "colors": "წითელი, თეთრი",
+        "stadium": "ენფილდი (54.074)",
+        "address": "Anfield Road, L4 0TH Liverpool",
+        "phone": "01 51 / 2 60 14 33",
+        "fax": "01 51 / 2 60 88 13",
+        "web": "http://www.liverpoolfc.com/",
+        "mail": "customercontact@liverpoolfc.tv",
+        "goalkeepers": [
+            {
+                "name": "ალისონი",
+                "num": 1,
+                "born": "02/10/1992",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/102643.png"
+            },
+            {
+                "name": "ადრიანი",
+                "num": 13,
+                "born": "03/01/1987",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/60036.png"
+            },
+            {
+                "name": "კაომინ კელეჰერი",
+                "num": 62,
+                "born": "23/11/1998",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/375147.png"
+            }
+        ],
+        "defenders": [
+            {
+                "name": "ტრენტ ალექსანდრ-არნოლდი",
+                "num": 66,
+                "born": "07/10/1998",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/376875.png"
+            },
+            {
+                "name": "ბენ დევისი",
+                "num": 28,
+                "born": "11/08/1995",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/282870.png"
+            },
+            {
+                "name": "ჯო გომესი",
+                "num": 12,
+                "born": "23/05/1997",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/290182.png"
+            },
+            {
+                "name": "ოზან კაბაკი",
+                "num": 19,
+                "born": "25/03/2000",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/461755.png"
+            },
+            {
+                "name": "ჟოელ მატიპი",
+                "num": 32,
+                "born": "08/08/1991",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/101189.png"
+            },
+            {
+                "name": "ნათანიელ ფილიპსი",
+                "num": 47,
+                "born": "21/03/1997",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/456092.png"
+            },
+            {
+                "name": "ენდრიუ რობერტსონი",
+                "num": 26,
+                "born": "11/03/1994",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/254527.png"
+            },
+            {
+                "name": "კოსტას ციმიკასი",
+                "num": 21,
+                "born": "12/05/1996",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/372317.png"
+            },
+            {
+                "name": "ვირჯილ ვან დაიკი",
+                "num": 4,
+                "born": "08/07/1991",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/188624.png"
+            },
+            {
+                "name": "ნეკო უილიამსი",
+                "num": 76,
+                "born": "13/04/2001",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/459370.png"
+            },
+            {
+                "name": "რაის უილიამსი",
+                "num": 46,
+                "born": "03/02/2001",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/459372.png"
+            }
+        ],
+        "midfielders": [
+            {
+                "name": "ფაბინიო",
+                "num": 3,
+                "born": "23/10/1993",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/245348.png"
+            },
+            {
+                "name": "ჯორდან ჰენდერსონი",
+                "num": 14,
+                "born": "17/06/1990",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/48010.png"
+            },
+            {
+                "name": "ნაბი კეიტა",
+                "num": 8,
+                "born": "10/02/1995",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/323155.png"
+            },
+            {
+                "name": "კურტ ჯონსი",
+                "num": 17,
+                "born": "30/01/2001",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/459355.png"
+            },
+            {
+                "name": "ჯეიმს მილნერი",
+                "num": 7,
+                "born": "04/01/1986",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/2899.png"
+            },
+            {
+                "name": "ალექს ოქსლეიდ-ჩემბერლენი",
+                "num": 15,
+                "born": "15/08/1993",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/120695.png"
+            },
+            {
+                "name": "ტიაგო ალკანტარა",
+                "num": 6,
+                "born": "11/04/1991",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/79017.png"
+            },
+            {
+                "name": "ჯორჯინიო ვაინალდუმი",
+                "num": 5,
+                "born": "11/11/1990",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/8828.png"
+            }
+        ],
+        "attackers": [
+            {
+                "name": "დიოგუ ჟოტა",
+                "num": 20,
+                "born": "04/12/1996",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/374031.png"
+            },
+            {
+                "name": "სადიო მანე",
+                "num": 10,
+                "born": "10/04/1992",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/201602.png"
+            },
+            {
+                "name": "დივოკ ორიჯი",
+                "num": 27,
+                "born": "18/04/1995",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/215344.png"
+            },
+            {
+                "name": "რობერტო ფირმინო",
+                "num": 9,
+                "born": "02/10/1991",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/103265.png"
+            },
+            {
+                "name": "მოჰამედ სალაჰი",
+                "num": 11,
+                "born": "15/06/1992",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/138653.png"
+            },
+            {
+                "name": "ხერდან შაქირი",
+                "num": 23,
+                "born": "10/10/1991",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/83268.png"
+            }
+        ],
+        "matches": [
+            {
+                "date": "21.05",
+                "home": "ლივერპული",
+                "away": "ჩელსი",
+                "home_id": 3,
+                "away_id": 2,
+                "score": "-:-",
+                "match_id": 30
+            },
+            {
+                "date": "21.04",
+                "home": "არსენალი",
+                "away": "ლივერპული",
+                "home_id": 1,
+                "away_id": 3,
+                "score": "-:-",
+                "match_id": 27
+            },
+            {
+                "date": "07.04",
+                "home": "მანჩესტერი",
+                "away": "ლივერპული",
+                "home_id": 5,
+                "away_id": 3,
+                "score": "-:-",
+                "match_id": 23
+            },
+            {
+                "date": "17.02",
+                "home": "ლივერპული",
+                "away": "მანჩესტერი",
+                "home_id": 3,
+                "away_id": 5,
+                "score": "0:0",
+                "match_id": 12
+            },
+            {
+                "date": "07.02",
+                "home": "ლივერპული",
+                "away": "სიტი",
+                "home_id": 3,
+                "away_id": 4,
+                "score": "1:4",
+                "match_id": 17
+            },
+            {
+                "date": "28.01",
+                "home": "ტოტენჰემი",
+                "away": "ლივერპული",
+                "home_id": 6,
+                "away_id": 3,
+                "score": "1:3",
+                "match_id": 19
+            },
+            {
+                "date": "16.12",
+                "home": "ლივერპული",
+                "away": "ტოტენჰემი",
+                "home_id": 3,
+                "away_id": 6,
+                "score": "2:1",
+                "match_id": 13
+            },
+            {
+                "date": "08.11",
+                "home": "სიტი",
+                "away": "ლივერპული",
+                "home_id": 4,
+                "away_id": 3,
+                "score": "1:1",
+                "match_id": 8
+            },
+            {
+                "date": "28.09",
+                "home": "ლივერპული",
+                "away": "არსენალი",
+                "home_id": 3,
+                "away_id": 1,
+                "score": "3:1",
+                "match_id": 4
+            },
+            {
+                "date": "20.09",
+                "home": "ჩელსი",
+                "away": "ლივერპული",
+                "home_id": 2,
+                "away_id": 3,
+                "score": "0:2",
+                "match_id": 1
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "მანჩესტერ სიტი",
+        "coach": "პეპ გვარდიოლა",
+        "icon": "https://s.hs-data.com/bilder/wappen/mittel/750.gif?fallback=png",
+        "country": "ინგლისი",
+        "city": "მანჩესტერი",
+        "nicknames": "ქალაქელები",
+        "found": "01/01/1880",
+        "colors": "ცისფერი, თეთრი",
+        "stadium": "ეტიჰადი (55.097)",
+        "address": "Sportcity, Rowsley Street, M11 3FF Manchester",
+        "phone": "08 70 / 0 62 18 94",
+        "fax": "01 61 / 4 38 79 99",
+        "web": "https://www.mancity.com/",
+        "mail": "mcfc@mcfc.co.uk",
+        "goalkeepers": [
+            {
+                "name": "ედერსონი",
+                "num": 31,
+                "born": "17/08/1993",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/206804.png"
+            },
+            {
+                "name": "ზაკ შტეფენი",
+                "num": 13,
+                "born": "02/04/1995",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/281843.png"
+            },
+            {
+                "name": "სკოტ ქარსონი",
+                "num": 33,
+                "born": "03/09/1985",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/2759.png"
+            }
+        ],
+        "defenders": [
+            {
+                "name": "ნათან აკე",
+                "num": 6,
+                "born": "18/02/1995",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/182930.png"
+            },
+            {
+                "name": "ერიკ გარსია",
+                "num": 50,
+                "born": "09/01/2001",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/461179.png"
+            },
+            {
+                "name": "ჟოაო კანსელუ",
+                "num": 27,
+                "born": "27/05/1994",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/161784.png"
+            },
+            {
+                "name": "აიმერიკ ლაპორტი",
+                "num": 14,
+                "born": "27/05/1994",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/182904.png"
+            },
+            {
+                "name": "ბენჟამინ მენდი",
+                "num": 22,
+                "born": "17/07/1994",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/162509.png"
+            },
+            {
+                "name": "რუბენ დიაში",
+                "num": 3,
+                "born": "14/05/1997",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/290253.png"
+            },
+            {
+                "name": "ჯონ სტოუნსი",
+                "num": 5,
+                "born": "28/05/1994",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/189445.png"
+            },
+            {
+                "name": "კაილი უოკერი",
+                "num": 2,
+                "born": "28/05/1990",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/68532.png"
+            },
+            {
+                "name": "ოლეკსანდრ ზინჩენკო",
+                "num": 11,
+                "born": "15/12/1996",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/275836.png"
+            }
+        ],
+        "midfielders": [
+            {
+                "name": "კევინ დე ბრუინი",
+                "num": 17,
+                "born": "28/06/1991",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/78532.png"
+            },
+            {
+                "name": "ფერნანდინიო",
+                "num": 25,
+                "born": "04/05/1985",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/19655.png"
+            },
+            {
+                "name": "ფილ ფოდენი",
+                "num": 47,
+                "born": "28/05/2000",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/453102.png"
+            },
+            {
+                "name": "ილქაი გიუნდოგანი",
+                "num": 8,
+                "born": "24/10/1990",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/69050.png"
+            },
+            {
+                "name": "როდრი",
+                "num": 16,
+                "born": "22/06/1996",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/395959.png"
+            }
+        ],
+        "attackers": [
+            {
+                "name": "სერხიო აგუერო",
+                "num": 10,
+                "born": "02/06/1988",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/3051.png"
+            },
+            {
+                "name": "ბერნარდუ სილვა",
+                "num": 20,
+                "born": "10/08/1994",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/298753.png"
+            },
+            {
+                "name": "ფერან ტორესი",
+                "num": 21,
+                "born": "29/02/2000",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/420666.png"
+            },
+            {
+                "name": "რიად მაჰრეზი",
+                "num": 26,
+                "born": "21/02/1991",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/156662.png"
+            },
+            {
+                "name": "გაბრიელ ჟეზუსი",
+                "num": 9,
+                "born": "03/04/1997",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/364017.png"
+            },
+            {
+                "name": "რაჰეემ სტერლინგი",
+                "num": 7,
+                "born": "08/12/1994",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/160414.png"
+            }
+        ],
+        "matches": [
+            {
+                "date": "20.05",
+                "home": "სიტი",
+                "away": "მანჩესტერი",
+                "home_id": 4,
+                "away_id": 5,
+                "score": "-:-",
+                "match_id": 28
+            },
+            {
+                "date": "21.04",
+                "home": "სიტი",
+                "away": "ჩელსი",
+                "home_id": 4,
+                "away_id": 2,
+                "score": "-:-",
+                "match_id": 26
+            },
+            {
+                "date": "07.04",
+                "home": "სიტი",
+                "away": "ტოტენჰემი",
+                "home_id": 4,
+                "away_id": 6,
+                "score": "-:-",
+                "match_id": 22
+            },
+            {
+                "date": "28.03",
+                "home": "არსენალი",
+                "away": "სიტი",
+                "home_id": 1,
+                "away_id": 4,
+                "score": "-:-",
+                "match_id": 21
+            },
+            {
+                "date": "07.02",
+                "home": "ლივერპული",
+                "away": "სიტი",
+                "home_id": 3,
+                "away_id": 4,
+                "score": "1:4",
+                "match_id": 17
+            },
+            {
+                "date": "03.01",
+                "home": "ჩელსი",
+                "away": "სიტი",
+                "home_id": 2,
+                "away_id": 4,
+                "score": "1:3",
+                "match_id": 11
+            },
+            {
+                "date": "12.12",
+                "home": "მანჩესტერი",
+                "away": "სიტი",
+                "home_id": 5,
+                "away_id": 4,
+                "score": "0:0",
+                "match_id": 15
+            },
+            {
+                "date": "08.11",
+                "home": "სიტი",
+                "away": "ლივერპული",
+                "home_id": 4,
+                "away_id": 3,
+                "score": "1:1",
+                "match_id": 8
+            },
+            {
+                "date": "21.11",
+                "home": "ტოტენჰემი",
+                "away": "სიტი",
+                "home_id": 5,
+                "away_id": 4,
+                "score": "2:0",
+                "match_id": 6
+            },
+            {
+                "date": "17.10",
+                "home": "სიტი",
+                "away": "არსენალი",
+                "home_id": 4,
+                "away_id": 1,
+                "score": "1:0",
+                "match_id": 3
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "მანჩესტერ იუნაიტედი",
+        "coach": "ოლე გუნარ სულშერი",
+        "icon": "https://s.hs-data.com/bilder/wappen/mittel/543.gif?fallback=png",
+        "country": "ინგლისი",
+        "city": "მანჩესტერი",
+        "nicknames": "წითელი ეშმაკები",
+        "found": "01/03/1878",
+        "colors": "წითელი, თეთრი, შავი",
+        "stadium": "ოლდ ტრაფორდი (75.731)",
+        "address": "Sir Matt Busby Way, Old Trafford, M16 0RA Manchester",
+        "phone": "01 61 / 86 88 000",
+        "fax": "01 61 / 86 88 804",
+        "web": "http://www.manutd.com/",
+        "mail": "enquiries@manutd.co.uk",
+        "goalkeepers": [
+            {
+                "name": "დავიდ დე ხეა",
+                "num": 1,
+                "born": "07/11/1990",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/61954.png"
+            },
+            {
+                "name": "სერხიო რომერო",
+                "num": 22,
+                "born": "22/02/1987",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/17311.png"
+            },
+            {
+                "name": "დინ ჰენდერსონი",
+                "num": 26,
+                "born": "12/03/1997",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/317323.png"
+            }
+        ],
+        "defenders": [
+            {
+                "name": "ალექს ტელესი",
+                "num": 27,
+                "born": "15/12/1992",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/115167.png"
+            },
+            {
+                "name": "ერიკ ბაიი",
+                "num": 3,
+                "born": "12/04/1994",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/289271.png"
+            },
+            {
+                "name": "ფილ ჯონსი",
+                "num": 4,
+                "born": "21/02/1992",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/97299.png"
+            },
+            {
+                "name": "ჰარი მაგუაიერი",
+                "num": 5,
+                "born": "05/03/1993",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/182047.png"
+            },
+            {
+                "name": "აარონ ვან ბისაკა",
+                "num": 29,
+                "born": "26/11/1997",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/470717.png"
+            },
+            {
+                "name": "ლუკ შოუ",
+                "num": 23,
+                "born": "12/07/1995",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/209805.png"
+            }
+        ],
+        "midfielders": [
+            {
+                "name": "ბრუნო ფერნანდეში",
+                "num": 18,
+                "born": "08/09/1994",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/276371.png"
+            },
+            {
+                "name": "ფრედი",
+                "num": 17,
+                "born": "05/03/1993",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/195289.png"
+            },
+            {
+                "name": "ხუან მატა",
+                "num": 8,
+                "born": "28/04/1988",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/19106.png"
+            },
+            {
+                "name": "ნემანია მატიჩი",
+                "num": 31,
+                "born": "01/08/1988",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/35472.png"
+            },
+            {
+                "name": "პოლ პოგბა",
+                "num": 6,
+                "born": "15/03/1993",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/177208.png"
+            },
+            {
+                "name": "სკოტ მაკტომინეი",
+                "num": 39,
+                "born": "08/12/1996",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/420214.png"
+            }
+        ],
+        "attackers": [
+            {
+                "name": "ედინსონ კავანი",
+                "num": 7,
+                "born": "14/02/1987",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/5920.png"
+            },
+            {
+                "name": "მეისონ გრინვუდი",
+                "num": 11,
+                "born": "01/10/2001",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/501819.png"
+            },
+            {
+                "name": "დონი ვან დე ბეკი",
+                "num": 34,
+                "born": "18/04/1997",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/319301.png"
+            },
+            {
+                "name": "დენიელ ჯეიმსი",
+                "num": 21,
+                "born": "10/11/1997",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/316309.png"
+            },
+            {
+                "name": "ენთონი მარსიალი",
+                "num": 9,
+                "born": "05/12/1995",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/215647.png"
+            },
+            {
+                "name": "მარკუს რაშფორდი",
+                "num": 10,
+                "born": "31/10/1997",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/420221.png"
+            }
+        ],
+        "matches": [
+            {
+                "date": "20.05",
+                "home": "სიტი",
+                "away": "მანჩესტერი",
+                "home_id": 4,
+                "away_id": 5,
+                "score": "-:-",
+                "match_id": 28
+            },
+            {
+                "date": "20.04",
+                "home": "ტოტენჰემი",
+                "away": "მანჩესტერი",
+                "home_id": 6,
+                "away_id": 5,
+                "score": "-:-",
+                "match_id": 25
+            },
+            {
+                "date": "07.04",
+                "home": "მანჩესტერი",
+                "away": "ლივერპული",
+                "home_id": 5,
+                "away_id": 3,
+                "score": "-:-",
+                "match_id": 23
+            },
+            {
+                "date": "27.03",
+                "home": "ჩელსი",
+                "away": "მანჩესტერი",
+                "home_id": 2,
+                "away_id": 5,
+                "score": "-:-",
+                "match_id": 20
+            },
+            {
+                "date": "17.02",
+                "home": "ლივერპული",
+                "away": "მანჩესტერი",
+                "home_id": 3,
+                "away_id": 5,
+                "score": "0:0",
+                "match_id": 12
+            },
+            {
+                "date": "30.01",
+                "home": "არსენალი",
+                "away": "მანჩესტერი",
+                "home_id": 1,
+                "away_id": 5,
+                "score": "0:0",
+                "match_id": 18
+            },
+            {
+                "date": "12.12",
+                "home": "მანჩესტერი",
+                "away": "სიტი",
+                "home_id": 5,
+                "away_id": 4,
+                "score": "0:0",
+                "match_id": 15
+            },
+            {
+                "date": "01.11",
+                "home": "მანჩესტერი",
+                "away": "არსენალი",
+                "home_id": 5,
+                "away_id": 1,
+                "score": "0:1",
+                "match_id": 7
+            },
+            {
+                "date": "24.10",
+                "home": "მანჩესტერი",
+                "away": "ჩელსი",
+                "home_id": 5,
+                "away_id": 2,
+                "score": "0:0",
+                "match_id": 5
+            },
+            {
+                "date": "04.10",
+                "home": "მანჩესტერი",
+                "away": "ტოტენჰემი",
+                "home_id": 5,
+                "away_id": 6,
+                "score": "1:6",
+                "match_id": 2
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "ტოტენჰემი",
+        "coach": "ჟოზე მოურინიო",
+        "icon": "https://s.hs-data.com/bilder/wappen/mittel/552.gif?fallback=png",
+        "country": "ინგლისი",
+        "city": "ლონდონი",
+        "nicknames": "სპურსი",
+        "found": "05/09/1882",
+        "colors": "ლურჯი, თეთრი",
+        "stadium": "ტოტენჰემ ჰოთსპურ სთედიუმი (62.062)",
+        "address": "Bill Nicholson Way, N17 0AP London",
+        "phone": "08 44 / 4 99 50 00",
+        "fax": "0 20 / 83 65 50 05",
+        "web": "http://www.spurs.co.uk",
+        "mail": "website@tottenhamhotspur.com",
+        "goalkeepers": [
+            {
+                "name": "უგო ლორისი",
+                "num": 1,
+                "born": "26/12/1986",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/1255.png"
+            },
+            {
+                "name": "ჯო ჰარტი",
+                "num": 12,
+                "born": "19/04/1987",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/2842.png"
+            }
+        ],
+        "defenders": [
+            {
+                "name": "ტობი ალდერვაირელდი",
+                "num": 4,
+                "born": "02/03/1989",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/70508.png"
+            },
+            {
+                "name": "სერჟ ორიე",
+                "num": 4,
+                "born": "24/12/1992",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/155098.png"
+            },
+            {
+                "name": "ერიკ დაიერი",
+                "num": 15,
+                "born": "15/01/1994",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/245831.png"
+            },
+            {
+                "name": "რეგილონი",
+                "num": 3,
+                "born": "16/12/1996",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/372821.png"
+            },
+            {
+                "name": "დევინსონ სანჩესი",
+                "num": 6,
+                "born": "12/06/1996",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/290497.png"
+            },
+            {
+                "name": "ბენ დევისი",
+                "num": 33,
+                "born": "24/04/1993",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/207547.png"
+            }
+        ],
+        "midfielders": [
+            {
+                "name": "დელე ალი",
+                "num": 20,
+                "born": "11/04/1996",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/217739.png"
+            },
+            {
+                "name": "პიერ-ემილ ჰოებერგი",
+                "num": 5,
+                "born": "05/08/1995",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/182609.png"
+            },
+            {
+                "name": "ჯოვანი ლო სელსო",
+                "num": 18,
+                "born": "09/04/1996",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/392369.png"
+            },
+            {
+                "name": "ტანგი ნდომბელე",
+                "num": 28,
+                "born": "28/12/1996",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/327388.png"
+            },
+            {
+                "name": "მუსა სისოკო",
+                "num": 17,
+                "born": "16/08/1989",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/13622.png"
+            },
+            {
+                "name": "ჰარი ვინკსი",
+                "num": 8,
+                "born": "02/02/1996",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/274470.png"
+            }
+        ],
+        "attackers": [
+            {
+                "name": "გარეთ ბეილი",
+                "num": 9,
+                "born": "16/07/1989",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/15482.png"
+            },
+            {
+                "name": "სტივენ ბერგვინი",
+                "num": 23,
+                "born": "08/10/1997",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/319305.png"
+            },
+            {
+                "name": "ჰარი კეინი",
+                "num": 10,
+                "born": "28/07/1993",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/158575.png"
+            },
+            {
+                "name": "ერიკ ლამელა",
+                "num": 11,
+                "born": "04/03/1992",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/81992.png"
+            },
+            {
+                "name": "ჰენ-მინ სონი",
+                "num": 7,
+                "born": "08/07/1992",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/103043.png"
+            },
+            {
+                "name": "ლუკას მოურა",
+                "num": 27,
+                "born": "13/08/1992",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/141970.png"
+            }
+        ],
+        "matches": [
+            {
+                "date": "20.05",
+                "home": "არსენალი",
+                "away": "ტოტენჰემი",
+                "home_id": 1,
+                "away_id": 6,
+                "score": "-:-",
+                "match_id": 29
+            },
+            {
+                "date": "20.04",
+                "home": "ტოტენჰემი",
+                "away": "მანჩესტერი",
+                "home_id": 6,
+                "away_id": 5,
+                "score": "-:-",
+                "match_id": 25
+            },
+            {
+                "date": "07.04",
+                "home": "სიტი",
+                "away": "ტოტენჰემი",
+                "home_id": 4,
+                "away_id": 6,
+                "score": "-:-",
+                "match_id": 22
+            },
+            {
+                "date": "04.02",
+                "home": "ტოტენჰემი",
+                "away": "ჩელსი",
+                "home_id": 6,
+                "away_id": 2,
+                "score": "0:1",
+                "match_id": 16
+            },
+            {
+                "date": "28.01",
+                "home": "ტოტენჰემი",
+                "away": "ლივერპული",
+                "home_id": 6,
+                "away_id": 3,
+                "score": "1:3",
+                "match_id": 19
+            },
+            {
+                "date": "16.12",
+                "home": "ლივერპული",
+                "away": "ტოტენჰემი",
+                "home_id": 3,
+                "away_id": 6,
+                "score": "2:1",
+                "match_id": 13
+            },
+            {
+                "date": "06.12",
+                "home": "ტოტენჰემი",
+                "away": "არსენალი",
+                "home_id": 6,
+                "away_id": 1,
+                "score": "2:0",
+                "match_id": 10
+            },
+            {
+                "date": "29.11",
+                "home": "ჩელსი",
+                "away": "ტოტენჰემი",
+                "home_id": 2,
+                "away_id": 6,
+                "score": "0:0",
+                "match_id": 9
+            },
+            {
+                "date": "21.11",
+                "home": "ტოტენჰემი",
+                "away": "სიტი",
+                "home_id": 6,
+                "away_id": 4,
+                "score": "2:0",
+                "match_id": 6
+            },
+            {
+                "date": "04.10",
+                "home": "მანჩესტერი",
+                "away": "ტოტენჰემი",
+                "home_id": 5,
+                "away_id": 6,
+                "score": "1:6",
+                "match_id": 2
+            }
+        ]
+    },
+    
+
+    {   
+        "id": 10,
         "name": "ბარსელონა",
         "icon": "",
         "country": "ესპანეთი",
@@ -16,7 +1560,6 @@
         "mail": "secretaria@club.fcbarcelona.com",
         "goalkeepers": [
             {
-                "id": 1,
                 "name": "ტერ შტეგენი",
                 "num": 1,
                 "country": "Germany",

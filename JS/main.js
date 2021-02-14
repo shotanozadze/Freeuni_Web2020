@@ -4,7 +4,7 @@ import * as tSelector from './modules/teamSelector.js';
 import * as pSelector from './modules/playerSelector.js';
 
 let left = document.querySelector('#left');
-let compets = [1, 3];
+let compets = [1];
 
 function postFetchum(){
     mSelector.mSelect();
@@ -67,6 +67,7 @@ function competition(id, season, stage){
                         for(let i=0; i<standing.length; i++){
                             let pos = i+1;
                             let name = standing[i].team;
+                            let tm_id = standing[i].team_id;
                             let numMatches = standing[i].matches;
                             let won = standing[i].won;
                             let draw = standing[i].draw;
@@ -80,7 +81,7 @@ function competition(id, season, stage){
                             
                             inner += '<tr>';
                             inner += '<td> <div class="'+ color +'">' + pos + '</div> </td>';
-                            inner += '<td><img src="'+ logo +'">'+ name +'</td>';
+                            inner += '<td><img src="'+ logo +'"><a href="/?team_id='+ tm_id +'">'+ name +'</a></td>';
                             inner += '<td>'+ numMatches +'</td>';
                             inner += '<td>'+ won +'</td>';
                             inner += '<td>'+ draw +'</td>';
@@ -114,9 +115,9 @@ function competition(id, season, stage){
                                 let matchID = "/?match_id=" + roundMatches[j].match_id;
 
                                 inner += '<tr> <td>' + date + '</td>';
-                                inner += '<td>'+ home +'</td>';
+                                inner += '<td><a href="/?team_id='+ roundMatches[j].home_id +'">'+ home +'</a></td>';
                                 inner += '<td> <a href="'+ matchID +'">'+ score +'</a></td>';
-                                inner += '<td>'+ away +'</td>';
+                                inner += '<td><a href="/?team_id='+ roundMatches[j].away_id +'">'+ away +'</a></td>';
                                 inner += '</tr>';
                             }
                         }
@@ -159,9 +160,9 @@ function MainPage(){
                 for(let j=0; j<matches.length; j++){
 
                     inner += '<tr><td>'+ matches[j].date +'</td>';
-                    inner += '<td>'+ matches[j].home +'</td>';
-                    inner += '<td>'+ matches[j].score +'</td>';
-                    inner += '<td>'+ matches[j].away +'</td></tr>';
+                    inner += '<td><a href="/?team_id='+ matches[j].home_id +'">'+ matches[j].home +'</a></td>';
+                    inner += '<td><a href="/?match_id='+ matches[j].match_id +'">'+ matches[j].score +'</a></td>';
+                    inner += '<td><a href="/?team_id='+ matches[j].away_id +'">'+ matches[j].away +'</a></td></tr>';
 
                 }
 
@@ -261,16 +262,17 @@ function teamPage(id){
             for (let i=0; i<result.length; i++){
                 let currTeam = result[i];
                 if (currTeam.id == id){
-                    inner += '<div class="TeamNameBar"><img src="https://secure.cache.images.core.optasports.com/soccer/teams/150x150/2017.png">ბარსელონა </div>';
+                    inner += '<div class="TeamNameBar"><img src="'+ currTeam.icon +'">'+ currTeam.name +'</div>';
                     inner += '<div class="mSelector"><div class="matchSelectorMain">პროფილი</div><div class="matchSelector">შემადგენლობა</div><div class="matchSelector">მატჩები</div></div>';
                     inner += '<div class="TeamProfile"><table class="matchDet" style="display: table; margin-top: 0;"><thead>';
                     inner += '<tr><td colspan="2">გუნდის პროფილი</td></tr></thead><tbody>';
-                    inner += '<tr><td>გუნდი</td><td>' + currTeam.name + '</td></tr>';
+                    inner += '<tr><td>დასახელება</td><td>' + currTeam.name + '</td></tr>';
+                    inner += '<tr><td>მთავარი წვრთნელი</td><td>' + currTeam.coach + '</td></tr>';
                     inner += '<tr><td>ქვეყანა</td><td>' + currTeam.country + '</td></tr>';
+                    inner += '<tr><td>ქალაქი</td><td>' + currTeam.city + '</td></tr>';
                     inner += '<tr><td>მეტსახელი</td><td>' + currTeam.nicknames + '</td></tr>';
                     inner += '<tr><td>დაარსება</td><td>' + currTeam.found + '</td></tr>';
                     inner += '<tr><td>ფერები</td><td>' + currTeam.colors + '</td></tr>';
-                    inner += '<tr><td>წევრები</td><td>' + currTeam.members + '</td></tr>';
                     inner += '<tr><td>სტადიონი</td><td>' + currTeam.stadium + '</td></tr>';
                     inner += '<tr><td>მისამართი</td><td>' + currTeam.address + '</td></tr>';
                     inner += '<tr><td>ტელეფონი</td><td>' + currTeam.phone + '</td></tr>';
@@ -323,12 +325,19 @@ function teamPage(id){
                         inner += '<td> <img src="../images/spain.png"> </td>';
                         inner += '<td>'+ player.born +'</td></tr>';
                     }
-                    inner += '</tbody><thead><tr><td colspan="5"> მთავარი მწვრთნელი </td></tr></thead></table></div>';
+                    inner += '</tbody></table></div>';
                     
+                    inner += '<div class="TeamMatches"><table class="matchestb"><thead><tr><td colspan="4"> ბოლო მატჩები </td></tr></thead><tbody>';
+                    let teamMts = currTeam.matches;
+                    for (let j=0; j<teamMts.length; j++){
+                        let mtc = teamMts[j];
+                        inner += '<tr><td>'+ mtc.date +'</td>';
+                        inner += '<td><a href="/?team_id='+ mtc.home_id +'">'+ mtc.home +'</a></td>';
+                        inner += '<td><a href="/?match_id='+ mtc.match_id +'">'+ mtc.score +'</a></td>';
+                        inner += '<td><a href="/?team_id='+ mtc.away_id +'">'+ mtc.away +'</a></td></tr>';
+                    }
 
-                    inner += '<div class="TeamMatches"><table class="matchestb"><thead><tr><td colspan="4"> ბოლო მატჩები </td></tr></thead>';
-                    inner += '<tbody><tr><td>25.02</td><td>ელჩე</td><td>3:3</td><td>სელტა</td></tr></tbody></table></div>';
-
+                    inner += '</tbody></table></div>';
                     left.innerHTML = inner;
                     found = true;
                     break;

@@ -1,5 +1,6 @@
 [   
-    {
+    {   
+        "id": 1,
         "name": "სატესტო ჩემპიონატი",
         "image": "../images/testChamp.png",
         "matches": [
@@ -7,8 +8,8 @@
                 "date": "12.12",
                 "home": "მანჩესტერი",
                 "away": "სიტი",
-                "home_id": 1,
-                "away_id": 1,
+                "home_id": 5,
+                "away_id": 4,
                 "score": "0:0",
                 "match_id": 15
             },
@@ -17,7 +18,7 @@
                 "home": "არსენალი",
                 "away": "ჩელსი",
                 "home_id": 1,
-                "away_id": 1,
+                "away_id": 2,
                 "score": "3:1",
                 "match_id": 14
             },
@@ -25,8 +26,8 @@
                 "date": "28.01",
                 "home": "ტოტენჰემი",
                 "away": "ლივერპული",
-                "home_id": 1,
-                "away_id": 1,
+                "home_id": 6,
+                "away_id": 3,
                 "score": "1:3",
                 "match_id": 19
             },
@@ -35,7 +36,7 @@
                 "home": "არსენალი",
                 "away": "მანჩესტერი",
                 "home_id": 1,
-                "away_id": 1,
+                "away_id": 5,
                 "score": "0:0",
                 "match_id": 18
             },
@@ -43,8 +44,8 @@
                 "date": "04.02",
                 "home": "ტოტენჰემი",
                 "away": "ჩელსი",
-                "home_id": 1,
-                "away_id": 1,
+                "home_id": 6,
+                "away_id": 2,
                 "score": "0:1",
                 "match_id": 16
             },
@@ -52,8 +53,8 @@
                 "date": "07.02",
                 "home": "ლივერპული",
                 "away": "სიტი",
-                "home_id": 1,
-                "away_id": 1,
+                "home_id": 3,
+                "away_id": 3,
                 "score": "1:4",
                 "match_id": 17
             }
