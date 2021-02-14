@@ -928,14 +928,6 @@
                 "num": 16,
                 "born": "22/06/1996",
                 "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/395959.png"
-            }
-        ],
-        "attackers": [
-            {
-                "name": "სერხიო აგუერო",
-                "num": 10,
-                "born": "02/06/1988",
-                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/3051.png"
             },
             {
                 "name": "ბერნარდუ სილვა",
@@ -948,6 +940,14 @@
                 "num": 21,
                 "born": "29/02/2000",
                 "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/420666.png"
+            }
+        ],
+        "attackers": [
+            {
+                "name": "სერხიო აგუერო",
+                "num": 10,
+                "born": "02/06/1988",
+                "img": "https://secure.cache.images.core.optasports.com/soccer/players/50x50/3051.png"
             },
             {
                 "name": "რიად მაჰრეზი",

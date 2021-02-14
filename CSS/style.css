@@ -521,6 +521,11 @@ body {
     text-align: center;
 }
 
+.matchestb thead>tr a{
+    text-decoration: none;
+    color: currentcolor;
+}
+
 .matchestb thead>tr>td img {
     height: 25px;
     width: 25px;
@@ -1248,6 +1253,11 @@ body {
     color: #cd2f2a;
 }
 
+.lineups tbody>tr>td a{
+    text-decoration: none;
+    color: currentColor;
+}
+
 .lineups tbody>tr>td:nth-child(2n) {
     width: 43%;
     text-align: left;
@@ -1851,6 +1861,11 @@ body {
 
     border-bottom: 1px solid #b9b9b9;
     border-top: 1px solid #f8f8f8;
+}
+
+.SquadTB tbody>tr>td a{
+    text-decoration: none;
+    color: currentcolor;
 }
 
 .SquadTB tbody>tr>td:nth-child(2n) {

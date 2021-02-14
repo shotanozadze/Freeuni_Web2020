@@ -1,5 +1,5 @@
 [   
-    {   
+    { 
         "id": 1,
         "name": "სატესტო ჩემპიონატი",
         "image": "../images/testChamp.png",
@@ -60,7 +60,8 @@
             }
         ]
     },
-    {
+    {   
+        "id": 5,
         "name": "ჩემპიონთა ლიგა",
         "image": "https://icons.whatsthescore.com/competition/s/normal/678.png",
         "matches": [
@@ -120,7 +121,8 @@
             }
         ]
     },
-    {
+    {   
+        "id": 7,
         "name": "პრემიერ ლიგა",
         "image": "https://icons.whatsthescore.com/competition/s/normal/192.png",
         "matches": [
@@ -180,7 +182,8 @@
             }
         ]
     },
-    {
+    {   
+        "id": 8,
         "name": "ლა ლიგა",
         "image": "https://icons.whatsthescore.com/competition/s/normal/551.png",
         "matches": [
@@ -240,7 +243,8 @@
             }
         ]
     },
-    {
+    {   
+        "id": 9,
         "name": "სერია ა",
         "image": "https://icons.whatsthescore.com/competition/s/normal/325.png",
         "matches": [
@@ -300,7 +304,8 @@
             }
         ]
     },
-    {
+    {   
+        "id": 11,
         "name": "ლიგა 1",
         "image": "https://icons.whatsthescore.com/competition/m/normal/226.png",
         "matches": [
@@ -360,7 +365,8 @@
             }
         ]
     },
-    {
+    {   
+        "id": 10,
         "name": "ბუნდესლიგა",
         "image": "https://icons.whatsthescore.com/competition/s/normal/243.png",
         "matches": [

@@ -1,111 +1,632 @@
 [
     {
-        "id": 1,
-        "firstname": "ლიონელ ანდრეს",
-        "lastname": "მესი",
-        "bornday": "24/06/1987",
-        "bornplace": "როსარიო, არგენტინა",
-        "country": "არგენტინა",
-        "height": "170",
-        "weight": "72",
-        "position": "ნახევარმცველი",
-        "foot": "მარცხენა",
-        "image": "https://s.hs-data.com/bilder/spieler/gross/26622.jpg?fallback=png",
-        "clubStats": [
+        "id": 4,
+        "players": [
             {
-                "competition": "ჩემპიონთა ლიგა",
-                "matches": 1,
-                "goals": 1,
-                "lineup": 1,
-                "subin": 1,
-                "subout": 1,
-                "yellow": 1,
-                "yellowred": 1,
-                "red": 1                
+                "id": 10,
+                "firstname": "სერხიო კუნ",
+                "lastname": "აგუერო",
+                "bornday": "02.06.1988",
+                "bornplace": "ბუენოს აირესი, არგენტინა",
+                "country": "არგენტინა",
+                "height": "173",
+                "weight": "74",
+                "position": "თავდამსხმელი",
+                "foot": "მარჯვენა",
+                "image": "https://s.hs-data.com/bilder/spieler/gross/43370.jpg?fallback=png",
+                "clubStats": [
+                    {
+                        "competition": "ჩემპიონთა ლიგა",
+                        "matches": 74,
+                        "goals": 41,
+                        "lineup": 58,
+                        "subin": 16,
+                        "subout": 28,
+                        "yellow": 9,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    {
+                        "competition": "ევროპა ლიგა",
+                        "matches": 23,
+                        "goals": 14,
+                        "lineup": 19,
+                        "subin": 4,
+                        "subout": 10,
+                        "yellow": 3,
+                        "yellowred": 0,
+                        "red": 1
+                    },
+                    {
+                        "competition": "ევროპის სუპერთასი",
+                        "matches": 1,
+                        "goals": 1,
+                        "lineup": 1,
+                        "subin": 0,
+                        "subout": 0,
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    {
+                        "competition": "პრემიერ ლიგა",
+                        "matches": 268,
+                        "goals": 180,
+                        "lineup": 230,
+                        "subin": 38,
+                        "subout": 128,
+                        "yellow": 23,
+                        "yellowred": 0,
+                        "red": 1
+                    },
+                    {
+                        "competition": "FA თასი",
+                        "matches": 22,
+                        "goals": 20,
+                        "lineup": 17,
+                        "subin": 5,
+                        "subout": 7,
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    {
+                        "competition": "ლიგის თასი",
+                        "matches": 22,
+                        "goals": 11,
+                        "lineup": 16,
+                        "subin": 6,
+                        "subout": 9,
+                        "yellow": 2,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    {
+                        "competition": "ქომიუნითი შილდი",
+                        "matches": 2,
+                        "goals": 2,
+                        "lineup": 2,
+                        "subin": 0,
+                        "subout": 1,
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    {
+                        "competition": "ლა ლიგა",
+                        "matches": 175,
+                        "goals": 74,
+                        "lineup": 149,
+                        "subin": 26,
+                        "subout": 61,
+                        "yellow": 27,
+                        "yellowred": 1,
+                        "red": 1
+                    },
+                    {
+                        "competition": "კოპა დელ რეი",
+                        "matches": 20,
+                        "goals": 8,
+                        "lineup": 16,
+                        "subin": 4,
+                        "subout": 8,
+                        "yellow": 1,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    {
+                        "competition": "კოპა ლიბერტადორესი",
+                        "matches": 2,
+                        "goals": 0,
+                        "lineup": 0,
+                        "subin": 2,
+                        "subout": 0,
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    {
+                        "competition": "პრიმერა დივიზიონი",
+                        "matches": 54,
+                        "goals": 23,
+                        "lineup": 45,
+                        "subin": 9,
+                        "subout": 16,
+                        "yellow": 7,
+                        "yellowred": 0,
+                        "red": 1
+                    }
+                ],
+                "nationalStats": [
+                    {
+                        "competition": "მსოფლიო ჩემპიონატი",
+                        "matches": 12,
+                        "goals": 2,
+                        "lineup": 6,
+                        "subin": 6,
+                        "subout": 5,
+                        "yellow": 1,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    {
+                        "competition": "მჩ შესარჩევი",
+                        "matches": 28,
+                        "goals": 9,
+                        "lineup": 20,
+                        "subin": 8,
+                        "subout": 16,
+                        "yellow": 4,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    {
+                        "competition": "ამხანაგური",
+                        "matches": 37,
+                        "goals": 21,
+                        "lineup": 21,
+                        "subin": 16,
+                        "subout": 18,
+                        "yellow": 3,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    {
+                        "competition": "კოპა ამერიკა",
+                        "matches": 20,
+                        "goals": 9,
+                        "lineup": 13,
+                        "subin": 7,
+                        "subout": 10,
+                        "yellow": 2,
+                        "yellowred": 0,
+                        "red": 0
+                    }
+                ],
+                "clubCareer": [
+                    {
+                        "time": "07/2011 - 06/2021",
+                        "logo": "https://s.hs-data.com/bilder/wappen/mittel/750.gif?fallback=png",
+                        "team": "მანჩესტერ სიტი"
+                    },
+                    {
+                        "time": "07/2006 - 07/2011",
+                        "logo": "https://s.hs-data.com/bilder/wappen/mittel/737.gif?fallback=png",
+                        "team": "ატლეტიკო მადრიდი"
+                    },
+                    {
+                        "time": "01/2003 - 06/2006",
+                        "logo": "https://s.hs-data.com/bilder/wappen/mittel/2213.gif?fallback=png",
+                        "team": "ინდეპენდიენტე"
+                    }
+                ]
             },
             {
-                "competition": "ლა ლიგა",
-                "matches": 1,
-                "goals": 1,
-                "lineup": 1,
-                "subin": 1,
-                "subout": 1,
-                "yellow": 1,
-                "yellowred": 1,
-                "red": 1                
+                "id": 26,
+                "firstname": "რიად კარიმ",
+                "lastname": "მაჰრეზი",
+                "bornday": "21.02.1991",
+                "bornplace": "პარიზი, საფრანგეთი",
+                "country": "ალჟირი",
+                "height": "179",
+                "weight": "67",
+                "position": "თავდამსხმელი",
+                "foot": "მარცხენა",
+                "image": "https://s.hs-data.com/bilder/spieler/gross/192635.jpg?fallback=png",
+                "clubStats": [
+                    {
+                        "competition": "ჩემპიონთა ლიგა",
+                        "matches": 27,
+                        "goals": 6,
+                        "lineup": 22,
+                        "subin": 5,
+                        "subout": 9,
+                        "yellow": 2,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    {
+                        "competition": "პრემიერ ლიგა",
+                        "matches": 216,
+                        "goals": 62,
+                        "lineup": 176,
+                        "subin": 40,
+                        "subout": 85,
+                        "yellow": 7,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    {
+                        "competition": "ჩემპიონშიპი",
+                        "matches": 19,
+                        "goals": 3,
+                        "lineup": 12,
+                        "subin": 7,
+                        "subout": 4,
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    {
+                        "competition": "FA თასი",
+                        "matches": 19,
+                        "goals": 2,
+                        "lineup": 15,
+                        "subin": 4,
+                        "subout": 7,
+                        "yellow": 1,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    {
+                        "competition": "ლიგის თასი",
+                        "matches": 19,
+                        "goals": 6,
+                        "lineup": 13,
+                        "subin": 6,
+                        "subout": 5,
+                        "yellow": 1,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    {
+                        "competition": "ქომიუნითი შილდი",
+                        "matches": 2,
+                        "goals": 0,
+                        "lineup": 2,
+                        "subin": 0,
+                        "subout": 1,
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    }
+                ],
+                "nationalStats": [
+                    {
+                        "competition": "მსოფლიო ჩემპიონატი",
+                        "matches": 1,
+                        "goals": 0,
+                        "lineup": 1,
+                        "subin": 0,
+                        "subout": 1,
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    {
+                        "competition": "ამხანაგური",
+                        "matches": 22,
+                        "goals": 4,
+                        "lineup": 18,
+                        "subin": 4,
+                        "subout": 8,
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    {
+                        "competition": "აფრიკის თასი",
+                        "matches": 14,
+                        "goals": 6,
+                        "lineup": 12,
+                        "subin": 2,
+                        "subout": 4,
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    }
+                ],
+                "clubCareer": [
+                    {
+                        "time": "07/2018 - 06/2023",
+                        "logo": "https://s.hs-data.com/bilder/wappen/mittel/750.gif?fallback=png",
+                        "team": "მანჩესტერ სიტი"
+                    },
+                    {
+                        "time": "01/2014 - 07/2018",
+                        "logo": "https://s.hs-data.com/bilder/wappen/mittel/549.gif?fallback=png",
+                        "team": "ლესტერ სიტი"
+                    },
+                    {
+                        "time": "07/2010 - 01/2014",
+                        "logo": "https://s.hs-data.com/bilder/wappen/mittel/760.gif?fallback=png",
+                        "team": "ლე ჰავრე"
+                    },
+                    {
+                        "time": "07/2009 - 06/2010",
+                        "logo": "https://s.hs-data.com/bilder/wappen/mittel/3656.gif?fallback=png",
+                        "team": "ქუიმპერი"
+                    }
+                ]
             },
             {
-                "competition": "სამეფო თასი",
-                "matches": 1,
-                "goals": 1,
-                "lineup": 1,
-                "subin": 1,
-                "subout": 1,
-                "yellow": 1,
-                "yellowred": 1,
-                "red": 1                
-            }
-        ],
-        "nationalStats": [
-            {
-                "competition": "მსოფლიო ჩემპიონატი",
-                "matches": 1,
-                "goals": 1,
-                "lineup": 1,
-                "subin": 1,
-                "subout": 1,
-                "yellow": 1,
-                "yellowred": 1,
-                "red": 1                
+                "id": 9,
+                "firstname": "გაბრიელ ფერნანდო",
+                "lastname": "დე ჟეზუსი",
+                "bornday": "03.04.1997",
+                "bornplace": "სან პაულუ, ბრაზილია",
+                "country": "ბრაზილია",
+                "height": "175",
+                "weight": "73",
+                "position": "თავდამსხმელი",
+                "foot": "მარცხენა",
+                "image": "https://s.hs-data.com/bilder/spieler/gross/307889.jpg?fallback=png",
+                "clubStats": [
+                    {
+                        "competition": "ჩემპიონთა ლიგა",
+                        "matches": 26,
+                        "goals": 15,
+                        "lineup": 19,
+                        "subin": 7,
+                        "subout": 7,
+                        "yellow": 2,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    {
+                        "competition": "პრემიერ ლიგა",
+                        "matches": 117,
+                        "goals": 45,
+                        "lineup": 67,
+                        "subin": 50,
+                        "subout": 31,
+                        "yellow": 13,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    {
+                        "competition": "FA თასი",
+                        "matches": 14,
+                        "goals": 8,
+                        "lineup": 14,
+                        "subin": 0,
+                        "subout": 2,
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    {
+                        "competition": "ლიგის თასი",
+                        "matches": 16,
+                        "goals": 7,
+                        "lineup": 9,
+                        "subin": 7,
+                        "subout": 3,
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    {
+                        "competition": "ქომიუნითი შლდი",
+                        "matches": 2,
+                        "goals": 0,
+                        "lineup": 0,
+                        "subin": 2,
+                        "subout": 0,
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    {
+                        "competition": "კოპა ლიბერტადორესი",
+                        "matches": 5,
+                        "goals": 4,
+                        "lineup": 3,
+                        "subin": 2,
+                        "subout": 0,
+                        "yellow": 1,
+                        "yellowred": 0,
+                        "red": 1
+                    },
+                    {
+                        "competition": "სერია ა",
+                        "matches": 47,
+                        "goals": 16,
+                        "lineup": 38,
+                        "subin": 9,
+                        "subout": 5,
+                        "yellow": 16,
+                        "yellowred": 0,
+                        "red": 0
+                    }
+                ],
+                "nationalStats": [
+                    {
+                        "competition": "მსოფლიო ჩემპიონატი",
+                        "matches": 5,
+                        "goals": 0,
+                        "lineup": 5,
+                        "subin": 0,
+                        "subout": 3,
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    {
+                        "competition": "ამხანაგური",
+                        "matches": 18,
+                        "goals": 9,
+                        "lineup": 15,
+                        "subin": 3,
+                        "subout": 12,
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    {
+                        "competition": "კოპა ამერიკა",
+                        "matches": 6,
+                        "goals": 2,
+                        "lineup": 4,
+                        "subin": 2,
+                        "subout": 1,
+                        "yellow": 0,
+                        "yellowred": 1,
+                        "red": 0
+                    }
+                ],
+                "clubCareer": [
+                    {
+                        "time": "01/2017 - 06/2023",
+                        "logo": "https://s.hs-data.com/bilder/wappen/mittel/750.gif?fallback=png",
+                        "team": "მანჩესტერ სიტი"
+                    },
+                    {
+                        "time": "01/2015 - 12/2016",
+                        "logo": "https://s.hs-data.com/bilder/wappen/mittel/2224.gif?fallback=png",
+                        "team": "პალმეირასი"
+                    }
+                ]
             },
             {
-                "competition": "კოპა ამერიკა",
-                "matches": 1,
-                "goals": 1,
-                "lineup": 1,
-                "subin": 1,
-                "subout": 1,
-                "yellow": 1,
-                "yellowred": 1,
-                "red": 1                
-            },
-            {
-                "competition": "შესარჩევი",
-                "matches": 1,
-                "goals": 1,
-                "lineup": 1,
-                "subin": 1,
-                "subout": 1,
-                "yellow": 1,
-                "yellowred": 1,
-                "red": 1                
-            }
-        ],
-        "clubCareer": [
-            {
-                "time": "07/2018 - 06/2022",
-                "logo": "https://s.hs-data.com/bilder/wappen/mittel/511.gif?fallback=png",
-                "team": "იუვენტუსი"
-            },
-            {
-                "time": "07/2009 - 07/2018",
-                "logo": "https://s.hs-data.com/bilder/wappen/mittel/532.gif?fallback=png",
-                "team": "რეალ მადრიდი"
-            },
-            {
-                "time": "07/2003 - 06/2009",
-                "logo": "https://s.hs-data.com/bilder/wappen/mittel/543.gif?fallback=png",
-                "team": "მანჩესტერ იუნაიტედი"
-            },
-            {
-                "time": "07/2002 - 06/2003",
-                "logo": "https://s.hs-data.com/bilder/wappen/mittel/809.gif?fallback=png",
-                "team": "სპორტინგი"
-            },
-            {
-                "time": "07/2001 - 06/2003",
-                "logo": "https://s.hs-data.com/bilder/wappen/mittel/809.gif?fallback=png",
-                "team": "სპორტინგი (ახალგაზრდული)"
+                "id": 7,
+                "firstname": "რაჰეემ",
+                "lastname": "შაკილ სტერლინგი",
+                "bornday": "08.12.1994",
+                "bornplace": "კინგსტონი, იამაიკა",
+                "country": "ინგლისი",
+                "height": "170",
+                "weight": "69",
+                "position": "თავდამსხმელი",
+                "foot": "მარჯვენა",
+                "image": "https://s.hs-data.com/bilder/spieler/gross/180807.jpg?fallback=png",
+                "clubStats": [
+                    {
+                        "competition": "ჩემპიონთა ლიგა",
+                        "matches": 56,
+                        "goals": 21,
+                        "lineup": 44,
+                        "subin": 12,
+                        "subout": 16,
+                        "yellow": 7,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    {
+                        "competition": "ევროპა ლიგა",
+                        "matches": 9,
+                        "goals": 0,
+                        "lineup": 2,
+                        "subin": 7,
+                        "subout": 1,
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    {
+                        "competition": "პრემიერ ლიგა",
+                        "matches": 280,
+                        "goals": 94,
+                        "lineup": 238,
+                        "subin": 42,
+                        "subout": 81,
+                        "yellow": 29,
+                        "yellowred": 1,
+                        "red": 0
+                    },
+                    {
+                        "competition": "FA თასი",
+                        "matches": 27,
+                        "goals": 10,
+                        "lineup": 22,
+                        "subin": 5,
+                        "subout": 6,
+                        "yellow": 6,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    {
+                        "competition": "ლიგის თასი",
+                        "matches": 26,
+                        "goals": 10,
+                        "lineup": 19,
+                        "subin": 7,
+                        "subout": 2,
+                        "yellow": 4,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    {
+                        "competition": "ქომიუნითი შილდი",
+                        "matches": 1,
+                        "goals": 1,
+                        "lineup": 1,
+                        "subin": 0,
+                        "subout": 0,
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    }
+                ],
+                "nationalStats": [
+                    {
+                        "competition": "მსოფლიო ჩემპიონატი",
+                        "matches": 9,
+                        "goals": 0,
+                        "lineup": 8,
+                        "subin": 1,
+                        "subout": 6,
+                        "yellow": 1,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    {
+                        "competition": "მჩ შესარჩევი",
+                        "matches": 7,
+                        "goals": 0,
+                        "lineup": 5,
+                        "subin": 2,
+                        "subout": 4,
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    {
+                        "competition": "ევროპის ჩემპიონატი",
+                        "matches": 3,
+                        "goals": 0,
+                        "lineup": 3,
+                        "subin": 0,
+                        "subout": 3,
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    {
+                        "competition": "ამხანაგური",
+                        "matches": 17,
+                        "goals": 0,
+                        "lineup": 13,
+                        "subin": 4,
+                        "subout": 9,
+                        "yellow": 2,
+                        "yellowred": 0,
+                        "red": 1
+                    },
+                    {
+                        "competition": "ერთა ლიგა",
+                        "matches": 7,
+                        "goals": 3,
+                        "lineup": 7,
+                        "subin": 0,
+                        "subout": 1,
+                        "yellow": 1,
+                        "yellowred": 0,
+                        "red": 0
+                    }
+                ],
+                "clubCareer": [
+                    {
+                        "time": "07/2015 - 06/2023",
+                        "logo": "https://s.hs-data.com/bilder/wappen/mittel/750.gif?fallback=png",
+                        "team": "მანჩესტერ სიტი"
+                    },
+                    {
+                        "time": "07/2010 - 07/2015",
+                        "logo": "https://s.hs-data.com/bilder/wappen/mittel/550.gif?fallback=png",
+                        "team": "ლივერპული"
+                    }
+                ]
             }
         ]
     }
